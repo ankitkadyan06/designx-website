@@ -1,0 +1,12 @@
+.btn-start {
+  backdrop-filter: blur(10px);
+}
+
+.text-gradient {
+  background: linear-gradient(180deg, #009dff 0%, #0049ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  
+}
