@@ -1,9 +1,12 @@
 import React from 'react'
+import Header from '../Components/Common/Header'
+import HeroSection from '../Components/HomePage/HeroSection'
 
 const HomePage = () => {
   return (
     <div>
-      Home Page
+      <Header/>
+      <HeroSection />
     </div>
   )
 }
