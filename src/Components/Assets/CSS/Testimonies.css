@@ -1,0 +1,15 @@
+.testimonies{
+    background-image: url('../Images/backClient.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 40px;
+}
+
+.text-gradientTest {
+    background: linear-gradient(180deg, #C9D8FF 0%, #00A3FD 99.99%, #0046FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
