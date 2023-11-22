@@ -10,7 +10,7 @@ const TrustedBy = () => {
             <img src={client} alt="" />
         </div>
         <div className='w-[50%] pr-[85px]'>
-            <p className='text-gradient text-[38px] font-poppins'>Trusted by</p>
+            <p className='text-gradientTrust text-[38px] font-poppins'>Trusted by</p>
             <hr className='w-[20%] border-[3px] border-solid border-[#0049FF] relative bottom-[17px]'/>
             <p className='text-[32px] text-white font-poppins font-medium'>Leverage the Future of Shop Floor Transformation</p>
             <p className='text-[18px] text-white font-poppins'>Some of the significant members of the manufacturing industry have transformed their shop floors by leveraging the SaaS-based platform, DFOS and exhibited exemplary digital outcomes.</p>

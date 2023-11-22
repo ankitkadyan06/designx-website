@@ -1,10 +1,10 @@
 .backContTwo {
   background-color: #282932;
   filter: drop-shadow(0px 20px 31px rgba(0, 0, 0, 0.25));
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden;
   bottom: 40px;
-  z-index: 1;
+  z-index: 1; */
   /* bottom: 41px;
   transform: rotate(-2deg);
   height: 640px; */

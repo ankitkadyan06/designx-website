@@ -2,8 +2,6 @@
     background-image: url('../Images/backClient.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    bottom: 40px;
 }
 
 .text-gradientTest {

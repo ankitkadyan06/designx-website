@@ -2,8 +2,8 @@
     background: url('../Images/backClient.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    bottom: 40px;
+    /* position: relative;
+    bottom: 40px; */
 }
 
 .text-gradientTrust {
