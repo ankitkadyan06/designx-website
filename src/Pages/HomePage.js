@@ -6,6 +6,7 @@ import ContentTwo from '../Components/HomePage/ContentTwo'
 import TrustedBy from '../Components/HomePage/TrustedBy'
 import VideoComp from '../Components/HomePage/VideoComp'
 import Testimonies from '../Components/HomePage/Testimonies'
+import Footer from '../Components/Common/Footer'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <TrustedBy/>
       <VideoComp/>
       <Testimonies/>
+      <Footer/>
     </div>
   )
 }

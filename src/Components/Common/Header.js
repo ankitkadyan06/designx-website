@@ -16,7 +16,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className={`sticky-header ${isSticky ? "fixed" : ""}`}>
+    <header className={`sticky-header ${isSticky ? "fixed" : ""} border-b-[0.5px] border-solid border-[#adadad]`}>
       <img src={Logo} alt="" className="ml-[77px]" />
       <nav>
         <ul className="flex text-white font-inter text-[21px] mt-[10px]">

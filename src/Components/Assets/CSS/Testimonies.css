@@ -11,3 +11,28 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
   }
+
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 33%;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: #282932;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+    height: 530px;
+    text-align: justify;
+  }
+
+  .slide-next {
+    transform: translateX(-50%);
+  }
+  
+  /* .slide-previous {
+    display: none;
+  } */

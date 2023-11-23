@@ -5,9 +5,10 @@ import spring from '../Assets/Images/springDark.svg'
 
 const ContentTwo = () => {
   return (
+    <div className="tiltBGHomepage">
     <div className="backContTwo">
       <div className="flex pt-[100px]">
-        <div className="w-[50%] pl-[78px] pr-[202px]">
+        <div className="w-[50%] pl-[78px] pr-[202px] overlook">
           <p className="text-white text-[32px] font-poppins font-medium capitalize">One Factory-One Platform</p>
           <p className="text-[#D4D4D4] text-[18px] font-poppins text-justify">
             After interacting with hundreds of people who wanted to change the
@@ -28,12 +29,13 @@ const ContentTwo = () => {
           </p>
           <button className="bg-white text-[#001141] text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">Know More</button>
         </div>
-        <div className="w-[50%]">
-            <img src={checkSheet} alt=""/>
+        <div className="w-[50%] checkImage">
+            <img src={checkSheet} alt="" className="relative bottom-[85px]"/>
             <img src={spring} alt="" className='absolute top-0 right-[1px] z-[-1]'/>
 
         </div>
       </div>
+    </div>
     </div>
   );
 };
