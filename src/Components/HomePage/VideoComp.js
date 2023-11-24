@@ -24,11 +24,11 @@ const VideoComp = ({ videoDfos, imageDfos }) => {
               Take your manufacturing plant to new heights by getting the utmost
               shop floor visibility, connectivity & real-time insights.
             </p>
-            <div className="flex">
-              <button className="demo text-white text-[18px] md:text-[24px] rounded-[5px] font-medium px-[23px] py-[5px] h-[58px]">
+            <div className="block md:flex lg:block xl:flex">
+              <button className="demo text-white text-[14px] md:text-[24px] rounded-[5px] font-medium px-[23px] py-[5px] h-[58px]">
                 Get a Demo
               </button>
-              <button className="flex ml-[59px]">
+              <button className="flex mt-[10px] md:mt-[0px] lg:mt-[10px] xl:mt-[0px] ml-[0px] xl:ml-[59px]">
                 <img src={play} alt="" />
                 <p className="text-white text-[20px] md:text-[25px] font-poppins font-semibold ml-[21px] py-[13px]">
                   View Video

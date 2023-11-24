@@ -26,8 +26,8 @@ const Header = () => {
           <Link to="/Resources" className="ml-[30px] no-underline text-white">Resources</Link>
         </ul>
       </nav>
-      <div className="flex mr-[80.22px]">
-        <Link to="/Contact" className="text-white font-inter text-[18px] md:text-[21px] mt-[10px] no-underline">Contact Us</Link>
+      <div className="flex">
+        <Link to="/Contact" className="text-white font-inter text-[16px] md:text-[21px] mt-[10px] no-underline">Contact Us</Link>
         <button className="rounded-[64px] bg-white text-[#00153F] font-semibold text-[14px] md:text-[16px] ml-[27px] px-[18px] md:px-[23px] py-[0px]">Demo</button>
       </div>
     </header>
