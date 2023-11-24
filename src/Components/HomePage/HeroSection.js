@@ -1,26 +1,26 @@
 import React from "react";
-import heroImage from "../Assets/Images/heroimage.svg";
+// import heroImage from "../Assets/Images/heroimage.svg";
 import "../Assets/CSS/HeroSection.css";
 import CountUp from "react-countup";
 
 const HeroSection = () => {
   return (
-    <div>
-      <img src={heroImage} alt="" className="absolute w-full z-[-1]" />
+    <div className="heroBackGround">
+      {/* <img src={heroImage} alt="" className="absolute w-full z-[-1]" /> */}
       <div className="relative top-[120px]">
-        <div className="text-white text-[43px] font-poppins capitalize text-center">
+        <div className="text-white text-[32px] md:text-[38px] lg:text-[43px] font-poppins capitalize text-center">
           millions of data points, but only 1% reaches
           <br /> decision-makers
         </div>
-        <div className="text-[#DADADA] text-[18px] mt-[10px] text-center">
+        <div className="text-[#DADADA] text-[12px] md:text-[14px] lg:text-[18px] mt-[10px] text-center">
           Capture remaining 99% data points by digitizing end-to-end
           manufacturing processes with DFOS
         </div>
-        <button className="btn-start text-[24px] text-white font-medium w-[170px] h-[56px] rounded-[11px] ml-[44.2%] mt-[50px]">
+        <button className="btn-start text-[18px] md:text-[24px] text-white font-medium w-[170px] h-[56px] rounded-[11px] ml-[35%] md:ml-[44.2%] mt-[50px]">
           Start Today
         </button>
       </div>
-      <div className="backNo block lg:flex justify-around w-full px-[50px] h-[350px] md:h-auto p-[60px] md:p-[50px] mt-[37%]">
+      <div className="backNo block md:flex justify-around w-full px-[50px] h-[350px] md:h-auto p-[60px] md:p-[50px] mt-[37%]">
         <div className="font-poppins text-xl text-center md:text-[28px] xl:text-[68px]">
           <CountUp start={0} end={350} delay={1} className="text-gradient"/>
           <span className="text-gradient">+</span>

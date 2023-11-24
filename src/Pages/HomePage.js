@@ -6,9 +6,12 @@ import ContentTwo from '../Components/HomePage/ContentTwo'
 import TrustedBy from '../Components/HomePage/TrustedBy'
 import VideoComp from '../Components/HomePage/VideoComp'
 import Testimonies from '../Components/HomePage/Testimonies'
-import Footer from '../Components/Common/Footer'
+// import Footer from '../Components/Common/Footer'
 
 const HomePage = () => {
+
+  const videoForDfos = "../Components/Assets/Images/demo.mp4"
+  const imagePreviewForDFOS = "../Components/Assets/Images/videoImagepreview.svg"
   return (
     <div>
       <Header/>
@@ -16,9 +19,9 @@ const HomePage = () => {
       <ContentOne/>
       <ContentTwo/>
       <TrustedBy/>
-      <VideoComp/>
+      <VideoComp videoDfos={videoForDfos} imageDfos={imagePreviewForDFOS}/>
       <Testimonies/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

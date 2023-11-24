@@ -17,9 +17,9 @@ const Header = () => {
   }, []);
   return (
     <header className={`sticky-header ${isSticky ? "fixed" : ""} border-b-[0.5px] border-solid border-[#adadad]`}>
-      <img src={Logo} alt="" className="ml-[77px]" />
+      <img src={Logo} alt="" className="ml-[50px] sm:ml-[67px] md:ml-[77px] md:w-[200px] xl:w-[248px] md:h-[50px] xl:h-[56px]" />
       <nav>
-        <ul className="flex text-white font-inter text-[21px] mt-[10px]">
+        <ul className="flex text-white font-inter text-[14px] sm:text-[16px] lg:text-[21px] mt-[10px]">
           <Link to="/" className="no-underline text-white">Home</Link>
           <Link to="/Product" className="ml-[30px] no-underline text-white">Product</Link>
           <Link to="/Aboutus" className="ml-[30px] no-underline text-white">About Us</Link>
@@ -27,8 +27,8 @@ const Header = () => {
         </ul>
       </nav>
       <div className="flex mr-[80.22px]">
-        <Link to="/Contact" className="text-white font-inter text-[21px] mt-[10px] no-underline">Contact Us</Link>
-        <button className="rounded-[64px] bg-white text-[#00153F] font-semibold text-[16px] ml-[27px]" style={{padding:"0px 22.781px 0px 23px"}}>Demo</button>
+        <Link to="/Contact" className="text-white font-inter text-[18px] md:text-[21px] mt-[10px] no-underline">Contact Us</Link>
+        <button className="rounded-[64px] bg-white text-[#00153F] font-semibold text-[14px] md:text-[16px] ml-[27px] px-[18px] md:px-[23px] py-[0px]">Demo</button>
       </div>
     </header>
   );
