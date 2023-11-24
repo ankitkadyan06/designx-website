@@ -51,9 +51,9 @@ const HeaderDemo = () => {
         }`}
       >
         <div className="mx-auto px-4 md:flex md:px-8">
-          <div className="flex justify-between items-center  md:block">
+          <div className="flex justify-between md:block">
             <Link to="/">
-              <img src={logo} width={120} height={50} alt="Float UI logo" />
+              <img src={logo} width={170} height={50} alt="Float UI logo" />
             </Link>
             <div className="md:hidden">
               <button
@@ -93,41 +93,29 @@ const HeaderDemo = () => {
             </div>
           </div>
           <div
-            className={`flex items-center mt-8 md:mt-0 md:flex ${
+            className={`flex ml-[16rem] items-center mt-8 md:mt-0 md:flex ${
               isMenuOpen ? "block" : "hidden"
             }`}
           >
             <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
               {navigation.map((item, idx) => (
                 <li key={idx} className="text-gray-700 hover:text-gray-900">
-                  <Link to={item.path} className="block text-white font-poppins no-underline">
+                  <Link to={item.path} className="block text-white text-[21px] font-poppins no-underline">
                     {item.title}
                   </Link>
                 </li>
               ))}
             </ul>
-            <div className="flex gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
-              <Link to="/" className="block text-white hover:text-gray-900 font-poppins no-underline">
+            <div className="flex ml-[22rem] gap-x-6 justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
+              <Link to="/Contact" className="block text-white text-[21px] font-poppins no-underline pt-[10px]">
                 Contact Us
               </Link>
-              <Link
+              <button
                 to="/"
-                className="flex items-center justify-center gap-x-1 py-2 px-4 text-[#00153F] font-medium bg-white hover:bg-gray-700 rounded-full md:inline-flex no-underline"
+                className="flex text-[16px] justify-center gap-x-1 py-2.5 px-4 text-[#00153F] font-medium bg-white rounded-full md:inline-flex no-underline"
               >
                 Demo
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </Link>
+              </button>
             </div>
           </div>
         </div>
