@@ -1,0 +1,26 @@
+.contactUsBackground {
+  background-image: url("../Images/backContactus.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactTextGradient {
+  background: linear-gradient(180deg, #c9d8ff 0%, #00a3fd 99.99%, #0046ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.bookDemo {
+  border-radius: 12px;
+  /* border: 5px solid #0046ff; */
+  background: rgba(0, 0, 0, 0.57);
+  box-shadow: 30px 18px 39px 0px rgba(0, 0, 0, 0.25);
+}
+
+.submitButtonForForm {
+  border-radius: 8px;
+  border: 1px solid #029efe;
+  background: linear-gradient(90deg, #315fd6 0%, #019fff 100%);
+}
