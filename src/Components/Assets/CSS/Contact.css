@@ -24,3 +24,48 @@
   border: 1px solid #029efe;
   background: linear-gradient(90deg, #315fd6 0%, #019fff 100%);
 }
+
+.formBackground{
+  background: linear-gradient(180deg, #0046FF 100%, #25E7E9 100%, #009FFF 100%);
+  border-radius: 27px;
+  padding: 5px;
+}
+
+.contactForm{
+  background: linear-gradient(161deg, #011F70 100%, #1F9FBA 100%, #000000 100%);
+  border-radius: 27px;
+  padding: 34px 30px 23px 28px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+.custom-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px; 
+  position: relative;
+}
+
+
+.custom-checkbox::before {
+  content: '\2713'; 
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #adadad; 
+  font-size: 16px; 
+  visibility: hidden;
+}
+
+
+input[type="checkbox"]:checked + .custom-checkbox::before {
+  visibility: visible;
+}

@@ -8,17 +8,17 @@ import tvs from '../Assets/Images/tvs.svg'
 
 const ClientsTrust = () => {
   return (
-    <div className='ml-[200px]'>
+    <div className='ml-[30px]'>
       <div>
         <p className='text-[20px] text-white font-poppins font-medium' >Trusted by</p>
         <div className="border-b-[3px] border-solid border-white w-[19%]"></div>
-        <div className='flex'>
+        <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 mt-[20px]'>
             <img src={unilever} alt="" />
-            <img src={amber} alt="" className='ml-[80px]' />
-            <img src={dabur} alt="" className='ml-[75px]' />
-            <img src={toray} alt="" className='ml-[75px]'/>
-            <img src={hero} alt="" className='ml-[100px]'/>
-            <img src={tvs} alt="" className='ml-[85px]'/>
+            <img src={amber} alt="" />
+            <img src={dabur} alt="" />
+            <img src={toray} alt=""/>
+            <img src={hero} alt="" />
+            <img src={tvs} alt="" />
         </div>
       </div>
     </div>

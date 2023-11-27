@@ -3,12 +3,12 @@ import React from "react";
 const SubmitForm = () => {
   return (
     <div className="pt-[150px]">
-      <div className="grid grid-cols-2 gap-4">
-        <div className="w-[365px] ml-[200px]">
-          <p className="text-white text-[47px] font-poppins font-semibold">
+      <div className="block lg:grid lg:grid-cols-2 gap-4">
+        <div className="w-[365px] ml-[10%] sm:ml-[30%] lg:ml-[200px]">
+          <p className="text-white text-[36px] lg:text-[47px] font-poppins font-semibold">
             One-step closer to digitalization
           </p>
-          <p className="text-[#D4D4D4] text-[18px] font-poppins text-justify">
+          <p className="text-[#D4D4D4] text-[14px] lg:text-[18px] font-poppins text-justify">
             The quest to find an agile solution for your shop floor has come to
             an end. Switch to digitalization today with DesignX!
           </p>
@@ -31,8 +31,8 @@ const SubmitForm = () => {
             </div>
           </div>
         </div>
-        <div className="formBackground ml-[70px]">
-          <div className="w-[50%]">
+        <div className="formBackground ml-[10%] sm:ml-[30%] mt-[20px] lg:mt-[0px] lg:ml-[70px] w-[365px] lg:w-[414px]">
+          <div className=" contactForm">
             <p className="text-white text-[32px] font-poppins font-medium">
               Contact Us
             </p>
@@ -42,36 +42,38 @@ const SubmitForm = () => {
               <input
                 type="text"
                 placeholder="NAME"
-                className="text-white text-[12px] font-poppins p-[5px] w-[356px] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
+                className="text-white text-[12px] font-poppins p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="EMAIL"
-                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[356px] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
+                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="PHONE (OPTIONAL)"
-                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[356px] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
+                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="COMPANY (OPTIONAL)"
-                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[356px] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
+                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
               />
               <br />
               <br />
-              <input
+              
+              <label
+                htmlFor=""
+                className="text-[#B7B7B7] text-[12px] font-poppins"
+              >
+                <input
                 type="checkbox"
                 name=""
                 id=""
-                className="w-[17px] h-[17px] relative top-[4px]"
+                className="w-[17px] h-[17px]"
               />
-              <label
-                htmlFor=""
-                className="text-[#B7B7B7] text-[12px] font-poppins ml-[6px]"
-              >
-                Subscribe to our newsletter
+              <span className="custom-checkbox"></span>
+                <span className="">Subscribe to our newsletter</span>
               </label>
 
               <div className="mt-[20px]">
@@ -82,7 +84,7 @@ const SubmitForm = () => {
                   name=""
                   id=""
                   placeholder="It would be great to hear more about your project (optional)"
-                  className="w-[100%] h-[171px] bg-transparent border-[1px] border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
+                  className="w-[94%] h-[171px] bg-transparent border-[1px] border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
                 ></textarea>
               </div>
             </form>
