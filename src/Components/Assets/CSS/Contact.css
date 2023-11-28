@@ -71,3 +71,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .custom-checkbox::before {
   visibility: visible;
 }
+
+.bookDemo:hover {
+  border: 5px solid #0046FF; 
+}

@@ -8,11 +8,11 @@ const SubmitForm = () => {
           <p className="text-white text-[36px] lg:text-[47px] font-poppins font-semibold">
             One-step closer to digitalization
           </p>
-          <p className="text-[#D4D4D4] text-[14px] lg:text-[18px] font-poppins text-justify">
+          <p className="text-[#D4D4D4] text-[14px] lg:text-[18px] font-poppins text-justify mr-[30px]">
             The quest to find an agile solution for your shop floor has come to
             an end. Switch to digitalization today with DesignX!
           </p>
-          <div className="flex">
+          <div className="flex mt-[24px]">
             <div className="bookDemo w-[168px] h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF]">
               <p className="contactTextGradient text-[22px] font-poppins font-semibold mt-[20px] ml-[17px] mr-[20px]">
                 Book a Demo
