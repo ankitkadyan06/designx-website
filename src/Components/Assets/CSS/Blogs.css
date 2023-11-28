@@ -1,0 +1,22 @@
+@font-face {
+    font-family: sansation;
+    src: url('../../Fonts/sansation/Sansation_Regular.ttf');
+}
+
+.blogback{
+    background-image: url('../Images/backContactus.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blogHeading{
+    font-family: 'sansation', sans-serif;
+}
+
+.blogContentBackground{
+    background: rgba(0, 0, 0, 0.36);
+}
+
+.blogReadButton{
+    background: linear-gradient(90deg, #0945CB -6.95%, #1F84EC 102.37%);
+}

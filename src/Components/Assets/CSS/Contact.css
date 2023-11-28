@@ -25,16 +25,18 @@
   background: linear-gradient(90deg, #315fd6 0%, #019fff 100%);
 }
 
-.formBackground{
+/* .formBackground{
   background: linear-gradient(180deg, #0046FF 100%, #25E7E9 100%, #009FFF 100%);
   border-radius: 27px;
   padding: 5px;
-}
+} */
 
 .contactForm{
-  background: linear-gradient(161deg, #011F70 100%, #1F9FBA 100%, #000000 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(161deg, rgba(1, 31, 112, 0.20) 5.23%, rgba(31, 159, 186, 0.20) 43.4%, rgba(0, 0, 0, 0.20) 99.15%);
+  border: 5px solid #0046FF;
   border-radius: 27px;
   padding: 34px 30px 23px 28px;
+  box-shadow: 30px 18px 39px 0px rgba(0, 0, 0, 0.25);
 }
 
 input[type="checkbox"] {
