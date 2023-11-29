@@ -8,7 +8,7 @@ import tvs from '../Assets/Images/tvs.svg'
 
 const ClientsTrust = () => {
   return (
-    <div className='ml-[30px]'>
+    <div className='ml-[30px] mt-[40px] pb-[20px]'>
       <div>
         <p className='text-[20px] text-white font-poppins font-medium' >Trusted by</p>
         <div className="border-b-[3px] border-solid border-white w-[19%]"></div>

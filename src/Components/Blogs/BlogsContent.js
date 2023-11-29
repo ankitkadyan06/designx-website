@@ -8,7 +8,7 @@ const BlogsContent = () => {
         <img src={blogPic} alt="" className='rounded-24px' />
         <div className='font-poppins mt-[0px] lg:mt-[41px] ml-[10px]'>
             <p className='text-white text-[24px] xl:text-[28px] font-medium'>How DFOS empowers intelligent business process management suite(iBPMS)?</p>
-            <p className='text-[14px] xl:text-[18px] text-[#adadad]'>Leverage the benefits of Intelligent Business Process Management suite</p>
+            <p className='text-[14px] xl:text-[18px] text-[#adadad] font-medium'>Leverage the benefits of Intelligent Business Process Management suite</p>
             <Link to="/BlogDetails"><button className='blogReadButton w-[151px] h-[40px] rounded-[7px] font-inter text-white'>Read More</button></Link>
         </div>
       </div>

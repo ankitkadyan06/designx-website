@@ -9,7 +9,7 @@ module.exports = {
       'montserrat': [ 'Montserrat', 'sans-serif'],
       'ubuntu': ['Ubuntu', 'sans-serif'],
       'inter': ['inter', 'sans-serif'],
-      'robotoSlab': ['Roboto Slab', 'sans-serif']
+      'robotoSlab': ['Roboto Slab', 'serif']
     }
   },
   plugins: [],
