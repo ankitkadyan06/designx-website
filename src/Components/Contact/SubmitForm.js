@@ -4,7 +4,7 @@ const SubmitForm = () => {
   return (
     <div className="pt-[150px]">
       <div className="block lg:grid lg:grid-cols-2 gap-4">
-        <div className="w-[365px] ml-[10%] sm:ml-[30%] lg:ml-[200px]">
+        <div className="w-[390px] ml-[10%] sm:ml-[30%] lg:ml-[200px]">
           <p className="text-white text-[36px] lg:text-[47px] font-poppins font-semibold">
             One-step closer to digitalization
           </p>
