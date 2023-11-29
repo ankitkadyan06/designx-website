@@ -9,7 +9,7 @@ const navigation = [
  { name: 'Home', to: '/' },
  { name: 'Product', to: '/Product' },
  { name: 'About Us', to: '/Aboutus' },
- { name: 'Resources ▼', to: '/Resources' },
+ { name: 'Resources ˬ', to: '/Resources' },
 ]
 const HeaderDemo = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -50,7 +50,7 @@ const HeaderDemo = () => {
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
-                {item.name === 'Resources ▼' ? (
+                {item.name === 'Resources ˬ' ? (
                   <>
                     <button
                       className="no-underline font-poppins text-[21px] leading-6 text-white cursor-pointer focus:outline-none"
@@ -62,6 +62,7 @@ const HeaderDemo = () => {
                       <div className="absolute mt-2 space-y-2 bg-white text-[#00153F] rounded-md shadow-lg">
                         <Link to="/Blogs" className="block px-4 py-2 no-underline text-[#00153F]">Blogs</Link>
                         <Link to="#" className="block px-4 py-2 no-underline text-[#00153F]">Newsletters</Link>
+                        <Link to="#" className="block px-4 py-2 no-underline text-[#00153F]">Use Cases</Link>
                       </div>
                     )}
                   </>

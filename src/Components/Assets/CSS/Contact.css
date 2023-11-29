@@ -31,47 +31,24 @@
   padding: 5px;
 } */
 
-.contactForm{
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(161deg, rgba(1, 31, 112, 0.20) 5.23%, rgba(31, 159, 186, 0.20) 43.4%, rgba(0, 0, 0, 0.20) 99.15%);
-  border: 5px solid #0046FF;
+.contactForm {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(
+      161deg,
+      rgba(1, 31, 112, 0.2) 5.23%,
+      rgba(31, 159, 186, 0.2) 43.4%,
+      rgba(0, 0, 0, 0.2) 99.15%
+    );
+  border: 5px solid #0046ff;
   border-radius: 27px;
   padding: 34px 30px 23px 28px;
   box-shadow: 30px 18px 39px 0px rgba(0, 0, 0, 0.25);
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-
-.custom-checkbox {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 4px; 
-  position: relative;
-}
-
-
-.custom-checkbox::before {
-  content: '\2713'; 
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #adadad; 
-  font-size: 16px; 
-  visibility: hidden;
-}
-
-
-input[type="checkbox"]:checked + .custom-checkbox::before {
-  visibility: visible;
-}
-
 .bookDemo:hover {
-  border: 5px solid #0046FF; 
+  border: 5px solid #0046ff;
 }

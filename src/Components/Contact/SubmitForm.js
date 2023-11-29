@@ -37,7 +37,7 @@ const SubmitForm = () => {
               Contact Us
             </p>
             {/* <hr className="border-b-[3px] border-solid border-white w-[15%]" /> */}
-            <div className="border-b-[3px] border-solid border-white w-[40%]"></div>
+            <div className="border-b-[3px] border-solid border-white w-[40%] pr-[50px]"></div>
             <form action="" className="mt-[40px]">
               <input
                 type="text"
@@ -62,17 +62,16 @@ const SubmitForm = () => {
               <br />
               <br />
               
+              <input
+              type="checkbox"
+              name=""
+              id=""
+              className="w-[17px] h-[17px] relative top-[4px]"
+            />
               <label
                 htmlFor=""
-                className="text-[#B7B7B7] text-[12px] font-poppins"
+                className="text-[#B7B7B7] text-[12px] font-poppins ml-[5px]"
               >
-                <input
-                type="checkbox"
-                name=""
-                id=""
-                className="w-[17px] h-[17px]"
-              />
-              <span className="custom-checkbox"></span>
                 <span className="">Subscribe to our newsletter</span>
               </label>
 
