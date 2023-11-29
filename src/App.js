@@ -8,6 +8,7 @@ import Contact from './Pages/Contact';
 import Blogs from './Pages/Blogs';
 import BlogDetails from './Pages/BlogDetails';
 
+
 function App() {
   return (
     <BrowserRouter>

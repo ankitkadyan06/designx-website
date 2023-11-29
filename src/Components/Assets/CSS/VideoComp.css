@@ -38,7 +38,7 @@
   width: 100%;
   max-width: 650px;
   margin: auto;
-  background: linear-gradient(0deg, #4cb8ff 1.52%, #eef5ff 136.27%);
+  /* background: linear-gradient(0deg, #4cb8ff 1.52%, #eef5ff 136.27%); */
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.25);
 }
 

@@ -40,9 +40,9 @@ const Testimonies = () => {
     );
   };
   return (
-    <div className="testimonies w-full h-[1100px] lg:h-[800px] xl:h-[780px] 2xl:h-[900px] px-[10px]">
+    <div className="testimonies w-full h-[1250px] sm:h-[1200px] lg:h-[1200px] xl:h-[850px] 2xl:h-[900px] px-[10px]">
       <div className="block lg:grid lg:grid-cols-2 pt-[140px] pl-[78px]">
-        <div className="w-[50%] pr-[17px] mt-[80px] lg:mt-[120px]">
+        <div className="w-full sm:w-[50%] pr-[17px] mt-[80px] lg:mt-[120px]">
           <p className="text-gradientTest font-poppins text-[42px] font-semibold">
             {" "}
             What Our Clients Are Saying...

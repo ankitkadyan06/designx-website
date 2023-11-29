@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "../Assets/CSS/VideoComp.css";
 import play from "../Assets/Images/playButton.svg";
-// import videoPreview from '../Assets/Images/videoPreview.svg'
 import videoImagePreview from "../Assets/Images/videoImagepreview.svg";
-// import videoDemo from "../Assets/Images/demo.mp4";
-import videoView from '../Assets/Images/videoView.svg'
+import videoView from "../Assets/Images/videoView.svg";
 
 const VideoComp = ({ videoDfos, imageDfos }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -28,7 +26,10 @@ const VideoComp = ({ videoDfos, imageDfos }) => {
               <button className="demo text-white text-[14px] md:text-[24px] rounded-[5px] font-medium px-[23px] py-[5px] h-[58px]">
                 Get a Demo
               </button>
-              <button className="flex mt-[10px] md:mt-[0px] lg:mt-[10px] xl:mt-[0px] ml-[0px] xl:ml-[59px]"onClick={playVideo}>
+              <button
+                className="flex mt-[10px] md:mt-[0px] lg:mt-[10px] xl:mt-[0px] ml-[0px] xl:ml-[59px]"
+                onClick={playVideo}
+              >
                 <img src={play} alt="" />
                 <p className="text-white text-[20px] md:text-[25px] font-poppins font-semibold ml-[21px] py-[13px]">
                   View Video
@@ -36,18 +37,24 @@ const VideoComp = ({ videoDfos, imageDfos }) => {
               </button>
             </div>
           </div>
-          <div className="">
-            {/* <img src={videoPreview} alt="" className="relative bottom-[70px]" /> */}
-            <div className="w-[664px] h-[358px] rounded-[15px] video-container">
+          <div className="w-[664px] border-[5px] border-solid border-[#0046FF] rounded-[15px] video-container">
+            <div className="">
               {!isPlaying && (
                 <>
                   <img
                     src={videoImagePreview}
                     alt="Video Preview"
-                    className="preview-image w-[94%] ml-[3%] pt-[3%]"
+                    className="preview-image w-[100%]"
                   />
-                  <div className="play-button cursor-pointer" onClick={playVideo}>
-                    <img src={videoView} alt="" className="absolute bottom-[40%] left-[45%]" />
+                  <div
+                    className="play-button cursor-pointer"
+                    onClick={playVideo}
+                  >
+                    <img
+                      src={videoView}
+                      alt=""
+                      className="absolute bottom-[40%] left-[45%]"
+                    />
                   </div>
                 </>
               )}
@@ -56,7 +63,7 @@ const VideoComp = ({ videoDfos, imageDfos }) => {
                   controls
                   className={`rounded-[15px] ${
                     isPlaying ? "playing" : "hidden"
-                  } w-[94%] ml-[3%] pt-[5%] rounded-[5px]`}
+                  } w-[100%] rounded-[15px]`}
                 >
                   <source src={videoDfos} type="video/mp4" />
                   Your browser does not support the video tag.
