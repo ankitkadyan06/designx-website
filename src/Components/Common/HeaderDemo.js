@@ -37,7 +37,7 @@ const HeaderDemo = () => {
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <Link to="#" className="-m-1.5 p-1.5 focus:outline-none ml-[2%]">
+            <Link to="/" className="-m-1.5 p-1.5 focus:outline-none ml-[2%]">
               <img src={logo} className="h-8 w-auto" alt="" />
             </Link>
           </div>
@@ -78,22 +78,22 @@ const HeaderDemo = () => {
                       {item.name}
                     </button>
                     {showResourcesDropdown && (
-                      <div className="absolute mt-2 space-y-2 bg-white text-[#00153F] rounded-md shadow-lg">
+                      <div className="absolute mt-2 space-y-2 bg-[#001141] border-[1px] border-solid border-[#adadad] text-white rounded-md shadow-lg">
                         <Link
                           to="/Blogs"
-                          className="block px-4 py-2 no-underline text-[#00153F]"
+                          className="block px-4 py-2 no-underline text-white"
                         >
                           Blogs
                         </Link>
                         <Link
                           to="#"
-                          className="block px-4 py-2 no-underline text-[#00153F]"
+                          className="block px-4 py-2 no-underline text-white"
                         >
                           Newsletters
                         </Link>
                         <Link
                           to="#"
-                          className="block px-4 py-2 no-underline text-[#00153F]"
+                          className="block px-4 py-2 no-underline text-white"
                         >
                           Use Cases
                         </Link>
@@ -135,7 +135,7 @@ const HeaderDemo = () => {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#00153F] px-6 py-20 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link to="#" className="-m-1.5 p-1.5">
+              <Link to="/" className="-m-1.5 p-1.5">
                 <img className="h-8 w-auto" src={logo} alt="" />
               </Link>
               <button

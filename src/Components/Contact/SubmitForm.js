@@ -42,22 +42,22 @@ const SubmitForm = () => {
               <input
                 type="text"
                 placeholder="NAME"
-                className="text-white text-[12px] font-poppins p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
+                className="text-white text-[12px] font-poppins p-[5px] font-light w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="EMAIL"
-                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
+                className="mt-[45px] text-white text-[12px] font-poppins font-light p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="PHONE (OPTIONAL)"
-                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
+                className="mt-[45px] text-white text-[12px] font-poppins font-light p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="COMPANY (OPTIONAL)"
-                className="mt-[45px] text-white text-[12px] font-poppins p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
+                className="mt-[45px] text-white text-[12px] font-poppins font-light p-[5px] w-[94%] border-b-[1px] border-solid border-white bg-transparent focus:outline-none"
               />
               <br />
               <br />
@@ -83,7 +83,7 @@ const SubmitForm = () => {
                   name=""
                   id=""
                   placeholder="It would be great to hear more about your project (optional)"
-                  className="w-[94%] h-[171px] bg-transparent border-[1px] border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
+                  className="w-[94%] h-[171px] bg-transparent border-[1px] font-light text-white font-poppins border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
                 ></textarea>
               </div>
             </form>

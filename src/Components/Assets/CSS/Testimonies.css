@@ -23,7 +23,9 @@
     padding: 20px;
     margin-right: 10px;
     background-color: #282932;
-    border-radius: 8px;
+    border-top: 10px solid #0046FF;
+    border-right: 10px solid #0046FF;
+    border-radius: 17px;
     transition: transform 0.5s ease-in-out;
     height: 530px;
     /* text-align: justify; */
