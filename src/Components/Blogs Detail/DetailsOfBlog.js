@@ -2,7 +2,7 @@ import React from 'react'
 
 const DetailsOfBlog = () => {
   return (
-    <div className='ml-[100px] mt-[52px] mr-[80px] pb-[50px]'>
+    <div className='ml-[50px] lg:ml-[100px] mt-[52px] mr-[80px] pb-[50px]'>
       <p className='text-[#FCFCFC] text-[28px] font-poppins'>
       Unveil a plethora of opportunities with IIOT solutions.
       </p>
