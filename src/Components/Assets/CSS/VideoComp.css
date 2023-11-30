@@ -16,13 +16,13 @@
   background: linear-gradient(95deg, #094cad 0%, #00a2ff 100%);
 }
 
-.videoContainer {
+/* .videoContainer {
   background: linear-gradient(
     90deg,
     rgba(17, 34, 80, 1) 35%,
     rgba(10, 0, 34, 1) 100%
   );
-}
+} */
 
 .videoContent {
   transform: skewy(5deg);

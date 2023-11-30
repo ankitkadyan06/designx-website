@@ -1,8 +1,8 @@
-.testimonies{
+/* .testimonies{
     background-image: url('../Images/backClient.svg');
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .text-gradientTest {
     background: linear-gradient(180deg, #C9D8FF 0%, #00A3FD 99.99%, #0046FF 100%);
@@ -39,28 +39,22 @@
     display: none;
   } */
 
-  @media screen and (min-width:300px){
+  @media screen and (max-width:600px){
     .slide{
       min-width: 100%;
-      height: 400px;
+      height: 800px;
     }
   }
 
 
-  @media screen and (min-width:700px){
+  /* @media screen and (min-width:1024px){
     .slide{
       min-width: 60%;
       height: 400px;
     }
-  }
+  } */
 
-  
-  @media screen and (min-width:1280px){
-    .slide{
-      min-width: 50%;
-      height: 500px;
-    }
-  }
+
 
 
 

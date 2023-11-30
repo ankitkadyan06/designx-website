@@ -1,10 +1,8 @@
-.trustedBy{
+/* .trustedBy{
     background: url('../Images/backClient.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: relative;
-    bottom: 40px; */
-}
+} */
 
 .text-gradientTrust {
     background: linear-gradient(180deg, #0043FF 0%, #009FFF 92.81%);
