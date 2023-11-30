@@ -3,6 +3,7 @@ import "../Assets/CSS/VideoComp.css";
 import play from "../Assets/Images/playButton.svg";
 import videoImagePreview from "../Assets/Images/videoImagepreview.svg";
 import videoView from "../Assets/Images/videoView.svg";
+import videoDemo from '../Assets/video/DFOS intro.mp4'
 
 const VideoComp = ({ videoDfos, imageDfos }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -65,7 +66,7 @@ const VideoComp = ({ videoDfos, imageDfos }) => {
                     isPlaying ? "playing" : "hidden"
                   } w-[100%] rounded-[15px]`}
                 >
-                  <source src={videoDfos} type="video/mp4" />
+                  <source src={videoDemo} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

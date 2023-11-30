@@ -44,7 +44,6 @@ const Testimonies = () => {
       <div className="block lg:grid lg:grid-cols-2 pt-[5px] sm:pt-[140px] pl-[10px] sm:pl-[78px]">
         <div className="w-full sm:w-[50%] pr-[17px] mt-[5px] sm:mt-[80px] lg:mt-[120px]">
           <p className="text-gradientTest font-poppins text-[32px] lg:text-[42px] font-semibold">
-            {" "}
             What Our Clients Are Saying...
           </p>
           <div className="flex">

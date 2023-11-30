@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 import logo from "../Assets/Images/designXlogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
+import downArrow from'../Assets/Images/downArrow.svg';
 
 const navigation = [
   { name: "Home", to: "/" },
   { name: "Product", to: "/Product" },
   { name: "About Us", to: "/Aboutus" },
-  { name: "Resources ˬ", to: "/Resources" },
+  { name: "Resources", to: "/Resources" },
 ];
 const HeaderDemo = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,15 +68,15 @@ const HeaderDemo = () => {
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <div key={item.name} className="relative">
-                {item.name === "Resources ˬ" ? (
+                {item.name === "Resources" ? (
                   <>
                     <button
-                      className="no-underline font-poppins text-[21px] leading-6 text-white cursor-pointer focus:outline-none"
+                      className="no-underline font-poppins flex text-[21px] leading-6 text-white cursor-pointer focus:outline-none"
                       onClick={() =>
                         setShowResourcesDropdown(!showResourcesDropdown)
                       }
                     >
-                      {item.name}
+                      {item.name} <img src={downArrow} alt='' className="w-[20px] h-[20px] mt-[3px]"/>
                     </button>
                     {showResourcesDropdown && (
                       <div className="absolute mt-2 space-y-2 bg-[#001141] border-[1px] border-solid border-[#adadad] text-white rounded-md shadow-lg">
@@ -152,33 +153,33 @@ const HeaderDemo = () => {
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <div key={item.name} className="relative">
-                      {item.name === "Resources ˬ" ? (
+                      {item.name === "Resources" ? (
                         <>
                           <button
-                            className="no-underline font-poppins text-[21px] leading-6 text-white cursor-pointer focus:outline-none"
+                            className="no-underline font-poppins flex text-[21px] leading-6 text-white cursor-pointer focus:outline-none"
                             onClick={() =>
                               setShowResourcesDropdown(!showResourcesDropdown)
                             }
                           >
-                            {item.name}
+                            {item.name} <img src={downArrow} alt='' className="w-[20px] h-[20px] mt-[3px]"/>
                           </button>
                           {showResourcesDropdown && (
-                            <div className="absolute mt-2 space-y-2 bg-white text-[#00153F] rounded-md shadow-lg">
+                            <div className="absolute mt-2 space-y-2 bg-[#00153F] text-white rounded-md shadow-lg border-[1px] border-solid border-[#adadad]">
                               <Link
                                 to="/Blogs"
-                                className="block px-4 py-2 no-underline text-[#00153F]"
+                                className="block px-4 py-2 no-underline text-white"
                               >
                                 Blogs
                               </Link>
                               <Link
                                 to="#"
-                                className="block px-4 py-2 no-underline text-[#00153F]"
+                                className="block px-4 py-2 no-underline text-white"
                               >
                                 Newsletters
                               </Link>
                               <Link
                                 to="#"
-                                className="block px-4 py-2 no-underline text-[#00153F]"
+                                className="block px-4 py-2 no-underline text-white"
                               >
                                 Use Cases
                               </Link>
