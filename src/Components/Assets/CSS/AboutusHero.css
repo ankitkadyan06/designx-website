@@ -1,16 +1,35 @@
-.heroAbout{
-    background: url('../Images/aboutusHeaderBack.svg'), lightgray 0px 0px / 100% 137.325% no-repeat;
-    background-size: cover;
-
-
+.heroAbout {
+  background: url("../Images/aboutusHeaderBack.svg"),
+    lightgray 0px 0px / 100% 137.325% no-repeat;
+  background-size: cover;
 }
 
-.aboutContent{
-    background: linear-gradient(180deg, #000F3F 25.54%, #037EC4 124.74%);
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
+.aboutContent {
+  background: linear-gradient(180deg, #000f3f 25.54%, #037ec4 124.74%);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
 }
 
-.vision{
-    background-color: #282932;
-    box-shadow: 0px -20px 31px rgba(0, 0, 0, 0.25);
+.vision {
+  background-color: #282932;
+  box-shadow: 0px -20px 31px rgba(0, 0, 0, 0.25);
+}
+
+.founder {
+  background: url("../Images/backClient.svg"),
+    lightgray 0px 0px / 100% 137.325% no-repeat;
+  background-size: cover;
+}
+
+.CEO {
+  background: linear-gradient(180deg, #0046ff 0%, #009fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardFounder:hover {
+  border-top: 10px solid #0046ff;
+  border-right: 10px solid #0046ff;
+  border-radius: 17px;
+  transition: border 0.3s ease;
 }
