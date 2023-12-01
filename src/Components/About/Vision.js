@@ -2,7 +2,7 @@ import React from "react";
 import split from "../Assets/Images/partGradient.svg";
 const Vision = () => {
   return (
-    <div className="vision py-[27px] px-[80px]">
+    <div className="vision py-[27px] px-[80px] w-full h-[214px]">
       <div className="flex">
         <div className="w-[45%]">
           <p className="text-[32px] text-white font-poppins font-medium">
