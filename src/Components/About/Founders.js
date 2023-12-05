@@ -15,26 +15,26 @@ const Founders = () => {
   };
 
   return (
-    <div className="founder pl-[80px] pt-[100px] pb-[50px]">
+    <div className="founder px-[50px] lg:px-[80px] pt-[100px] pb-[50px]">
       <div className="block lg:grid lg:grid-cols-2 gap-4">
         <div>
-          <p className="text-[46px] text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
+          <p className="text-[38px] lg:text-[46px] text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
             Meet Our Prominent Innovators
           </p>
-          <div className="bg-[#282932] w-[646px] h-[280px] rounded-[17px] pt-[13px] pr-[20px] mt-[90px] founderDetails">
+          <div className="bg-[#282932] w-[90%] lg:w-[646px] lg:h-[280px] rounded-[17px] pt-[13px] pr-[20px] mt-[60px] lg:mt-[90px] founderDetails">
             <img src={invertedComma1} alt="" className="ml-[23px]" />
-            <p className="text-[28px] text-white font-poppins font-medium ml-[51px]">
+            <p className="text-[24px] lg:text-[28px] text-white font-poppins font-medium ml-[51px]">
               {hoveredFounder ? hoveredFounder.name : "Rajat Srivastav, CEO"}
             </p>
-            <p className="text-[18px] text-white font-poppins font-normal ml-[30px] pl-[20px]">
+            <p className="text-[14px] lg:text-[18px] text-white font-poppins font-normal ml-[30px] pl-[20px]">
               {hoveredFounder
                 ? hoveredFounder.description
                 : "An enthusiast entrepreneur & visionary with an aim to digitalize and automate the manufacturing industry, combat wastages & up efficiencies."}
             </p>
-            <img src={invertedComma2} alt="" className="ml-[87%]" />
+            <img src={invertedComma2} alt="" className="ml-[87%] sm:ml-[92%] lg:ml-[87%]" />
           </div>
         </div>
-        <div className="flex">
+        <div className="flex mt-[50px] lg:mt-[0px]">
           <div
             className="bg-[#282932] w-[313px] h-[506px] rounded-[17px] pt-[65px] cardFounder pl-[20px]"
             onMouseEnter={() =>

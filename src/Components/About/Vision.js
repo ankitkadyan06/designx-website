@@ -5,10 +5,10 @@ const Vision = () => {
     <div className="vision py-[27px] px-[80px] w-full h-[214px]">
       <div className="flex">
         <div className="w-[45%]">
-          <p className="text-[32px] text-white font-poppins font-medium">
+          <p className="text-[24px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
             Our Vision
           </p>
-          <p className="text-[18px] text-[#adadad] font-poppins">
+          <p className="text-[12px] md:text-[14px] lg:text-[18px] text-[#adadad] font-poppins">
             To accelerate transition of manufacturing industry towards digital
             transformation through DFOS   
           </p>
@@ -17,10 +17,10 @@ const Vision = () => {
           <img src={split} alt="" />
         </div>
         <div className="w-[45%]">
-          <p className="text-[32px] text-white font-poppins font-medium">
+          <p className="text-[24px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
             Our Mission
           </p>
-          <p className="text-[18px] text-[#adadad] font-poppins">
+          <p className="text-[12px] md:text-[14px] lg:text-[18px] text-[#adadad] font-poppins">
             To pre-create the manufacturing future with self-serving tech
           </p>
         </div>
