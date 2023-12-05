@@ -1,7 +1,8 @@
 .heroAbout {
   background: url("../Images/aboutusHeaderBack.svg"),
-    lightgray 0px 0px / 100% 137.325% no-repeat;
+    lightgray 0px 0px / 100% 137.325%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .aboutContent {

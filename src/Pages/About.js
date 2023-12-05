@@ -4,6 +4,7 @@ import AboutusHero from "../Components/About/AboutusHero";
 import AboutContent from "../Components/About/AboutContent";
 import Vision from "../Components/About/Vision";
 import Founders from "../Components/About/Founders";
+import TimeLine from "../Components/About/TimeLine";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       <AboutContent />
       <Vision />
       <Founders />
+      <TimeLine/>
     </div>
   );
 };
