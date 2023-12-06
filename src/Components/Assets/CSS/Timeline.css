@@ -1,0 +1,35 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+}
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #007bff; /* Change the color on hover */
+}
+
+/* Style the active link differently */
+li.active a {
+  color: #007bff;
+}
+
+/* Add some spacing to the content to avoid overlap with the fixed navigation */
+body {
+  margin-top: 50px; /* Adjust based on the height of your navigation */
+}
+
+/* Add a smooth transition effect to the active link */
+li {
+  transition: color 0.3s;
+}

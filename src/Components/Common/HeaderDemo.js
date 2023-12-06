@@ -30,7 +30,7 @@ const HeaderDemo = () => {
     <div
       className={`sticky-header ${
         isSticky ? "fixed" : ""
-      } border-b-[0.5px] border-solid border-[#adadad] h-[76px]`}
+      } border-b-[0.5px] border-solid border-[#adadad] font-poppins font-normal h-[76px]`}
     >
       <header className="absolute inset-x-0 top-0 z-50 h-[70px]">
         <nav
@@ -67,7 +67,7 @@ const HeaderDemo = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <div key={item.name} className="relative">
+              <div key={item.name} className="relative font-poppins font-normal">
                 {item.name === "Resources" ? (
                   <>
                     <button
@@ -82,19 +82,19 @@ const HeaderDemo = () => {
                       <div className="absolute mt-2 space-y-2 bg-[#001141] border-[1px] border-solid border-[#adadad] text-white rounded-md shadow-lg">
                         <Link
                           to="/Blogs"
-                          className="block px-4 py-2 no-underline text-white"
+                          className="block px-4 py-2 no-underline text-white font-poppins font-light"
                         >
                           Blogs
                         </Link>
                         <Link
                           to="#"
-                          className="block px-4 py-2 no-underline text-white"
+                          className="block px-4 py-2 no-underline text-white font-poppins font-light"
                         >
                           Newsletters
                         </Link>
                         <Link
                           to="#"
-                          className="block px-4 py-2 no-underline text-white"
+                          className="block px-4 py-2 no-underline text-white font-poppins font-light"
                         >
                           Use Cases
                         </Link>
@@ -104,7 +104,7 @@ const HeaderDemo = () => {
                 ) : (
                   <Link
                     to={item.to}
-                    className="no-underline font-poppins text-[21px] leading-6 text-white"
+                    className="no-underline font-poppins text-[21px] font-normal leading-6 text-white"
                   >
                     {item.name}
                   </Link>
@@ -115,7 +115,7 @@ const HeaderDemo = () => {
           <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end mr-[0%] xl:mr-[8%]">
             <Link
               to="/Contact"
-              className="text-[21px] leading-6 text-white no-underline mt-[3%] xl:mt-[1.7%]"
+              className="text-[21px] leading-6 text-white no-underline mt-[3%] xl:mt-[1.7%] font-poppins font-normal"
             >
               Contact Us
             </Link>
@@ -152,7 +152,7 @@ const HeaderDemo = () => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <div key={item.name} className="relative">
+                    <div key={item.name} className="relative font-poppins font-normal">
                       {item.name === "Resources" ? (
                         <>
                           <button
@@ -167,19 +167,19 @@ const HeaderDemo = () => {
                             <div className="absolute mt-2 space-y-2 bg-[#00153F] text-white rounded-md shadow-lg border-[1px] border-solid border-[#adadad]">
                               <Link
                                 to="/Blogs"
-                                className="block px-4 py-2 no-underline text-white"
+                                className="block px-4 py-2 no-underline text-white font-poppins font-normal"
                               >
                                 Blogs
                               </Link>
                               <Link
                                 to="#"
-                                className="block px-4 py-2 no-underline text-white"
+                                className="block px-4 py-2 no-underline text-white font-poppins font-normal"
                               >
                                 Newsletters
                               </Link>
                               <Link
                                 to="#"
-                                className="block px-4 py-2 no-underline text-white"
+                                className="block px-4 py-2 no-underline text-white font-poppins font-normal"
                               >
                                 Use Cases
                               </Link>
@@ -189,7 +189,7 @@ const HeaderDemo = () => {
                       ) : (
                         <Link
                           to={item.to}
-                          className="no-underline font-poppins text-[21px] leading-6 text-white"
+                          className="no-underline font-poppins text-[21px] leading-6 text-white font-normal"
                         >
                           {item.name}
                         </Link>
@@ -200,7 +200,7 @@ const HeaderDemo = () => {
                 <div className="py-6">
                   <Link
                     to="/Contact"
-                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-base no-underline leading-7 text-white hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[21px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-normal"
                   >
                     Contact Us
                   </Link>
