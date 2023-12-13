@@ -39,6 +39,7 @@ const Testimonies = () => {
       (prevIndex) => (prevIndex - 1 + texts.length) % texts.length
     );
   };
+
   return (
     <div className="testimonies w-full h-[1250px] sm:h-[1200px] lg:h-[1200px] xl:h-[850px] 2xl:h-[900px] px-[10px]">
       <div className="block lg:grid lg:grid-cols-2 pt-[5px] sm:pt-[140px] pl-[10px] sm:pl-[78px]">
@@ -62,21 +63,26 @@ const Testimonies = () => {
           </div>
         </div>
         <div className="mt-[60px] ml-[0px] lg:ml-[-130px]">
-            <img src={inverted} alt="" />
+          <img src={inverted} alt="" />
           <div className="carousel-container">
             {texts.map((text, index) => {
-              // const isCurrent = currentIndex === index;
-              const isNext = currentIndex === (index + 1) % texts.length;
-              const transitionClass = isNext ? "slide-next" : "";
-              
+              const isCurrent = currentIndex === index;
+
+              const slideStyles = {
+                opacity: isCurrent ? 1 : 0.5,
+                filter: isCurrent ? "10px" : "0",
+                marginTop: isCurrent ? "30px" : "0px",
+                transform: `translateX(-${currentIndex * 100}%)`,
+                // transition: "transform 0.5s ease-in-out, opacity 0.5s ease-in-out",
+                // transitionDelay: isCurrent ? "400ms" : "250ms",
+                // transitionProperty: isCurrent ? "margin-top" : "",
+              };
+
               return (
                 <div
-                className={`slide ${transitionClass}`}
-                key={index}
-                style={{
-                  transition: "transform 0.5s ease-in-out",
-                  transform: `translateX(-${currentIndex * 100}%)`,
-                }}
+                  className="slide"
+                  key={index}
+                  style={slideStyles}
                 >
                   <div className="p-[10px] rounded">
                     <p className="text-[#009BF8] font-poppins text-[20px] font-semibold">

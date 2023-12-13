@@ -8,6 +8,7 @@ import VideoComp from '../Components/HomePage/VideoComp'
 import Testimonies from '../Components/HomePage/Testimonies'
 // import Footer from '../Components/Common/Footer'
 import HeaderDemo from '../Components/Common/HeaderDemo'
+// import TestimoniesClient from '../Components/HomePage/TestimoniesClient'
 
 const HomePage = () => {
 
@@ -22,6 +23,7 @@ const HomePage = () => {
       <ContentTwo/>
       <TrustedBy/>
       <VideoComp videoDfos={videoForDfos} imageDfos={imagePreviewForDFOS}/>
+      {/* <TestimoniesClient/> */}
       <Testimonies/>
       {/* <Footer/> */}
     </div>

@@ -27,8 +27,8 @@
     border-right: 10px solid #0046FF;
     border-radius: 17px;
     transition: transform 0.5s ease-in-out;
-    height: 530px;
-    /* text-align: justify; */
+    height: auto;
+    text-align: justify;
   }
 
   .slide-next {

@@ -71,7 +71,7 @@ const HeaderDemo = () => {
                 {item.name === "Resources" ? (
                   <>
                     <button
-                      className="no-underline font-poppins flex text-[21px] leading-6 text-white cursor-pointer focus:outline-none"
+                      className="no-underline font-poppins flex text-[18px] leading-6 text-white cursor-pointer focus:outline-none"
                       onClick={() =>
                         setShowResourcesDropdown(!showResourcesDropdown)
                       }
@@ -104,7 +104,7 @@ const HeaderDemo = () => {
                 ) : (
                   <Link
                     to={item.to}
-                    className="no-underline font-poppins text-[21px] font-normal leading-6 text-white"
+                    className="no-underline font-poppins text-[18px] font-normal leading-6 text-white"
                   >
                     {item.name}
                   </Link>
@@ -115,7 +115,7 @@ const HeaderDemo = () => {
           <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end mr-[0%] xl:mr-[8%]">
             <Link
               to="/Contact"
-              className="text-[21px] leading-6 text-white no-underline mt-[3%] xl:mt-[1.7%] font-poppins font-normal"
+              className="text-[18px] leading-6 text-white no-underline mt-[3%] xl:mt-[1.7%] font-poppins font-normal"
             >
               Contact Us
             </Link>
@@ -156,7 +156,7 @@ const HeaderDemo = () => {
                       {item.name === "Resources" ? (
                         <>
                           <button
-                            className="no-underline font-poppins flex text-[21px] leading-6 text-white cursor-pointer focus:outline-none"
+                            className="no-underline font-poppins flex text-[18px] leading-6 text-white cursor-pointer focus:outline-none"
                             onClick={() =>
                               setShowResourcesDropdown(!showResourcesDropdown)
                             }
@@ -189,7 +189,7 @@ const HeaderDemo = () => {
                       ) : (
                         <Link
                           to={item.to}
-                          className="no-underline font-poppins text-[21px] leading-6 text-white font-normal"
+                          className="no-underline font-poppins text-[18px] leading-6 text-white font-normal"
                         >
                           {item.name}
                         </Link>
@@ -200,7 +200,7 @@ const HeaderDemo = () => {
                 <div className="py-6">
                   <Link
                     to="/Contact"
-                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[21px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-normal"
+                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[18px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-normal"
                   >
                     Contact Us
                   </Link>

@@ -16,9 +16,9 @@ const HeroSection = () => {
           Capture remaining 99% data points by digitizing end-to-end
           manufacturing processes with DFOS
         </div>
-        <button className="btn-start text-[18px] md:text-[24px] text-white font-medium w-[170px] h-[56px] rounded-[11px] ml-[35%] md:ml-[44.2%] mt-[50px]">
+        {/* <button className="btn-start text-[18px] md:text-[24px] text-white font-medium w-[170px] h-[56px] rounded-[11px] ml-[35%] md:ml-[44.2%] mt-[50px]">
           Start Today
-        </button>
+        </button> */}
       </div>
       <div className="backNo block md:flex justify-around w-full px-[50px] h-[350px] md:h-auto p-[60px] md:p-[50px] mt-[37%]">
         <div className="font-poppins text-xl text-center md:text-[28px] xl:text-[68px]">

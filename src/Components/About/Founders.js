@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import invertedComma1 from "../Assets/Images/invertedComma1.svg";
 import invertedComma2 from "../Assets/Images/invertedComma2.svg";
-import dummy from "../Assets/Images/dummyCircle.svg";
+// import dummy from "../Assets/Images/dummyCircle.svg";
+import RajatSir from '../Assets/Images/rajatSir.svg';
+import NishantSir from '../Assets/Images/nishantSir.svg';
 import twitter from "../Assets/Images/twitter.svg";
 import facebook from "../Assets/Images/facebook.svg";
 import linkedin from "../Assets/Images/linkedin.svg";
@@ -45,7 +47,7 @@ const Founders = () => {
               })
             }
           >
-            <img src={dummy} alt="" className="mx-auto" />
+            <img src={RajatSir} alt="" className="mx-auto" />
             <p className="CEO text-[28px] font-poppins font-medium text-center mt-[66px]">
               Rajat Srivastav
             </p>
@@ -71,7 +73,7 @@ const Founders = () => {
               })
             }
           >
-            <img src={dummy} alt="" className="mx-auto" />
+            <img src={NishantSir} alt="" className="mx-auto" />
             <p className="CEO text-[28px] font-poppins font-medium text-center mt-[66px]">
               Nishant Srivastav
             </p>
