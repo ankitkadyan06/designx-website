@@ -1,12 +1,12 @@
 import React from 'react'
-import dashboardBlack from '../Assets/Images/dashboardAbout.svg'
+import digitalProcess from '../Assets/Images/digitalProcess.svg'
 
 const ProductContent = () => {
   return (
     <div className='contentProduct py-[100px]'>
       <div className='grid grid-cols-2 gap-4 mx-[80px]'>
         <div>
-            <img src={dashboardBlack} alt="" />
+            <img src={digitalProcess} alt="" />
         </div>
         <div className='mt-[50px] ml-[30px]'>
             <p className='text-[28px] text-white font-poppins font-medium'>Digital Process</p>

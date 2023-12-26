@@ -8,8 +8,9 @@ import ProductDigitalTwin from '../Components/Product/ProductDigitalTwin'
 import ComputerVision from '../Components/Product/ComputerVision'
 import ESG from '../Components/Product/ESG'
 import Wheel from '../Components/Product/Wheel'
-// import Approach from '../Components/Product/Approach'
-import CardDemo from '../Components/Product/CardDemo'
+import Approach from '../Components/Product/Approach'
+import Footer from '../Components/Common/Footer'
+// import CardDemo from '../Components/Product/CardDemo'
 
 const Product = () => {
   return (
@@ -22,8 +23,9 @@ const Product = () => {
       <ComputerVision/>
       <ESG/>
       <Wheel/>
-      {/* <Approach/> */}
-      <CardDemo/>
+      <Approach/>
+      {/* <CardDemo/> */}
+      <Footer/>
     </div>
   )
 }
