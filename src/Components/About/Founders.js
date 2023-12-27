@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import invertedComma1 from "../Assets/Images/invertedComma1.svg";
 import invertedComma2 from "../Assets/Images/invertedComma2.svg";
 // import dummy from "../Assets/Images/dummyCircle.svg";
-import RajatSir from '../Assets/Images/rajatSir.svg';
-import NishantSir from '../Assets/Images/nishantSir.svg';
+import RajatSir from "../Assets/Images/rajatSir.svg";
+import NishantSir from "../Assets/Images/nishantSir.svg";
 import twitter from "../Assets/Images/twitter.svg";
 import facebook from "../Assets/Images/facebook.svg";
 import linkedin from "../Assets/Images/linkedin.svg";
 import { Link } from "react-router-dom";
-import '../Assets/CSS/Founders.css'
+import "../Assets/CSS/Founders.css";
 
 const Founders = () => {
   const [hoveredFounder, setHoveredFounder] = useState(null);
@@ -34,7 +34,11 @@ const Founders = () => {
                 ? hoveredFounder.description
                 : "An enthusiast entrepreneur & visionary with an aim to digitalize and automate the manufacturing industry, combat wastages & up efficiencies."}
             </p>
-            <img src={invertedComma2} alt="" className="ml-[87%] sm:ml-[92%] lg:ml-[87%]" />
+            <img
+              src={invertedComma2}
+              alt=""
+              className="ml-[87%] sm:ml-[92%] lg:ml-[87%]"
+            />
           </div>
         </div>
         <div className="flex mt-[50px] lg:mt-[0px]">
