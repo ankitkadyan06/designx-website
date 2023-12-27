@@ -14,7 +14,7 @@ const ContentOne = () => {
         </div>
         <div className=''>
           <img src={dashboard} alt="" className='px-[50px] relative z-[10]'/>
-          <img src={spring} alt="" className='absolute top-[63rem] right-[1px] z-[1]' />
+          <img src={spring} alt="" className='absolute top-[72rem] right-[1px] z-[1]' />
         </div>
       </div>
     </div>

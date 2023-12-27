@@ -8,6 +8,7 @@ import twitter from "../Assets/Images/twitter.svg";
 import facebook from "../Assets/Images/facebook.svg";
 import linkedin from "../Assets/Images/linkedin.svg";
 import { Link } from "react-router-dom";
+import '../Assets/CSS/Founders.css'
 
 const Founders = () => {
   const [hoveredFounder, setHoveredFounder] = useState(null);

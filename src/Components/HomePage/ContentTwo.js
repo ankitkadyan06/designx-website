@@ -1,7 +1,8 @@
 import React from "react";
 import "../Assets/CSS/ContentTwo.css";
 import checkSheet from '../Assets/Images/checkImage.svg'
-import spring from '../Assets/Images/springDark.svg'
+import spring from '../Assets/Images/springDark.svg' 
+import { Link } from "react-router-dom";
 
 const ContentTwo = () => {
   return (
@@ -27,7 +28,7 @@ const ContentTwo = () => {
             improvement. It's like throwing a bright light on every corner of
             your operations!
           </p>
-          <button className="bg-white text-[#001141] text-[14px] md:text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">Know More</button>
+          <Link to='/Product'><button className="bg-white text-[#001141] text-[14px] md:text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">Know More</button></Link>
         </div>
         <div className="checkImage">
             <img src={checkSheet} alt="" className="relative bottom-[85px]"/>

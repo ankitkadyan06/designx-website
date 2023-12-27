@@ -65,24 +65,21 @@ const Testimonies = () => {
         <div className="mt-[60px] ml-[0px] lg:ml-[-130px]">
           <img src={inverted} alt="" />
           <div className="carousel-container">
-            {texts.map((text, index) => {
+          {texts.map((text, index) => {
               const isCurrent = currentIndex === index;
+              const transformValue = isCurrent ? `translateY(30px)` : `translateY(0)`;
 
-              const slideStyles = {
-                opacity: isCurrent ? 1 : 0.5,
-                filter: isCurrent ? "10px" : "0",
-                marginTop: isCurrent ? "30px" : "0px",
-                transform: `translateX(-${currentIndex * 100}%)`,
-                // transition: "transform 0.5s ease-in-out, opacity 0.5s ease-in-out",
-                // transitionDelay: isCurrent ? "400ms" : "250ms",
-                // transitionProperty: isCurrent ? "margin-top" : "",
-              };
 
               return (
                 <div
-                  className="slide"
-                  key={index}
-                  style={slideStyles}
+                className="slide"
+                key={index}
+                style={{
+                  opacity: isCurrent ? 1 : 0.5,
+                  filter: isCurrent ? "brightness(1)" : "brightness(0.5)",
+                  transform: `translateX(-${currentIndex * 100}%) ${transformValue}`,
+                  transition: "transform 0.5s ease-in-out, opacity 0.5s ease-in-out, filter 0.5s ease-in-out",
+                }}
                 >
                   <div className="p-[10px] rounded">
                     <p className="text-[#009BF8] font-poppins text-[20px] font-semibold">

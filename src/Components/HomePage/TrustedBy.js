@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Assets/CSS/TrustedBy.css'
 import client from '../Assets/Images/clientLogos.svg'
+import { Link } from 'react-router-dom'
 
 const TrustedBy = () => {
   return (
@@ -15,7 +16,7 @@ const TrustedBy = () => {
             <p className='text-[28px] lg:text-[32px] text-white font-poppins font-medium'>Leverage the Future of Shop Floor Transformation</p>
             <p className='text-[14px] md:text-[18px] text-white font-poppins'>Some of the significant members of the manufacturing industry have transformed their shop floors by leveraging the SaaS-based platform, DFOS and exhibited exemplary digital outcomes.</p>
             <p className='text-[14px] md:text-[18px] text-white font-poppins'>Empower your shop floors with DFOS.</p>
-            <button className="bg-white text-[#001141] text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">Learn More</button>
+           <Link to='/Contact'><button className="bg-white text-[#001141] text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">Learn More</button></Link>
         </div>
       </div>
     </div>

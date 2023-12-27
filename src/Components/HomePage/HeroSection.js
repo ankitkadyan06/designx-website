@@ -20,7 +20,7 @@ const HeroSection = () => {
           Start Today
         </button> */}
       </div>
-      <div className="backNo block md:flex justify-around w-full px-[50px] h-[350px] md:h-auto p-[60px] md:p-[50px] mt-[37%]">
+      <div className="backNo block md:flex justify-around w-full  px-[50px] h-[350px] md:h-auto p-[60px] md:p-[50px] mt-[50%]">
         <div className="font-poppins text-xl text-center md:text-[28px] xl:text-[68px]">
           <CountUp start={0} end={350} delay={1} className="text-gradient"/>
           <span className="text-gradient">+</span>

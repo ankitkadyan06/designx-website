@@ -12,8 +12,7 @@ import HeaderDemo from '../Components/Common/HeaderDemo'
 
 const HomePage = () => {
 
-  const videoForDfos = "../Components/Assets/Images/demo.mp4"
-  const imagePreviewForDFOS = "../Components/Assets/Images/videoImagepreview.svg"
+  
   return (
     <div>
       {/* <Header/> */}
@@ -22,7 +21,7 @@ const HomePage = () => {
       <ContentOne/>
       <ContentTwo/>
       <TrustedBy/>
-      <VideoComp videoDfos={videoForDfos} imageDfos={imagePreviewForDFOS}/>
+      <VideoComp/>
       {/* <TestimoniesClient/> */}
       <Testimonies/>
       <Footer/>
