@@ -3,8 +3,8 @@ import '../Assets/CSS/Product.css'
 import globe from '../../globe.mp4'
 const ProductHero = () => {
   return (
-    <div className="productHero flex">
-      <div className="font-poppins mt-[200px] w-[50%]">
+    <div className="productHero block lg:flex">
+      <div className="font-poppins pt-[70px] lg:pt-[0px] mt-[0px] lg:mt-[200px] w-full lg:w-[50%]">
         <p className="text-white text-[43px] font-medium ml-[81px]">
           Revolutionize Your Shop floor with DFOS!
         </p>
@@ -16,8 +16,8 @@ const ProductHero = () => {
           which assists in expanding the business exponentially.
         </p>
       </div>
-      <div className="w-[50%]">
-      <video autoPlay muted loop className="">
+      <div className="w-[50%] hidden lg:block">
+      <video autoPlay muted loop className="shadow-2xl shadow-black">
         <source src={globe} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

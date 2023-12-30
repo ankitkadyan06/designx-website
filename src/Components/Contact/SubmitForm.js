@@ -1,4 +1,9 @@
 import React from "react";
+import TextField from '@mui/material/TextField';
+import '../Assets/CSS/Form.css'
+import Checkbox from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel';
+
 
 const SubmitForm = () => {
   return (
@@ -12,7 +17,7 @@ const SubmitForm = () => {
             The quest to find an agile solution for your shop floor has come to
             an end. Switch to digitalization today with DesignX!
           </p>
-          <div className="flex mt-[24px]">
+          <div className="flex mt-[40px]">
             <div className="bookDemo w-[168px] h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF]">
               <p className="contactTextGradient text-[22px] font-poppins font-semibold mt-[20px] ml-[17px] mr-[20px]">
                 Book a Demo
@@ -38,7 +43,7 @@ const SubmitForm = () => {
             </p>
             {/* <hr className="border-b-[3px] border-solid border-white w-[15%]" /> */}
             <div className="border-b-[3px] border-solid border-white w-[40%] pr-[50px]"></div>
-            <form action="" className="mt-[40px]">
+            {/* <form action="" className="mt-[40px]">
               <input
                 type="text"
                 placeholder="NAME"
@@ -84,6 +89,26 @@ const SubmitForm = () => {
                   id=""
                   placeholder="It would be great to hear more about your project (optional)"
                   className="w-[94%] h-[171px] bg-transparent border-[1px] font-light text-white font-poppins border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
+                ></textarea>
+              </div>
+            </form> */}
+            <form action="" className="mt-[10px] font-poppins">
+            <TextField fullWidth id="standard-basic" label="NAME" variant="standard" className="text-[12px]" />
+            <TextField fullWidth id="standard-basic" label="EMAIL" variant="standard" />
+            <TextField fullWidth id="standard-basic" label="PHONE (OPTIONAL)" variant="standard" />
+            <TextField fullWidth id="standard-basic" label="COMPANY (OPTIONAL)" variant="standard" />
+            <br />
+            <br />
+            <FormControlLabel control={<Checkbox />} label="Subscribe to our newsletter" />
+            <div className="mt-[20px]">
+                <p className="text-[12px] text-white font-poppins uppercase">
+                  Remark
+                </p>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="It would be great to hear more about your project (optional)"
+                  className="w-[94%] h-[100px] bg-transparent border-[1px] font-light text-white font-poppins border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
                 ></textarea>
               </div>
             </form>

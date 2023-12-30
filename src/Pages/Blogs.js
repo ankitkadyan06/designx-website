@@ -3,6 +3,7 @@ import HeaderDemo from '../Components/Common/HeaderDemo'
 import '../Components/Assets/CSS/Blogs.css'
 import BlogsHeader from '../Components/Blogs/BlogsHeader'
 import BlogsContent from '../Components/Blogs/BlogsContent'
+import Footer from '../Components/Common/Footer'
 
 const Blogs = () => {
   return (
@@ -10,6 +11,7 @@ const Blogs = () => {
         <HeaderDemo/>
         <BlogsHeader/>
         <BlogsContent/>
+        <Footer/> 
     </div>
   )
 }

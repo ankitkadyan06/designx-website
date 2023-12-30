@@ -1,2 +1,23 @@
-
+.card {
+    /* Your card styling */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .card:hover, .card.hovered {
+    border: 2px solid blue; /* Add a border for the hovered and selected card */
+  }
+  
+  .card.selected {
+    /* You can customize the selected card styling here */
+  }
+  
+  .selected-box {
+    /* Your selected box styling */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
   

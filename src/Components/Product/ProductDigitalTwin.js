@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ProductDigitalTwin = () => {
   return (
     <div className="py-[150px]">
-      <div className="grid grid-cols-2 gap-4 mx-[80px]">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[80px]">
         <div>
           <img src={digitalTwin} alt="" />
         </div>

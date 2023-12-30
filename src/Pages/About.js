@@ -6,6 +6,7 @@ import Vision from "../Components/About/Vision";
 import Founders from "../Components/About/Founders";
 import TimeLine from "../Components/About/TimeLine";
 import Footer from '../Components/Common/Footer'
+// import Main from "../Components/About/Main";
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
       <AboutContent />
       <Vision />
       <Founders />
+      {/* <Main /> */}
       <TimeLine/>
       <Footer/>
     </div>

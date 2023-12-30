@@ -4,7 +4,7 @@ import digitalProcess from '../Assets/Images/digitalProcess.svg'
 const ProductContent = () => {
   return (
     <div className='contentProduct py-[100px]'>
-      <div className='grid grid-cols-2 gap-4 mx-[80px]'>
+      <div className='flex flex-col lg:grid grid-cols-2 gap-4 mx-[80px]'>
         <div>
             <img src={digitalProcess} alt="" />
         </div>

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 const ProductIIOT = () => {
   return (
     <div className="tiltBGProduct">
-    <div className="IIOT py-[150px]">
-      <div className="block lg:grid lg:grid-cols-2 gap-4 pt-[50px] lg:pt-[100px]">
+    <div className="IIOT py-[150px] px-[80px]">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 pt-[50px] lg:pt-[100px]">
         <div className="px-[10px] lg:px-[78px] overlook">
           <p className="text-white text-[28px] font-poppins font-medium capitalize">IIOT</p>
           <p className="text-[#C8C8C8] text-[14px] md:text-[18px] font-poppins text-justify">

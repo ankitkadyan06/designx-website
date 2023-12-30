@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footerBack font-poppins text-white pt-[60px] px-[78px]">
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div>
           <div>
             <p className="text-[20px] font-medium">Platform</p>
@@ -55,9 +55,9 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-[1px] border-solid border-white"/>
-      <div className="flex justify-between">
+      <div className="flex justify-center lg:justify-between">
       <p className="text-[18px] py-[30px]">Copyright © 2021 NRV Designx Pvt. Ltd.</p>
-      <img src={logo} alt="" />
+      <img src={logo} alt="" className="hidden lg:block" />
       </div>
     </div>
   );
