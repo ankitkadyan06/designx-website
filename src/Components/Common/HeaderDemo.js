@@ -5,6 +5,7 @@ import logo from "../Assets/Images/designXlogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
 import downArrow from'../Assets/Images/downArrow.svg';
+import { Tooltip } from 'react-tooltip';
 
 const navigation = [
   { name: "Home", to: "/" },
@@ -120,11 +121,14 @@ const HeaderDemo = () => {
               Contact Us
             </Link>
             <button
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="Coming Soon"
               to="#"
               className="text-[16px] leading-6 text-[#00153F] no-underlines font-inter bg-white rounded-[64px] py-[10px] px-[10px]"
             >
               Demo
             </button>
+            <Tooltip id="my-tooltip" />
           </div>
         </nav>
         <Dialog
@@ -205,11 +209,14 @@ const HeaderDemo = () => {
                     Contact Us
                   </Link>
                   <button
+                  data-tooltip-id="my-tooltip"
+                  data-tooltip-content="Coming Soon"
                     to="#"
                     className="-mx-3 block rounded-[64px] font-inter px-3 py-2.5 text-base no-underline leading-7 text-[#00153F] bg-white hover:bg-gray-50"
                   >
                     Demo
                   </button>
+                  <Tooltip id="my-tooltip" />
                 </div>
               </div>
             </div>

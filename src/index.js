@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "keen-slider/keen-slider.min.css"
+import 'react-tooltip/dist/react-tooltip.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

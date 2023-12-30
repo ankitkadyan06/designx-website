@@ -71,7 +71,6 @@ const VideoComp = () => {
                 <video
                 controls
                   ref={videoRef}
-                  autoPlay
                   className={`rounded-[15px] ${isPlaying ? "playing" : "hidden"} w-[100%] rounded-[15px]`}
                   style={{transform: "translate(-50%, 0%)"}}
                 >

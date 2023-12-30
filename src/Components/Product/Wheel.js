@@ -47,7 +47,7 @@ const Wheel = () => {
               stroke="url(#paint1_linear_682_278)"
               strokeWidth="4"
               mask="url(#path-3-inside-1_682_278)"
-              className="hover:fill-[url(#paint3_linear_682_278)]"
+              className="hover:fill-[url(#paint1_linear_682_278)]"
               onMouseEnter={() =>
                 handleHeadingHover({
                   name: "Enhanced Quality Control",
@@ -60,7 +60,7 @@ const Wheel = () => {
               d="M478.096 178.542C444.888 155.789 406.166 142.486 366.064 139.99C362.756 139.785 359.976 142.383 359.859 145.695L357.343 217.152C357.226 220.464 359.818 223.23 363.122 223.489C387.386 225.393 410.764 233.631 430.9 247.426C451.035 261.222 467.159 280.049 477.695 301.988C479.13 304.975 482.645 306.394 485.691 305.089L551.419 276.941C554.466 275.637 555.885 272.105 554.499 269.095C537.692 232.599 511.304 201.294 478.096 178.542Z"
               stroke="url(#paint2_linear_682_278)"
               strokeWidth="2"
-              className="hover:fill-[url(#paint3_linear_682_278)]"
+              className="hover:fill-[url(#paint2_linear_682_278)]"
               onMouseEnter={() =>
                 handleHeadingHover({
                   name: "Improved Efficiency",
@@ -75,7 +75,7 @@ const Wheel = () => {
             <path
               d="M560.527 302.513C563.713 301.6 567.044 303.44 567.871 306.649C577.902 345.557 577.228 386.495 565.862 425.111C554.497 463.728 532.889 498.505 503.381 525.776C500.947 528.025 497.15 527.768 494.967 525.275L445.862 469.184C443.68 466.69 443.942 462.909 446.336 460.618C463.507 444.195 476.107 423.536 482.835 400.676C489.563 377.815 490.162 353.625 484.625 330.518C483.853 327.296 485.681 323.976 488.867 323.062L560.527 302.513Z"
               // fill="url(#paint3_linear_682_278)"
-              className="hover:fill-[url(#paint3_linear_682_278)]"
+              className="hover:fill-[url(#paint4_linear_682_278)]"
               stroke="url(#paint4_linear_682_278)"
               strokeWidth="4"
               mask="url(#path-5-inside-2_682_278)"
@@ -95,7 +95,7 @@ const Wheel = () => {
               stroke="url(#paint5_linear_682_278)"
               strokeWidth="4"
               mask="url(#path-6-inside-3_682_278)"
-              className="hover:fill-[url(#paint3_linear_682_278)]"
+              className="hover:fill-[url(#paint5_linear_682_278)]"
               onMouseEnter={() =>
                 handleHeadingHover({
                   name: "Data-Driven Decision ",
@@ -108,7 +108,7 @@ const Wheel = () => {
               d="M142.487 437.011C156.004 474.929 179.532 508.437 210.526 534.007C213.082 536.116 216.858 535.646 218.897 533.034L263.68 475.673C265.719 473.061 265.246 469.301 262.725 467.15C244.393 451.509 230.452 431.311 222.337 408.547C214.222 385.783 212.244 361.321 216.547 337.611C217.139 334.35 215.127 331.138 211.895 330.405L140.927 314.307C137.695 313.574 134.473 315.598 133.827 318.849C125.997 358.258 128.971 399.094 142.487 437.011Z"
               stroke="url(#paint6_linear_682_278)"
               strokeWidth="2"
-              className="hover:fill-[url(#paint3_linear_682_278)]"
+              className="hover:fill-[url(#paint6_linear_682_278)]"
               onMouseEnter={() =>
                 handleHeadingHover({
                   name: "Cost Reduction ",
