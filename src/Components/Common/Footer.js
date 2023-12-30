@@ -6,17 +6,17 @@ import logo from '../Assets/Images/designXlogo.svg'
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="footerBack font-poppins text-white pt-[60px] px-[78px]">
+    <div className="footerBack font-poppins text-white pt-[60px] px-[28px] lg:px-[78px]">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div>
           <div>
             <p className="text-[20px] font-medium">Platform</p>
-            <p className="font-light text-[16px]">DFOS</p>
-            <p className="font-light text-[16px]">Digital Process</p>
-            <p className="font-light text-[16px]">IIOT</p>
-            <p className="font-light text-[16px]">Digital Twin</p>
-            <p className="font-light text-[16px]">Computer vision</p>
-            <p className="font-light text-[16px]">ESG</p>
+            <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[16px]">DFOS</p></Link>
+            <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[16px]">Digital Process</p></Link>
+            <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[16px]">IIOT</p></Link>
+            <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[16px]">Digital Twin</p></Link>
+            <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[16px]">Computer vision</p></Link>
+            <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[16px]">ESG</p></Link>
           </div>
         </div>
         <div>
@@ -56,7 +56,7 @@ const Footer = () => {
       </div>
       <hr className="border-[1px] border-solid border-white"/>
       <div className="flex justify-center lg:justify-between">
-      <p className="text-[18px] py-[30px]">Copyright © 2021 NRV Designx Pvt. Ltd.</p>
+      <p className="text-[14px] lg:text-[18px] py-[30px]">Copyright © 2021 NRV Designx Pvt. Ltd.</p>
       <img src={logo} alt="" className="hidden lg:block" />
       </div>
     </div>

@@ -4,11 +4,11 @@ import globe from '../../globe.mp4'
 const ProductHero = () => {
   return (
     <div className="productHero block lg:flex">
-      <div className="font-poppins pt-[70px] lg:pt-[0px] mt-[0px] lg:mt-[200px] w-full lg:w-[50%]">
-        <p className="text-white text-[43px] font-medium ml-[81px]">
+      <div className="font-poppins pt-[70px] lg:pt-[0px] mt-[0px] lg:mt-[200px] px-[40px] lg:px-[80px] w-full lg:w-[50%]">
+        <p className="text-white text-[32px] lg:text-[43px] font-medium">
           Revolutionize Your Shop floor with DFOS!
         </p>
-        <p className="text-[#adadad] text-[18px] ml-[81px] text-justify pr-[55px]">
+        <p className="text-[#adadad] text-[16px] lg:text-[18px] text-justify pr-[55px]">
           DFOS (Digital Factory Operating System) is a SaaS-based DIY platform
           to design, analyse, automate, and measure shop floor processes. It is
           relevant to 2 million+ factories worldwide helping to improvise their

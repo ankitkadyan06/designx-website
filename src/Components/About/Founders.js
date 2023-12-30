@@ -18,13 +18,16 @@ const Founders = () => {
   };
 
   return (
-    <div className="founder px-[50px] lg:px-[80px] pt-[100px] pb-[50px]">
-      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4">
-        <div>
-          <p className="text-[38px] lg:text-[46px] text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
+    <div className="founder px-[50px] lg:px-[10px] 2xl:px-[80px] pt-[100px] pb-[50px]">
+      <p className="text-[28px] block lg:hidden text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
             Meet Our Prominent Innovators
           </p>
-          <div className="bg-[#282932] w-[90%] lg:w-[646px] lg:h-[280px] rounded-[17px] pt-[13px] pr-[20px] mt-[60px] lg:mt-[90px] founderDetails">
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4">
+        <div>
+          <p className="text-[38px] lg:text-[46px] hidden lg:block text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
+            Meet Our Prominent Innovators
+          </p>
+          <div className="bg-[#282932] w-[90%] lg:w-[100%] lg:h-[280px] rounded-[17px] pt-[13px] pr-[20px] mt-[60px] lg:mt-[90px] founderDetails">
             <img src={invertedComma1} alt="" className="ml-[23px]" />
             <p className="text-[24px] lg:text-[28px] text-white font-poppins font-medium ml-[51px]">
               {hoveredFounder ? hoveredFounder.name : "Rajat Srivastav, CEO"}
@@ -52,11 +55,11 @@ const Founders = () => {
               })
             }
           >
-            <img src={RajatSir} alt="" className="mx-auto" />
-            <p className="CEO text-[28px] font-poppins font-medium text-center mt-[66px]">
+            <img src={RajatSir} alt="" className="mx-auto w-[220px] h-[220px]" />
+            <p className="CEO text-[24px] xl:text-[28px] font-poppins font-medium text-center mt-[66px]">
               Rajat Srivastav
             </p>
-            <p className="text-[#a0a0a0] text-[24px] font-poppins text-center">
+            <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center">
               CEO
             </p>
             <div className="flex justify-around mt-[20px]">
@@ -79,10 +82,10 @@ const Founders = () => {
             }
           >
             <img src={NishantSir} alt="" className="mx-auto" />
-            <p className="CEO text-[28px] font-poppins font-medium text-center mt-[66px]">
+            <p className="CEO text-[24px] xl:text-[28px] font-poppins font-medium text-center mt-[66px]">
               Nishant Srivastav
             </p>
-            <p className="text-[#a0a0a0] text-[24px] font-poppins text-center">
+            <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center">
               CTO
             </p>
             <div className="flex justify-around mt-[20px]">

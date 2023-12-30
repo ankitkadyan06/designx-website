@@ -38,8 +38,8 @@ const TestimoniesClient = () => {
   };
 
   return (
-    <div className="testimonies w-full h-[1250px] sm:h-[1200px] lg:h-[1200px] xl:h-[850px] 2xl:h-[900px] px-[50px]">
-      <div className="block lg:grid lg:grid-cols-2">
+    <div className="testimonies w-full h-[1250px] sm:h-[1200px] lg:h-[1200px] xl:h-[850px] 2xl:h-[900px] px-[80px]">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 mt-[50px]">
       <div className="pr-[17px] mt-[5px] sm:mt-[80px] lg:mt-[120px]">
           <p className="text-gradientTest font-poppins text-[32px] lg:text-[42px] font-semibold">
             What Our Clients Are Saying...

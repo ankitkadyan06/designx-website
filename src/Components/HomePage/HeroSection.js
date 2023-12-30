@@ -8,11 +8,11 @@ const HeroSection = () => {
     <div className="heroBackGround">
       {/* <img src={heroImage} alt="" className="absolute w-full z-[-1]" /> */}
       <div className="relative top-[120px]">
-        <div className="text-white text-[32px] md:text-[38px] lg:text-[43px] font-poppins capitalize text-center">
+        <div className="text-white text-[32px] md:text-[38px] lg:text-[43px] font-poppins capitalize text-center px-[20px]">
           millions of data points, but only 1% reaches
           <br /> decision-makers
         </div>
-        <div className="text-[#DADADA] text-[12px] md:text-[14px] lg:text-[18px] mt-[10px] text-center">
+        <div className="text-[#DADADA] text-[12px] md:text-[14px] lg:text-[18px] mt-[10px] text-center px-[20px]">
           Capture remaining 99% data points by digitizing end-to-end
           manufacturing processes with DFOS
         </div>

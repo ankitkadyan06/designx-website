@@ -2,7 +2,7 @@ import React from "react";
 import split from "../Assets/Images/partGradient.svg";
 const Vision = () => {
   return (
-    <div className="vision py-[27px] px-[80px] w-full h-[214px]">
+    <div className="vision py-[27px] px-[40px] lg:px-[80px] w-full h-auto lg:h-[214px]">
       <div className="flex">
         <div className="w-[45%]">
           <p className="text-[24px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
@@ -10,7 +10,7 @@ const Vision = () => {
           </p>
           <p className="text-[12px] md:text-[14px] lg:text-[18px] text-[#adadad] font-poppins">
             To accelerate transition of manufacturing industry towards digital
-            transformation through DFOS   
+            transformation through DFOS
           </p>
         </div>
         <div className="w-[10%] ml-[60px]">

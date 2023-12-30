@@ -12,7 +12,7 @@ const Wheel = () => {
 
   return (
     <div className="bg-[#01071B]">
-      <div className="flex flex-col lg:grid grid-cols-2 gap-4 pr-[80px]">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-4 px-[40px] lg:px-[0]">
         <div>
           <svg
             width="100%"
@@ -592,13 +592,13 @@ const Wheel = () => {
             </defs>
           </svg>
         </div>
-        <div className="flex flex-col justify-center items-center w-full">
+        <div className="flex flex-col justify-center items-center w-full px-[30px] lg:px-[80px] py-[20px]">
           {/* <p className="text-[34px] text-white font-poppins font-medium">Unveil unlimited advantages</p> */}
-          <div className="w-full h-[270px] border-[7px] border-solid border-[#0B77F8] rounded-[21px] px-[28px] py-[10px]">
-            <p className="text-[43px] text-white font-robotoSlab font-semibold">
+          <div className="w-full h-[350px] lg:h-[410px] xl:h-[310px] border-[7px] border-solid border-[#0B77F8] rounded-[21px] px-[28px] py-[10px]">
+            <p className="text-[22px] sm:text-[33px] lg:text-[43px] text-white font-robotoSlab font-semibold">
             {hoveredHeading ? hoveredHeading.name : "Sustainability"}
             </p>
-            <p className="text-[20px] text-white font-poppins">
+            <p className="text-[12px] sm:text-[16px] lg:text-[20px] text-white font-poppins">
             {hoveredHeading
                 ? hoveredHeading.description
                 : "DFOS can support sustainability goals by monitoring & reducing energy consumption and waste. It can also assist in maintaining compliance with environmental and safety regulations, reducing the risk of fines and legal issues."}

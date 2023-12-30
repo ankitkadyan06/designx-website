@@ -7,13 +7,12 @@
   }
   
   .card:hover, .card.hovered {
-    border: 2px solid blue; /* Add a border for the hovered and selected card */
+    border: 2px solid blue;
   }
   
 
   
   .selected-box {
-    /* Your selected box styling */
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;

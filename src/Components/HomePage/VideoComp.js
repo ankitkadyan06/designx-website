@@ -20,7 +20,7 @@ const VideoComp = () => {
   return (
     <div className="videoContainer">
       <div className="videoComp bg-[#282932] h-[700px] lg:h-[600px]">
-        <div className="block lg:grid lg:grid-cols-2 gap-4 pt-[50px] lg:pt-[100px] videoContent">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 pt-[50px] lg:pt-[100px] px-[30px] lg:px-[80px] videoContent">
           <div className="px-[10px] lg:px-[78px]">
             <p className="text-gradientVid text-[28px] md:text-[38px] text-white font-poppins capitalize">
               Harness the power of DFOS
