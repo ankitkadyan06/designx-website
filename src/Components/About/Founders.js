@@ -3,7 +3,7 @@ import invertedComma1 from "../Assets/Images/invertedComma1.svg";
 import invertedComma2 from "../Assets/Images/invertedComma2.svg";
 // import dummy from "../Assets/Images/dummyCircle.svg";
 import RajatSir from "../Assets/Images/rajatSir.svg";
-import NishantSir from "../Assets/Images/nishantSir.svg";
+import NishantSir from "../Assets/Images/nishantSir.png";
 import twitter from "../Assets/Images/twitter.svg";
 import facebook from "../Assets/Images/facebook.svg";
 import linkedin from "../Assets/Images/linkedin.svg";

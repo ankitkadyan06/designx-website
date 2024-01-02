@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Assets/CSS/TrustedBy.css'
-import client from '../Assets/Images/clientLogos.svg'
+import client from '../Assets/Images/clientLogos.png'
 import { Link } from 'react-router-dom'
 
 const TrustedBy = () => {

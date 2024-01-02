@@ -12,7 +12,7 @@
 }
 
 .heroBackGround{
-  background-image: url("../Images/heroimage.svg");
+  background-image: url("../Images/heroimage.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

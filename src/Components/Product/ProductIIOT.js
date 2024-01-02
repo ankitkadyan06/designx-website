@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Assets/CSS/IIOTProduct.css'
-import IIOTMachine from '../Assets/Images/IIOTMachine.svg'
+import IIOTMachine from '../Assets/Images/IIOTMachine.png'
 import readMoreArrow from '../Assets/Images/readMoreArrow.svg'
 import { Link } from 'react-router-dom'
 const ProductIIOT = () => {

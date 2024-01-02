@@ -1,5 +1,5 @@
 import React from "react";
-import checkImage from '../Assets/Images/aboutUsImageone.svg'
+import checkImage from '../Assets/Images/aboutUsImageone.png'
 import spring from '../Assets/Images/backgroundSprings.svg'
 import shop from '../Assets/Images/shopfloorMobile.svg'
 

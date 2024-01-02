@@ -1,6 +1,6 @@
 import React from "react";
 import "../Assets/CSS/AboutusHero.css";
-import AboutHero from "../Assets/Images/aboutHeroImage.svg";
+import AboutHero from "../Assets/Images/aboutHeroImage.png";
 import spring from "../Assets/Images/backgroundSprings.svg";
 import Marquee from "react-fast-marquee";
 import unilever from "../Assets/Images/unilever.svg";

@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../Assets/CSS/VideoComp.css";
 import play from "../Assets/Images/playButton.svg";
-import videoImagePreview from "../Assets/Images/videoImagepreview.svg";
+import videoImagePreview from "../Assets/Images/videoImagepreview.png";
 import videoView from "../Assets/Images/videoView.svg";
 import videoDemo from "../Assets/video/DFOS intro.mp4";
 
@@ -21,7 +21,7 @@ const VideoComp = () => {
     <div className="videoContainer">
       <div className="videoComp bg-[#282932] h-[700px] lg:h-[600px]">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 pt-[50px] lg:pt-[100px] px-[30px] lg:px-[80px] videoContent">
-          <div className="px-[10px] lg:px-[78px]">
+          <div className="px-[10px] lg:px-[78px] mt-[0%] lg:mt-[10%]">
             <p className="text-gradientVid text-[28px] md:text-[38px] text-white font-poppins capitalize">
               Harness the power of DFOS
             </p>

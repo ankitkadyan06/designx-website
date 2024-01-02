@@ -1,5 +1,5 @@
 import React from 'react'
-import digitalProcess from '../Assets/Images/digitalProcess.svg'
+import digitalProcess from '../Assets/Images/digitalProcess.png'
 
 const ProductContent = () => {
   return (
