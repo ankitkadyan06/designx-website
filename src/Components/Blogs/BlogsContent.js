@@ -1,5 +1,5 @@
 import React from 'react'
-import blogPic from '../Assets/Images/blogPic.svg'
+import blogPic from '../Assets/Images/blogPic.png'
 import { Link } from 'react-router-dom';
 import readMoreArrow from '../Assets/Images/readMoreArrow.svg'
 const BlogsContent = () => {

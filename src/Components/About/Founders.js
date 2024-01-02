@@ -27,7 +27,7 @@ const Founders = () => {
           <p className="text-[38px] lg:text-[46px] hidden lg:block text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
             Meet Our Prominent Innovators
           </p>
-          <div className="bg-[#282932] w-[90%] lg:w-[100%] lg:h-[280px] rounded-[17px] pt-[13px] pr-[20px] mt-[60px] lg:mt-[90px] founderDetails">
+          <div className="bg-[#282932] w-[90%] lg:w-[100%] lg:h-[300px] rounded-[17px] pt-[13px] pr-[20px] mt-[60px] lg:mt-[70px] founderDetails">
             <img src={invertedComma1} alt="" className="ml-[23px]" />
             <p className="text-[24px] lg:text-[28px] text-white font-poppins font-medium ml-[51px]">
               {hoveredFounder ? hoveredFounder.name : "Rajat Srivastav, CEO"}
@@ -55,7 +55,7 @@ const Founders = () => {
               })
             }
           >
-            <img src={RajatSir} alt="" className="mx-auto w-[220px] h-[220px]" />
+            <img src={RajatSir} alt="" className="mx-auto w-[150px] h-[150px] xl:w-[220px] xl:h-[220px]" />
             <p className="CEO text-[24px] xl:text-[28px] font-poppins font-medium text-center mt-[66px]">
               Rajat Srivastav
             </p>
@@ -81,7 +81,7 @@ const Founders = () => {
               })
             }
           >
-            <img src={NishantSir} alt="" className="mx-auto" />
+            <img src={NishantSir} alt="" className="mx-auto w-[150px] h-[150px] xl:w-[220px] xl:h-[220px]"/>
             <p className="CEO text-[24px] xl:text-[28px] font-poppins font-medium text-center mt-[66px]">
               Nishant Srivastav
             </p>

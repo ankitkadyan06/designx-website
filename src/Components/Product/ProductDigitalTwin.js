@@ -9,7 +9,7 @@ const ProductDigitalTwin = () => {
         <div>
           <img src={digitalTwin} alt="" />
         </div>
-        <div className="mt-[20px]">
+        <div className="mt-[0px] ml-[0px] lg:ml-[30px] xl:mt-[20px]">
           <p className="text-white text-[24px] lg:text-[28px] font-poppins font-medium">
             Digital Twin
           </p>

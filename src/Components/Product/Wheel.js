@@ -594,7 +594,7 @@ const Wheel = () => {
         </div>
         <div className="flex flex-col justify-center items-center w-full px-[30px] lg:px-[80px] py-[20px]">
           {/* <p className="text-[34px] text-white font-poppins font-medium">Unveil unlimited advantages</p> */}
-          <div className="w-full h-[350px] lg:h-[410px] xl:h-[310px] border-[7px] border-solid border-[#0B77F8] rounded-[21px] px-[28px] py-[10px]">
+          <div className="w-full h-auto lg:h-[410px] xl:h-[310px] border-[7px] border-solid border-[#0B77F8] rounded-[21px] px-[28px] py-[10px]">
             <p className="text-[22px] sm:text-[33px] lg:text-[43px] text-white font-robotoSlab font-semibold">
             {hoveredHeading ? hoveredHeading.name : "Sustainability"}
             </p>

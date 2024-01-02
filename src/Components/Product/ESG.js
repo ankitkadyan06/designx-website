@@ -9,7 +9,7 @@ const ESG = () => {
         <div>
             <img src={esg} alt="" />
         </div>
-        <div>
+        <div className="ml-[0px] lg:ml-[20px]">
             <p className="text-white text-[24px] lg:text-[28px] font-poppins font-medium">ESG</p>
             <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">Enhance long-term sustainability, attract responsible investors, and contribute positively to society and the planet by embracing environment social governance principles with DFOS. ESG is a sound business strategy that aligns financial success with societal and environmental well-being. </p>
             <Link to="/BlogDetails" className='no-underline'><button className='blogReadButton flex items-center justify-around w-[151px] h-[40px] rounded-[7px] font-inter font-normal text-white'>Read More <img src={readMoreArrow} alt="" /></button></Link>
