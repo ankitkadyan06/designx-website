@@ -15,7 +15,7 @@ const ContentOne = () => {
         </div>
         <div className='flex justify-center'>
           <img src={dashboard} alt="" className='relative z-[10]'/>
-          <img src={spring} alt="" className='absolute top-[65rem] 2xl:top-[72rem] right-[1px] z-[1] hidden lg:block h-[400px]'/>
+          <img src={spring} alt="" className='absolute right-[1px] z-[1] hidden lg:block h-[400px]'/>
         </div>
       </div>
     </div>
