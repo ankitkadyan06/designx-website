@@ -12,7 +12,7 @@ const ClientsTrust = () => {
       <div>
         <p className='text-[20px] text-white font-poppins font-medium' >Trusted by</p>
         <div className="border-b-[3px] border-solid border-white w-[19%]"></div>
-        <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 mt-[20px]'>
+        <div className=' mt-[20px]'>
             <img src={unilever} alt="" />
             <img src={amber} alt="" />
             <img src={dabur} alt="" />

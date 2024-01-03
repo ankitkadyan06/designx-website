@@ -6,6 +6,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
 import downArrow from'../Assets/Images/downArrow.svg';
 import { Tooltip } from 'react-tooltip';
+import ScrollToTop from "./ScrollToTop";
 
 const navigation = [
   { name: "Home", to: "/" },
@@ -223,6 +224,7 @@ const HeaderDemo = () => {
           </Dialog.Panel>
         </Dialog>
       </header>
+      <ScrollToTop/>
     </div>
   );
 };
