@@ -19,7 +19,7 @@ const Founders = () => {
 
   return (
     <div className="founder px-[50px] lg:px-[10px] 2xl:px-[80px] pt-[100px] pb-[50px]">
-      <p className="text-[28px] block lg:hidden text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
+      <p className="text-[20px] md:text-[28px] block lg:hidden text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
             Meet Our Prominent Innovators
           </p>
       <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4">
