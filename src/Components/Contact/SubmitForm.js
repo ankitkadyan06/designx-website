@@ -99,7 +99,7 @@ const SubmitForm = () => {
             <TextField fullWidth id="standard-basic" label="COMPANY (OPTIONAL)" variant="standard" />
             <br />
             <br />
-            <FormControlLabel control={<Checkbox />} label="Subscribe to our newsletter" />
+            <FormControlLabel control={<Checkbox defaultChecked/>} label="Subscribe to our newsletter" />
             <div className="mt-[20px]">
                 <p className="text-[12px] text-white font-poppins uppercase">
                   Remark

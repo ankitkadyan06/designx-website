@@ -8,9 +8,10 @@ const ContentTwo = () => {
   return (
     <div className="tiltBGHomepage">
     <div className="backContTwo">
-      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 pt-[50px] lg:pt-[100px] px-[30px] xl:px-[80px]">
-        <div className="px-[10px] lg:px-[78px] overlook">
-          <p className="text-white text-[28px] lg:text-[32px] font-poppins font-medium capitalize">One Factory-One Platform</p>
+    <p className="mobileFactory text-white text-[20px] sm:text-[28px] lg:text-[32px] font-poppins font-medium capitalize block lg:hidden">One Factory-One Platform</p>
+      <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[50px] lg:pt-[100px] px-[30px] xl:px-[80px] pb-[30px] lg:pb-[0px]">
+        <div className="px-[10px] overlook">
+          <p className="text-white text-[28px] lg:text-[32px] font-poppins font-medium capitalize lg:block hidden">One Factory-One Platform</p>
           <p className="text-[#D4D4D4] text-[14px] lg:text-[18px] font-poppins text-justify">
             After interacting with hundreds of people who wanted to change the
             status quo, we realized that a robust solution is imperative. This
@@ -30,9 +31,9 @@ const ContentTwo = () => {
           </p>
           <Link to='/Product'><button className="bg-white text-[#001141] text-[14px] md:text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">Know More</button></Link>
         </div>
-        <div className="checkImage">
-            <img src={checkSheet} alt="" className="relative bottom-[85px] mt-[50px] lg:mt-[0px]"/>
-            <img src={spring} alt="" className='absolute top-0 right-[1px] z-[-1]'/>
+        <div className="checkImage flex justify-center">
+            <img src={checkSheet} alt="" className="relative bottom-[85px] mt-[0px] md:mt-[50px] lg:mt-[0px]"/>
+            <img src={spring} alt="" className='absolute top-0 right-[1px] z-[-1] hidden lg:block'/>
 
         </div>
       </div>

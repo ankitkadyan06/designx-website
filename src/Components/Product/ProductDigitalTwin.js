@@ -5,12 +5,15 @@ import { Link } from "react-router-dom";
 const ProductDigitalTwin = () => {
   return (
     <div className="py-[60px] lg:py-[150px]">
+      <p className="text-white text-[20px] md:text-[24px] lg:text-[28px] font-poppins font-medium px-[30px] block lg:hidden">
+            Digital Twin
+          </p>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[30px] lg:mx-[80px]">
-        <div>
+        <div className="flex justify-center">
           <img src={digitalTwin} alt="" />
         </div>
         <div className="mt-[0px] ml-[0px] lg:ml-[30px] xl:mt-[20px]">
-          <p className="text-white text-[24px] lg:text-[28px] font-poppins font-medium">
+          <p className="text-white text-[24px] lg:text-[28px] font-poppins font-medium hidden lg:block">
             Digital Twin
           </p>
           <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
