@@ -106,7 +106,7 @@ const HeaderDemo = () => {
                 ) : (
                   <Link
                     to={item.to}
-                    className="no-underline font-poppins text-[18px] font-normal leading-6 text-white"
+                    className="no-underline font-poppins text-[14px] sm:text-[18px] font-normal leading-6 text-white"
                   >
                     {item.name}
                   </Link>
@@ -161,7 +161,7 @@ const HeaderDemo = () => {
                       {item.name === "Resources" ? (
                         <>
                           <button
-                            className="no-underline font-poppins flex text-[18px] leading-6 text-white cursor-pointer focus:outline-none"
+                            className="no-underline font-poppins flex text-[14px] sm:text-[18px] leading-6 text-white cursor-pointer focus:outline-none"
                             onClick={() =>
                               setShowResourcesDropdown(!showResourcesDropdown)
                             }
@@ -169,7 +169,7 @@ const HeaderDemo = () => {
                             {item.name} <img src={downArrow} alt='' className="w-[20px] h-[20px] mt-[3px]"/>
                           </button>
                           {showResourcesDropdown && (
-                            <div className="absolute mt-2 space-y-2 bg-[#00153F] text-white rounded-md shadow-lg border-[1px] border-solid border-[#adadad]">
+                            <div className="absolute mt-2 space-y-2 bg-[#00153F] text-white text-[14px] sm:text-[18px] rounded-md shadow-lg border-[1px] border-solid border-[#adadad]">
                               <Link
                                 to="/Blogs"
                                 className="block px-4 py-2 no-underline text-white font-poppins font-normal"
@@ -194,7 +194,7 @@ const HeaderDemo = () => {
                       ) : (
                         <Link
                           to={item.to}
-                          className="no-underline font-poppins text-[18px] leading-6 text-white font-normal"
+                          className="no-underline font-poppins text-[14px] sm:text-[18px] leading-6 text-white font-normal"
                         >
                           {item.name}
                         </Link>
@@ -205,7 +205,7 @@ const HeaderDemo = () => {
                 <div className="py-6">
                   <Link
                     to="/Contact"
-                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[18px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-normal"
+                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[14px] sm:text-[18px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-normal"
                   >
                     Contact Us
                   </Link>
@@ -213,7 +213,7 @@ const HeaderDemo = () => {
                   data-tooltip-id="my-tooltip"
                   data-tooltip-content="Coming Soon"
                     to="#"
-                    className="-mx-3 block rounded-[64px] font-inter px-3 py-2.5 text-base no-underline leading-7 text-[#00153F] bg-white hover:bg-gray-50"
+                    className="-mx-3 block rounded-[64px] font-inter px-3 py-2.5 text-[14px] sm:text-base no-underline leading-7 text-[#00153F] bg-white hover:bg-gray-50"
                   >
                     Demo
                   </button>

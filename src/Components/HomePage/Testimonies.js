@@ -86,13 +86,13 @@ const Testimonies = () => {
                   }}
                 >
                   <div className="p-[10px] rounded">
-                    <p className="text-[#009BF8] font-poppins text-[20px] font-semibold">
+                    <p className="text-[#009BF8] font-poppins text-[16px] sm:text-[20px] font-semibold">
                       {text.head}
                     </p>
-                    <p className="text-[#A8A8A8] font-poppins text-[16px]">
+                    <p className="text-[#A8A8A8] font-poppins text-[16px] sm:text-[20px]">
                       {text.orgName}
                     </p>
-                    <p className="text-[#ffffff] font-poppins text-[18px]">
+                    <p className="text-[#ffffff] font-poppins text-[16px] sm:text-[18px]">
                       {text.desc}
                     </p>
                   </div>

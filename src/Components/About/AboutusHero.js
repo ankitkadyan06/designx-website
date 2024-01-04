@@ -15,9 +15,9 @@ const AboutusHero = () => {
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 mx-[10px] lg:mx-[50px]">
         <img src={AboutHero} alt="" className="relative z-[1]" />
         <div>
-          <div className="text-[35px] lg:text-[43px] px-[20px] mt-[0px] lg:mt-[15%] relative z-[1]">
-            <p className="text-[20px] md:text-[35px] lg:text-[43px] text-white font-poppins font-medium">Inspire. Aspire. Automate</p>
-            <p className="text-[14px] md:text-[18px] lg:text-[20px] text-[#adadad] font-poppins text-justify w-[89%]">Craft a new manufacturing era to attain
+          <div className="text-[35px] lg:text-[43px] px-[15px] sm:px-[20px] mt-[0px] lg:mt-[15%] relative z-[1]">
+            <p className="text-[16px] sm:text-[20px] md:text-[35px] lg:text-[43px] text-white font-poppins font-medium">Inspire. Aspire. Automate</p>
+            <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] text-[#adadad] font-poppins text-justify w-[89%]">Craft a new manufacturing era to attain
             maximum efficiency. With DesignX, step towards a digital future to
             reach the zenith of success.</p>
              
@@ -25,7 +25,7 @@ const AboutusHero = () => {
           <img src={spring} alt="" className="tiltSpring" />
         </div>
       </div>
-      <p className="mt-[50px] lg:mt-[100px] mx-[30px] text-[28px] lg:text-[32px] text-white font-poppins font-medium underline underline-offset-[12px]">
+      <p className="mt-[50px] lg:mt-[100px] mx-[15px] sm:mx-[30px] text-[20px] sm:text-[28px] lg:text-[32px] text-white font-poppins font-medium underline underline-offset-[12px]">
         Trusted By
       </p>
       <div className="mx-[0px] lg:mx-[85px]">
