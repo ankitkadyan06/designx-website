@@ -12,7 +12,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className='blogback w-full h-[100vh]'>
+    <div className='blogback w-full h-[100%]'>
         <HeaderDemo/>
         <BlogsHeader/>
         <BlogsContent/>

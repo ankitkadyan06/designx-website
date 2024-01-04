@@ -17,7 +17,7 @@ const AboutusHero = () => {
         <div>
           <div className="text-[35px] lg:text-[43px] px-[15px] sm:px-[20px] mt-[0px] lg:mt-[15%] relative z-[1]">
             <p className="text-[16px] sm:text-[20px] md:text-[35px] lg:text-[43px] text-white font-poppins font-medium">Inspire. Aspire. Automate</p>
-            <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] text-[#adadad] font-poppins text-justify w-[89%]">Craft a new manufacturing era to attain
+            <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] text-[#adadad] font-poppins md:text-justify w-[100%] md:w-[89%]">Craft a new manufacturing era to attain
             maximum efficiency. With DesignX, step towards a digital future to
             reach the zenith of success.</p>
              
