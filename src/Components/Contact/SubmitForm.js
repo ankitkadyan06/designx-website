@@ -7,7 +7,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 
 const SubmitForm = () => {
   return (
-    <div className="pt-[150px]">
+    <div className="pt-[85px] md:pt-[150px]">
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mx-[30px] lg:mx-[80px]">
         <div className="w-full lg:w-[390px]">
           <p className="text-white text-[16px] sm:text-[20px] md:text-[36px] lg:text-[47px] font-poppins font-semibold">
