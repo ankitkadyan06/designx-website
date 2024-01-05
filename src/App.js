@@ -11,7 +11,7 @@ import BlogDetails from './Pages/BlogDetails';
 
 function App() {
   return (
-    <BrowserRouter basename='/DesignX_web'>
+    <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<HomePage />} />
       <Route path='/Aboutus' element={<About/>}/>
