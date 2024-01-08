@@ -17,7 +17,7 @@ const TimeLine = () => {
               <div className="card sticky">
                 <p>Inception: 2015</p>
               </div>
-              <div className="text-white font-poppins font-medium text-[20px] px-[15px] py-[5px]">
+              <div className="text-white  font-poppins font-medium text-[20px] px-[15px] py-[5px]">
                 NRV DesignX Pvt. Ltd. was found to provide services related to
                 automation and digitization of manufacturing processes.
               </div>
