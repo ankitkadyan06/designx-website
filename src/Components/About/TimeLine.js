@@ -17,7 +17,7 @@ const TimeLine = () => {
               <div className="card sticky">
                 <p>Inception: 2015</p>
               </div>
-              <div className="text-white  font-poppins font-medium text-[20px] px-[15px] py-[5px]">
+              <div className="text-white  font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
                 NRV DesignX Pvt. Ltd. was found to provide services related to
                 automation and digitization of manufacturing processes.
               </div>
@@ -28,9 +28,9 @@ const TimeLine = () => {
               <div className="card sticky">
                 <p>MVP: 2018</p>
               </div>
-              <div className="text-white  font-poppins font-medium text-[20px] px-[15px] py-[5px]">
+              <div className="text-white  font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
                 Completed our minimum viable product & started with one factory
-                of Hindustan Unilever.{" "}
+                of Hindustan Unilever.
               </div>
             </div>
           </ParallaxLayer>
@@ -39,7 +39,7 @@ const TimeLine = () => {
               <div className="card sticky">
                 <p>Expansion: 2019</p>
               </div>
-              <div className="text-white  font-poppins font-medium text-[20px] px-[15px] py-[5px]">
+              <div className="text-white  font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
                 Expanded to all the factories of HUL in South Asia & added new
                 brands like Hero MotoCorp & Bajaj India.{" "}
               </div>
@@ -50,7 +50,7 @@ const TimeLine = () => {
               <div className="card sticky">
                 <p>IOT Foray: 2020</p>
               </div>
-              <div className="text-white  font-poppins font-medium text-[20px] px-[15px] py-[5px]">
+              <div className="text-white  font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
                 Added IOT capability & built library of communication protocols
                 supporting all the major PLC controller brands. Via DFOS,
                 assisted the Manufacturing Companies in maintaining the
@@ -64,7 +64,7 @@ const TimeLine = () => {
               <div className="card sticky">
                 <p>DFOS Launch: 2021</p>
               </div>
-              <div className="text-white  font-poppins font-medium text-[20px] px-[15px] py-[5px]">
+              <div className="text-white  font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
                 Launched DFOS commercially across 110 factories. Added a couple
                 of high-end clients & full-fledged team to support.{" "}
               </div>
@@ -75,7 +75,7 @@ const TimeLine = () => {
               <div className="card sticky">
                 <p>The Big Move: 2022</p>
               </div>
-              <div className="text-white  font-poppins font-medium text-[20px] px-[15px] py-[5px]">
+              <div className="text-white  font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
                 Moved to IIT Delhi office in order to boost our Research & Tech
                 sophistication
               </div>
@@ -86,7 +86,7 @@ const TimeLine = () => {
               <div className="card sticky">
                 <p>Growing Steadily: 2023</p>
               </div>
-              <div className="text-white  font-poppins font-medium text-[20px] px-[15px] py-[5px]">
+              <div className="text-white  font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
                 Robust team of 70+ handling multifaceted clients & processes
                 spread over more than 350 factories.
               </div>
