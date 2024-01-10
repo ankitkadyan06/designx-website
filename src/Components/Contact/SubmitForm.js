@@ -17,7 +17,7 @@ const SubmitForm = () => {
             The quest to find an agile solution for your shop floor has come to
             an end. Switch to digitalization today with DesignX!
           </p>
-          <div className="flex justify-between flex-row mt-[40px]">
+          <div className="flex justify-center lg:justify-between flex-row mt-[40px]">
             <div className="bookDemo mr-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
               <p className="contactTextGradient text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Book a Demo
