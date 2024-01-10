@@ -65,7 +65,7 @@ const Founders = () => {
             <div className="flex justify-around mt-[20px]">
               <img src={twitter} alt="" />
               <img src={facebook} alt="" />
-              <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/">
+              <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/" target='_blank'>
                 {" "}
                 <img src={linkedin} alt="" />{" "}
               </Link>
@@ -91,7 +91,7 @@ const Founders = () => {
             <div className="flex justify-around items-center mt-[20px]">
               <img src={twitter} alt="" />
               <img src={facebook} alt="" />
-              <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/">
+              <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/" target='_blank'>
                 <img src={linkedin} alt="" />
               </Link>
             </div>
@@ -117,7 +117,7 @@ const Founders = () => {
             <div className="flex justify-around mt-[20px] px-[15px]">
               <img src={twitter} alt="" />
               <img src={facebook} alt="" />
-              <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/">
+              <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/" target='_blank'>
                 {" "}
                 <img src={linkedin} alt="" />{" "}
               </Link>
@@ -145,7 +145,7 @@ const Founders = () => {
             <div className="flex justify-around mt-[20px] px-[15px]">
               <img src={twitter} alt="" />
               <img src={facebook} alt="" />
-              <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/">
+              <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/" target='_blank'>
                 <img src={linkedin} alt="" />
               </Link>
             </div>
