@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
+// import { Link } from "react-router-dom";
+// import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 import computerVision from "../Assets/Images/computerVision.svg";
 const ComputerVision = () => {
   return (
@@ -17,11 +17,11 @@ const ComputerVision = () => {
               manufacturing environment safety. Extract meaningful insights
               using computer vision via DFOS
             </p>
-            <Link to="/BlogDetails" className="no-underline hidden lg:block">
+            {/* <Link to="/BlogDetails" className="no-underline hidden lg:block">
               <button className="blogReadButton flex items-center justify-around w-[120px] sm:w-[151px] text-[12px] sm:text-[14px] lg:text-[18px] h-[40px] rounded-[7px] font-inter font-normal text-white">
                 Read More <img src={readMoreArrow} alt="" />
               </button>
-            </Link>
+            </Link> */}
           </div>
           <div className="checkImage flex justify-center lg:justify-start pl-[0px] md:pl-[50px] lg:pl-[80px]">
             <img src={computerVision} alt="" className="mt-[0px] lg:mt-[20px]" />
@@ -34,11 +34,11 @@ const ComputerVision = () => {
             manufacturing environment safety. Extract meaningful insights using
             computer vision via DFOS
           </p>
-          <Link to="/BlogDetails" className="no-underline">
+          {/* <Link to="/BlogDetails" className="no-underline">
               <button className="blogReadButton flex text-[12px] sm:text-[14px] lg:text-[18px] items-center justify-around w-[120px] sm:w-[151px] h-[40px] rounded-[7px] font-inter font-normal text-white tracking-wide">
                 Read More <img src={readMoreArrow} alt="" />
               </button>
-            </Link>
+            </Link> */}
         </div>
       </div>
     </div>
