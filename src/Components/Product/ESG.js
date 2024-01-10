@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ESG = () => {
   return (
     <div className="py-[50px] lg:py-[180px]">
-      <p className="text-white text-[16px] sm:text-[24px] lg:text-[28px] font-poppins font-medium mx-[15px] block lg:hidden">
+      <p className="text-white text-[24px] lg:text-[28px] font-poppins font-medium mx-[15px] block lg:hidden">
         ESG
       </p>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[15px] sm:mx-[30px] lg:mx-[80px]">

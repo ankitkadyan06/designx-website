@@ -106,13 +106,13 @@ const Testimonies = () => {
         <img
           src={prevArrow}
           alt=""
-          className="w-[78px] cursor-pointer"
+          className="w-[36px] cursor-pointer"
           onClick={handlePrevious}
         />
         <img
           src={nextArrow}
           alt=""
-          className="w-[78px] ml-[32px] cursor-pointer"
+          className="w-[36px] ml-[32px] cursor-pointer"
           onClick={handleNext}
         />
       </div>

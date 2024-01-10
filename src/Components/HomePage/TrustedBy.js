@@ -14,15 +14,15 @@ const TrustedBy = () => {
         <div className="px-[10px] flex justify-center">
           <img src={client} alt="" />
         </div>
-        <div className=" px-[30px]  pl-[0px] md:px-[50px] 2xl:px-[80px]">
+        <div className="px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px]">
           <p className="text-gradientTrust tracking-wide text-[28px] lg:text-[38px] font-poppins hidden lg:block font-medium ">
             Trusted by
           </p>
           <hr className="w-[20%] border-[3px] border-solid border-[#0049FF] relative bottom-[17px] hidden lg:block" />
-          <p className="text-[28px] md:text-[32px] lg:text-[36px] tracking-wide text-white font-poppins leading-[36px] font-medium hidden lg:block">
+          <p className="text-[20px] sm:text-[28px] md:text-[32px] lg:text-[36px] tracking-wide text-white font-poppins leading-[30px] lg:leading-[36px] font-medium">
             Leverage the Future of Shop Floor Transformation
           </p>
-          <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide text-white leading-[36px] font-poppins font-light">
+          <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide text-white leading-[20px] lg:leading-[36px] font-poppins font-light">
             Some of the significant members of the manufacturing industry have
             transformed their shop floors by leveraging the SaaS-based platform,
             DFOS and exhibited exemplary digital outcomes.

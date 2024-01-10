@@ -4,7 +4,7 @@ import digitalProcess from '../Assets/Images/digitalProcess.png'
 const ProductContent = () => {
   return (
     <div className='contentProduct py-[50px] sm:py-[100px]'>
-      <p className='text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] text-white font-poppins font-medium block lg:hidden px-[15px] sm:px-[30px]'>Digital Process</p>
+      <p className='text-[20px] md:text-[24px] lg:text-[28px] text-white font-poppins font-medium block lg:hidden px-[15px] sm:px-[30px]'>Digital Process</p>
       <div className='flex flex-col lg:grid grid-cols-2 gap-4 mx-[15px] sm:mx-[30px] lg:mx-[80px]'>
         <div className='flex justify-center lg:justify-start'>
             <img src={digitalProcess} alt="" />
