@@ -7,7 +7,7 @@ const DetailsOfBlog = () => {
       Unveil a plethora of opportunities with IIOT solutions.
       </p> */}
       <p className='text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins'>In the digital age, the manufacturing industry is shifting towards automation to transform itself. In this race of transformation, the industrial internet of things can bring many opportunities for manufacturing firms. Yes, from process automation to supply chain management to industrial asset tracking, IIOT can assist businesses in using valuable real-time data for their success! With IIOT, one can easily find problems, detect errors, and banish inefficiencies. This step towards industry 4.0 will help us reach the maximum benefits. Let us learn more about IIOT and how we can empower you with these solutions.</p>
-      <p className='text-[#C8C8C8] text-[18px] font-poppins'>Presently, DFOS measures and analyses data in three different ways: the transfer of data from paper to DFOS, machines to DFOS, you to DFOS.</p>
+      <p className='text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins'>Presently, DFOS measures and analyses data in three different ways: the transfer of data from paper to DFOS, machines to DFOS, you to DFOS.</p>
 
       <p className='text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins'>
       What is Industrial Internet of Things?
