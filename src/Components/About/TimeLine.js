@@ -69,17 +69,22 @@ const TimeLine = () => {
           pages={TimeLineData.length}
           config={{ mass: 1, tension: 280, friction: 24 }}
         >
+            {({ pages, progress }) => (
+            <>
           {TimeLineData.map((item, index) => {
 
             return<ParallaxLayer
               key={index}
               sticky={{ start: index, end: index + 1 }}
               style={{
-                ...parallaxSpring,
-                opacity: index === 0 ? 1 : 0.5, // Set opacity based on focus
+                opacity: progress.interpolate({
+                  range: [index - 0.5, index, index + 0.5],
+                  output: [0.5, 1, 0.5],
+                }),
               }}
+         
             >
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4" >
                 <div className="card sticky">
                   <p>{item.year}</p>
                 </div>
@@ -89,7 +94,9 @@ const TimeLine = () => {
               </div>
             </ParallaxLayer>}
           )}
+          </>)}
         </Parallax>
+      
       </div>
     </div>
   );
