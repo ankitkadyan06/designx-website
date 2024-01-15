@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 // import wheel from "../Assets/Images/wheel.svg";
-import '../Assets/CSS/Wheel.css'
+import "../Assets/CSS/Wheel.css";
 const Wheel = () => {
-
   const [hoveredHeading, setHoveredHeading] = useState(null);
 
   const handleHeadingHover = (headingName) => {
     setHoveredHeading(headingName);
   };
-
 
   return (
     <div className="bg-[#01071B]">
@@ -53,7 +51,8 @@ const Wheel = () => {
                   name: "Enhanced Quality Control",
                   description:
                     "Monitor real-time data & integrate quality control measures with DFOS. It helps to maintain & improve product’s quality, reduce defects & minimize the likelihood to produce substandard goods.",
-                    bonus: "Get better data visibility, save time & enhance the overall quality of goods.",
+                  bonus:
+                    "Get better data visibility, save time & enhance the overall quality of goods.",
                 })
               }
             />
@@ -67,7 +66,8 @@ const Wheel = () => {
                   name: "Improved Efficiency",
                   description:
                     "DFOS optimizes production processes, reduces downtime, and minimizes manual interventions. This leads to increased production efficiency, shorter lead times, and higher throughput. ",
-                    bonus: "Streamline processes & uncover higher efficiency to uplift agility & innovation.",
+                  bonus:
+                    "Streamline processes & uncover higher efficiency to uplift agility & innovation.",
                 })
               }
             />
@@ -86,7 +86,8 @@ const Wheel = () => {
                   name: "Sustainability",
                   description:
                     "DFOS can support sustainability goals by monitoring & reducing energy consumption and waste. It can also assist in maintaining compliance with environmental and safety regulations, reducing the risk of fines and legal issues.",
-                    bonus: "Embrace an environmentally & ethically sound approach to gain an edge. Preserving the planet with DFOS.",
+                  bonus:
+                    "Embrace an environmentally & ethically sound approach to gain an edge. Preserving the planet with DFOS.",
                 })
               }
             />
@@ -104,7 +105,8 @@ const Wheel = () => {
                   name: "Data-Driven Decision ",
                   description:
                     "DFOS collects & analyzes volumes of data from various sources, providing valuable insights for decision-makers. This data-driven approach allows for better planning, resource allocation, and process optimization.",
-                    bonus: "Capture real-time insights & make your decisions data backed.",
+                  bonus:
+                    "Capture real-time insights & make your decisions data backed.",
                 })
               }
             />
@@ -118,10 +120,10 @@ const Wheel = () => {
                   name: "Cost Reduction ",
                   description:
                     "Through predictive maintenance, energy management, and waste reduction, DFOS helps in lowering operational costs. It can also optimize inventory management, reducing carrying costs & the risk of overstock or stockouts. ",
-                    bonus: "Eliminate delays, bottlenecks & unnecessary steps to overall reduce cost.",
+                  bonus:
+                    "Eliminate delays, bottlenecks & unnecessary steps to overall reduce cost.",
                 })
               }
-
             />
             <circle
               cx="353.161"
@@ -596,28 +598,105 @@ const Wheel = () => {
               />
             </defs>
             <rect
-          x="360"
-          y="160"
-          width="0"
-          height="61.1275"
-          fill="#DDDDDD"
-          transform="rotate(27, 435, 173.99275)"
-        />
+              x="360"
+              y="165"
+              width="230"
+              height="70"
+              fill="transparent"
+              transform="rotate(27, 435, 173.99275)"
+              onMouseEnter={() =>
+                handleHeadingHover({
+                  name: "Improved Efficiency",
+                  description:
+                    "DFOS optimizes production processes, reduces downtime, and minimizes manual interventions. This leads to increased production efficiency, shorter lead times, and higher throughput. ",
+                  bonus:
+                    "Streamline processes & uncover higher efficiency to uplift agility & innovation.",
+                })
+              }
+            />
+            <rect
+              x="550"
+              y="15"
+              width="200"
+              height="70"
+              fill="transparent"
+              transform="rotate(100, 435, 173.99275)"
+              onMouseEnter={() =>
+                handleHeadingHover({
+                  name: "Sustainability",
+                  description:
+                    "DFOS can support sustainability goals by monitoring & reducing energy consumption and waste. It can also assist in maintaining compliance with environmental and safety regulations, reducing the risk of fines and legal issues.",
+                  bonus:
+                    "Embrace an environmentally & ethically sound approach to gain an edge. Preserving the planet with DFOS.",
+                })
+              }
+            />
+            <rect
+              x="250"
+              y="500"
+              width="200"
+              height="70"
+              fill="transparent"
+              transform="rotate(0, 435, 173.99275)"
+              onMouseEnter={() =>
+                handleHeadingHover({
+                  name: "Data-Driven Decision ",
+                  description:
+                    "DFOS collects & analyzes volumes of data from various sources, providing valuable insights for decision-makers. This data-driven approach allows for better planning, resource allocation, and process optimization.",
+                  bonus:
+                    "Capture real-time insights & make your decisions data backed.",
+                })
+              }
+            />
+            <rect
+              x="500"
+              y="450"
+              width="200"
+              height="70"
+              fill="transparent"
+              transform="rotate(75, 435, 173.99275)"
+              onMouseEnter={() =>
+                handleHeadingHover({
+                  name: "Cost Reduction ",
+                  description:
+                    "Through predictive maintenance, energy management, and waste reduction, DFOS helps in lowering operational costs. It can also optimize inventory management, reducing carrying costs & the risk of overstock or stockouts. ",
+                  bonus:
+                    "Eliminate delays, bottlenecks & unnecessary steps to overall reduce cost.",
+                })
+              }
+            />
+            <rect
+              x="150"
+              y="70"
+              width="200"
+              height="70"
+              fill="transparent"
+              transform="rotate(-35, 435, 173.99275)"
+              onMouseEnter={() =>
+                handleHeadingHover({
+                  name: "Enhanced Quality Control",
+                  description:
+                    "Monitor real-time data & integrate quality control measures with DFOS. It helps to maintain & improve product’s quality, reduce defects & minimize the likelihood to produce substandard goods.",
+                  bonus:
+                    "Get better data visibility, save time & enhance the overall quality of goods.",
+                })
+              }
+            />
           </svg>
         </div>
         <div className="flex flex-col justify-center items-center w-full px-[15px] sm:pr-[30px] lg:pr-[80px] py-[20px] tracking-wide">
           {/* <p className="text-[34px] text-white font-poppins font-medium">Unveil unlimited advantages</p> */}
           <div className="w-full h-auto border-[7px] border-solid border-[#0B77F8] rounded-[21px] pt-[20px] pb-[26px] px-[30px] text-left">
             <p className="text-[22px] sm:text-[33px] lg:text-[43px] text-white font-robotoSlab font-semibold tracking-wide">
-            {hoveredHeading ? hoveredHeading.name : "Sustainability"}
+              {hoveredHeading ? hoveredHeading.name : "Sustainability"}
             </p>
             <p className="text-[12px] sm:text-[16px] lg:text-[20px] text-white font-poppins tracking-wide">
-            {hoveredHeading
+              {hoveredHeading
                 ? hoveredHeading.description
                 : "DFOS can support sustainability goals by monitoring & reducing energy consumption and waste. It can also assist in maintaining compliance with environmental and safety regulations, reducing the risk of fines and legal issues."}
             </p>
             <p className="text-[12px] sm:text-[16px] lg:text-[20px] text-white font-poppins tracking-wide">
-            {hoveredHeading
+              {hoveredHeading
                 ? hoveredHeading.bonus
                 : "Embrace an environmentally & ethically sound approach to gain an edge. Preserving the planet with DFOS."}
             </p>
@@ -629,5 +708,3 @@ const Wheel = () => {
 };
 
 export default Wheel;
-
-
