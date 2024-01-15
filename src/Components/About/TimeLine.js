@@ -1,6 +1,6 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { useSpring } from "@react-spring/web";
+// import { useSpring } from "@react-spring/web";
 import "../Assets/CSS/Timeline.css";
 import TimelinePhoto from "../Assets/Images/timelineBack.png";
 
@@ -50,9 +50,9 @@ const TimeLine = () => {
     },
   ];
 
-  const parallaxSpring = useSpring({
-    opacity: 0.5,
-  });
+  // const parallaxSpring = useSpring({
+  //   opacity: 0.5,
+  // });
 
   return (
     <div className="TimeLine border-b-[1px] border-b-solid border-b-black h-[600px]">
