@@ -54,7 +54,7 @@ const HeroSection = () => {
       <div className="backNo flex justify-around w-full px-[10px] sm:px-[50px] h-[0px] sm:h-[350px] md:h-auto p-[60px] md:p-[50px] mt-[0%] sm:mt-[50%]">
         <Counter start={0} end={350} delay={1} label="Manufacturing Plants" />
         <Counter start={0} end={40} delay={1} label="Customers" />
-        <Counter start={0} end={1550} delay={2} label="Project Excluded" />
+        <Counter start={0} end={1550} delay={2} label="Project Executed" />
       </div>
     </div>
   );

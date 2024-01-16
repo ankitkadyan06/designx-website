@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     <div>
     <div className="px-[15px] sm:px-[50px] lg:px-[80px]">
       <HeaderDemo />
-      <div className="pt-[70px] text-[24px] sm:text-[28px] lg:text-[36px] xl:text-[43px] text-center text-white font-poppins font-medium">
+      <div className="pt-[80px] text-[24px] sm:text-[28px] lg:text-[36px] xl:text-[43px] text-center text-white font-poppins font-medium">
         {" "}
         Privacy policy{" "}
       </div>
@@ -102,6 +102,7 @@ const PrivacyPolicy = () => {
         For more general information on cookies, please read{" "}
         <Link
           to="https://www.termsfeed.com/blog/cookies/"
+          target="_blank"
           className="no-underline text-red-500"
         >
           “What Are Cookies” from Cookie Consent.
@@ -238,6 +239,8 @@ const PrivacyPolicy = () => {
         <li>Step 4 : Click “Delete Account” button from the screen</li>
         <li>Step 5 : Click “Yes” if you want your account to be deleted</li>
       </ul>
+      <br />
+      <br />
     </div>
       <Footer/>
     </div>
