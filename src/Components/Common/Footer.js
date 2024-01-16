@@ -24,7 +24,7 @@ const Footer = () => {
             <p className="text-[16px] sm:text-[20px] font-medium">Company</p>
            <Link to="/Aboutus" className="no-underline text-white"> <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">About Us</p> </Link>
             <Link to='/Blogs'className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Blogs</p></Link>
-            <Link to='#' className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Privacy Policy</p></Link>
+            <Link to='/PrivacyPolicy' className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Privacy Policy</p></Link>
             <p className="font-light text-[12px] sm:text-[16px]">Case Study</p>
             <p className="font-light text-[12px] sm:text-[16px]">Newsletter</p>
            <Link to="/Contact" className="no-underline text-white"> <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Contact Us</p> </Link>
