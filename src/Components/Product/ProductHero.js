@@ -5,7 +5,7 @@ const ProductHero = () => {
   return (
     <div className="productHero block lg:flex bg-[#000210]">
       <div className="font-poppins pt-[70px] lg:pt-[0px] mt-[0px] lg:mt-[200px] px-[15px] sm:px-[30px] lg:px-[80px] w-full lg:w-[50%]">
-        <p className="text-white text-[20px] md:text-[32px] lg:text-[43px] mt-[10px] lg:mt-[0px] tracking-wide w-[90%] font-medium">
+        <p className="text-white text-[22px] md:text-[32px] lg:text-[43px] mt-[10px] lg:mt-[0px] tracking-wide w-[90%] font-medium">
           Revolutionize Your Shop floor with DFOS!
         </p>
         <p className="text-[#adadad] text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[20px] lg:leading-[36px] tracking-wide pr-[0px] lg:pr-[55px] w-[90%]">
