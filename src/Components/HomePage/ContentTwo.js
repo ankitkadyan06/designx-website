@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Assets/CSS/ContentTwo.css";
 import checkSheet from '../Assets/Images/checkImage.png'
 import spring from '../Assets/Images/springDark.svg' 
 import { Link } from "react-router-dom";
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const ContentTwo = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []); 
   return (
     <div className="tiltBGHomepage">
     <div className="backContTwo pt-[50px]">
     <p className="mobileFactory text-white text-[22px] sm:text-[28px] lg:text-[32px] font-poppins font-medium capitalize block lg:hidden">One Factory-One Platform</p>
       <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-0 lg:gap-4 px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px] pt-[50px] lg:pt-[100px] pb-[30px] lg:pb-[30px]">
-        <div className="mt-[0px] lg:mt-[20px] overlook">
+        <div className="mt-[0px] lg:mt-[20px] overlook" >
           <p className="text-white text-[28px] md:text-[32px] lg:text-[36px] font-poppins font-medium capitalize tracking-wide lg:block hidden">One Factory-One Platform</p>
           <p className="text-[#D4D4D4] text-[12px] tracking-wide sm:text-[14px] md:text-[18px] lg:text-[20px] font-poppins leading-[20px] lg:leading-[36px]">
             After interacting with hundreds of people who wanted to change the
