@@ -1,5 +1,5 @@
 import React from "react";
-import ArtificialIntelligence from "../Assets/Images/ArtificialDetailed.png";
+import ESGDetail from "../Assets/Images/ESGDetail.png";
 import { Link } from "react-router-dom";
 const ESG = () => {
   return (
@@ -22,7 +22,7 @@ const ESG = () => {
             </p>
           </div>
           <div className="hidden lg:flex lg:justify-end">
-            <img src={ArtificialIntelligence} alt="" />
+            <img src={ESGDetail} alt="" />
           </div>
         </div>
       </div>

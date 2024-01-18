@@ -1,14 +1,22 @@
 import React from "react";
 import blogPic from "../Assets/Images/blogPic.png";
+import blogDetailMin from '../Assets/Images/blogDetailmin.png'
 import iBPMS from "../Assets/Images/IOTBlogImage.png";
+import iBPMSMin from '../Assets/Images/iBPMSDetailsMin.png'
 import ArtificialIntelligence from "../Assets/Images/artificialBlog.png";
+import ArtificialIntelligenceMin from "../Assets/Images/ArtificialDetailedMin.png";
+import Hectos from '../Assets/Images/hectosBlog.png'
+import HectosMin from '../Assets/Images/hectosBlogMin.png'
+import ESGBlog from '../Assets/Images/ESGBlog.png'
+import ESGBlogMin from '../Assets/Images/ESGBlogMin.png'
 import { Link } from "react-router-dom";
 import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 const BlogsContent = () => {
   return (
     <div className="mb-[60px] blogContent">
       <div className="blogContentBackground flex flex-col lg:grid lg:grid-cols-2 w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px] pb-[20px] sm:ml-[50px] lg:ml-[96px] mb-[41px]">
-        <img src={blogPic} alt="" className="rounded-24px h-[107.5%]" />
+        <img src={blogPic} alt="" className="rounded-24px h-[107.5%] hidden lg:block" />
+        <img src={blogDetailMin} alt="" className="rounded-24px  block lg:hidden" />
         <div className="font-poppins mt-[0px] lg:mt-[41px] ml-[10px]">
           <p className="text-white text-[16px] md:text-[24px] xl:text-[28px] font-medium">
             Industrial Internet of Things: Meaning, Benefits and Uses
@@ -30,7 +38,8 @@ const BlogsContent = () => {
       </div>
 
       <div className="blogContentBackground flex flex-col lg:grid lg:grid-cols-2 w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px] pb-[20px] sm:ml-[50px] lg:ml-[96px] mb-[41px]">
-        <img src={iBPMS} alt="" className="rounded-24px h-[107.5%]" />
+        <img src={iBPMS} alt="" className="rounded-24px h-[107.5%] hidden lg:block" />
+        <img src={iBPMSMin} alt="" className="rounded-24px block lg:hidden" />
         <div className="font-poppins mt-[0px] lg:mt-[41px] ml-[10px]">
           <p className="text-white text-[16px] md:text-[24px] xl:text-[28px] font-medium">
             How DFOS empowers intelligent business process management
@@ -56,7 +65,12 @@ const BlogsContent = () => {
         <img
           src={ArtificialIntelligence}
           alt=""
-          className="rounded-24px h-[107.5%]"
+          className="rounded-24px h-[107.5%] hidden lg:block"
+        />
+        <img
+          src={ArtificialIntelligenceMin}
+          alt=""
+          className="rounded-24px block lg:hidden"
         />
         <div className="font-poppins mt-[0px] lg:mt-[41px] ml-[10px]">
           <p className="text-white text-[16px] md:text-[24px] xl:text-[28px] font-medium">
@@ -80,9 +94,14 @@ const BlogsContent = () => {
       </div>
       <div className="blogContentBackground flex flex-col lg:grid lg:grid-cols-2 w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px] pb-[20px] sm:ml-[50px] lg:ml-[96px] mb-[41px]">
         <img
-          src={ArtificialIntelligence}
+          src={Hectos}
           alt=""
-          className="rounded-24px h-[107.5%]"
+          className="rounded-24px h-[107.5%] hidden lg:block"
+        />
+        <img
+          src={HectosMin}
+          alt=""
+          className="rounded-24px block lg:hidden"
         />
         <div className="font-poppins mt-[0px] lg:mt-[41px] ml-[10px]">
           <p className="text-white  text-[16px] md:text-[24px] xl:text-[28px] font-medium">
@@ -105,9 +124,14 @@ const BlogsContent = () => {
       </div>
       <div className="blogContentBackground flex flex-col lg:grid lg:grid-cols-2 w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px] pb-[20px] sm:ml-[50px] lg:ml-[96px] mb-[41px]">
         <img
-          src={ArtificialIntelligence}
+          src={ESGBlog}
           alt=""
-          className="rounded-24px h-[107.5%]"
+          className="rounded-24px h-[107.5%] hidden lg:block"
+        />
+        <img
+          src={ESGBlogMin}
+          alt=""
+          className="rounded-24px block lg:hidden"
         />
         <div className="font-poppins mt-[0px] lg:mt-[41px] ml-[10px]">
           <p className="text-white  text-[16px] md:text-[24px] xl:text-[28px] font-medium">

@@ -1,5 +1,5 @@
 import React from "react";
-import iBPMS from "../Assets/Images/iBPMSDetails.png";
+import Hectos from "../Assets/Images/hectosDetail.png";
 import { Link } from "react-router-dom";
 const IOTGateway = () => {
   return (
@@ -25,7 +25,7 @@ const IOTGateway = () => {
             </p>
           </div>
           <div className="hidden lg:flex lg:justify-end">
-            <img src={iBPMS} alt="" />
+            <img src={Hectos} alt="" />
           </div>
         </div>
       </div>

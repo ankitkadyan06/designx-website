@@ -23,14 +23,14 @@ const ContentOne = () => {
             <p className="text-white text-[20px] sm:text-[28px] md:text-[32px] tracking-wide lg:text-[36px] font-poppins font-medium capitalize hidden lg:block">
               Massive volume of manufacturing data is Overlooked
             </p>
-            <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[36px]">
+            <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
               As a result, for most manufacturing decision-makers, the
               visibility to their day-to-day operations is opaque. Due to lack
               of historical data, a majority of futuristic decisions are
               instinct-based than data-based. This results in low productivity,
               compromised safety and depreciated quality.
             </p>
-            <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[36px]">
+            <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
               Even the ones who wish to change the status quo, when they
               look-out for a solution, often they encounter solutions which are
               expensive and have a high lead time. Despite all the challenges,
