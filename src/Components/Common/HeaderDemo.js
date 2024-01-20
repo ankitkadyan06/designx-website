@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../Assets/Images/designXlogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
-import downArrow from'../Assets/Images/downArrow.svg';
+// import downArrow from'../Assets/Images/downArrow.svg';
 import { Tooltip } from 'react-tooltip';
 // import ScrollToTop from "./ScrollToTop";
 
@@ -18,7 +18,7 @@ const navigation = [
 const HeaderDemo = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
-  const [showResourcesDropdown, setShowResourcesDropdown] = useState(false);
+  // const [showResourcesDropdown, setShowResourcesDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,55 +70,21 @@ const HeaderDemo = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <div key={item.name} className="relative font-poppins font-light">
-                {item.name === "Resources" ? (
-                  <>
-                    <button
-                      className="no-underline font-poppins flex text-[18px] leading-6 text-white cursor-pointer focus:outline-none"
-                      onClick={() =>
-                        setShowResourcesDropdown(!showResourcesDropdown)
-                      }
-                    >
-                      {item.name} <img src={downArrow} alt='' className="w-[20px] h-[20px] mt-[3px]"/>
-                    </button>
-                    {showResourcesDropdown && (
-                      <div className="absolute mt-2 space-y-2 bg-[#001141] border-[1px] border-solid border-[#adadad] text-white rounded-md shadow-lg">
-                        <Link
-                          to="/Blogs"
-                          className="block px-4 py-2 no-underline text-white font-poppins font-light"
-                        >
-                          Blogs
-                        </Link>
-                        <Link
-                          to="#"
-                          className="block px-4 py-2 no-underline text-white font-poppins font-light"
-                        >
-                          Newsletters
-                        </Link>
-                        <Link
-                          to="#"
-                          className="block px-4 py-2 no-underline text-white font-poppins font-light"
-                        >
-                          Use Cases
-                        </Link>
-                      </div>
-                    )}
-                  </>
-                ) : (
+              <div key={item.name} className="relative font-poppins font-normal">
                   <Link
                     to={item.to}
-                    className="no-underline font-poppins text-[14px] sm:text-[18px] font-light leading-6 text-white"
+                    className="no-underline font-poppins text-[14px] sm:text-[18px] font-normal leading-6 text-white tracking-wider"
                   >
                     {item.name}
                   </Link>
-                )}
+                
               </div>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end mr-[2%] xl:mr-[2%]">
+          <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end mr-[2%] xl:mr-[2%] tracking-wider">
             <Link
               to="/Contact"
-              className="text-[18px] leading-6 text-white no-underline mt-[3%] xl:mt-[1.7%] font-poppins font-light"
+              className="text-[18px] leading-6 text-white no-underline mt-[3%] xl:mt-[1.7%] font-poppins font-normal"
             >
               Contact Us
             </Link>
@@ -126,7 +92,7 @@ const HeaderDemo = () => {
             data-tooltip-id="my-tooltip"
             data-tooltip-content="Coming Soon"
               to="#"
-              className="text-[16px] leading-6 text-[#00153F] no-underlines font-inter font-medium bg-white rounded-[64px] py-[10px] px-[20px]"
+              className="text-[16px] leading-6 text-[#00153F] no-underlines font-inter font-semibold bg-white rounded-[64px] py-[10px] px-[20px] tracking-wide"
             >
               Demo
             </button>
@@ -158,55 +124,20 @@ const HeaderDemo = () => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <div key={item.name} className="relative font-poppins font-light">
-                      {item.name === "Resources" ? (
-                        <>
-                          <button
-                            className="no-underline font-poppins font-light flex text-[14px] sm:text-[18px] leading-6 text-white cursor-pointer focus:outline-none"
-                            onClick={() =>
-                              setShowResourcesDropdown(!showResourcesDropdown)
-                            }
-                          >
-                            {item.name} <img src={downArrow} alt='' className="w-[20px] h-[20px] mt-[3px]"/>
-                          </button>
-                          {showResourcesDropdown && (
-                            <div className="absolute mt-2 space-y-2 bg-[#00153F] text-white text-[14px] sm:text-[18px] rounded-md shadow-lg border-[1px] border-solid border-[#adadad]">
-                              <Link
-                                to="/Blogs"
-                                className="block px-4 py-2 no-underline text-white font-poppins font-light"
-                              >
-                                Blogs
-                              </Link>
-                              <Link
-                                to="#"
-                                className="block px-4 py-2 no-underline text-white font-poppins font-light"
-                              >
-                                Newsletters
-                              </Link>
-                              <Link
-                                to="#"
-                                className="block px-4 py-2 no-underline text-white font-poppins font-light"
-                              >
-                                Use Cases
-                              </Link>
-                            </div>
-                          )}
-                        </>
-                      ) : (
+                    <div key={item.name} className="relative font-poppins font-normal">
                         <Link
                           to={item.to}
-                          className="no-underline font-poppins text-[14px] sm:text-[18px] leading-6 text-white font-light"
+                          className="no-underline font-poppins text-[14px] sm:text-[18px] leading-6 text-white font-normal tracking-wider"
                         >
                           {item.name}
                         </Link>
-                      )}
                     </div>
                   ))}
                 </div>
                 <div className="py-6">
                   <Link
                     to="/Contact"
-                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[14px] sm:text-[18px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-light"
+                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[14px] sm:text-[18px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-normal tracking-wider"
                   >
                     Contact Us
                   </Link>
@@ -214,7 +145,7 @@ const HeaderDemo = () => {
                   data-tooltip-id="my-tooltip"
                   data-tooltip-content="Coming Soon"
                     to="#"
-                    className="-mx-3 block rounded-[64px] font-inter font-medium ml-[3px] px-[20px] py-2.5 text-[14px] sm:text-base no-underline leading-7 text-[#00153F] bg-white hover:bg-gray-50"
+                    className="-mx-3 block rounded-[64px] font-inter font-semibold ml-[3px] px-[20px] py-2.5 text-[14px] sm:text-base no-underline leading-7 text-[#00153F] bg-white hover:bg-gray-50"
                   >
                     Demo
                   </button>
