@@ -13,7 +13,7 @@ const Footer = () => {
             <p className="text-[16px] sm:text-[20px] font-medium">Platform</p>
             <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">DFOS</p></Link>
             {/* <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Digital Process</p></Link> */}
-            <Link to="/BlogDetails" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">IIOT</p></Link>
+            <Link to="/IIOT" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">IIOT</p></Link>
             <Link to="/DigitalTwin" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Digital Twin</p></Link>
             {/* <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Computer vision</p></Link> */}
             <Link to="/ESG" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">ESG</p></Link>
@@ -34,11 +34,12 @@ const Footer = () => {
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Contact </p>
             <p className="font-light text-[12px] sm:text-[16px]">Email: info@designx.in</p>
+            <p className="font-light text-[12px] sm:text-[16px]">Phone: 9045012061, 8126084680</p>
           </div>
         </div>
         <div>
           <div>
-            <p className="text-[16px] sm:text-[20px] font-medium">Location </p>
+            <p className="text-[16px] sm:text-[20px] font-medium">Address </p>
             <p className="font-light text-[12px] sm:text-[16px]">
               3C-1, Block C, Research & Innovation Park, IIT Delhi, New Delhi
               110016
@@ -55,9 +56,9 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-[1px] border-solid border-white"/>
-      <div className="flex justify-center lg:justify-between">
-      <p className="text-[14px] lg:text-[18px] py-[30px]">Copyright © 2021 NRV Designx Pvt. Ltd.</p>
-      <img src={logo} alt="" className="hidden lg:block" />
+      <div className="flex justify-center lg:justify-between items-center">
+      <p className="text-[14px] lg:text-[18px] py-[30px] mb-0">Copyright © 2021 NRV Designx Pvt. Ltd.</p>
+      <img src={logo} alt="" className="hidden lg:block w-auto h-8" />
       </div>
     </div>
   );
