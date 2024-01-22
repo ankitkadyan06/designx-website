@@ -3,6 +3,8 @@ import "../Assets/CSS/Footer.css";
 import facebook from "../Assets/Images/faceBookIcon.svg";
 import linkedin from "../Assets/Images/linkedinIcon.svg";
 import logo from "../Assets/Images/designXlogo.svg";
+import isms from '../Assets/Images/isms.png'
+import ssl from '../Assets/Images/SSL-Secure-Connection.png'
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -77,6 +79,13 @@ const Footer = () => {
             <p className="font-light text-[12px] sm:text-[16px]">
               Phone: <Link to="tel:9045012061" className="email_link">9045012061</Link>,{" "}
               <Link to="tel:8126084680" className="email_link">8126084680</Link>
+            </p>
+          </div>
+          <div>
+            <p className="text-[16px] sm:text-[20px] font-medium">Certifications</p>
+            <p className="block sm:flex">
+              <img src={isms} alt="" className="w-[50px] h-[50px] mr-[10px]" />
+              <img src={ssl} alt="" className="w-[70px] h-[50px] mt-[5px] sm:mt-[0px] ml-[0px] sm:ml-[10px]" />
             </p>
           </div>
         </div>
