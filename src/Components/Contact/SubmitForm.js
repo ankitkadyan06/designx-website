@@ -11,7 +11,7 @@ const SubmitForm = () => {
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mx-[30px] xl:mx-[150px] 2xl:mx-[250px]">
         <div className="w-full lg:w-[390px]">
           <p className="text-white text-[22px] md:text-[36px] lg:text-[47px] font-poppins font-semibold">
-            One-step <br/> closer to digital transformation
+            One-step <br className="hidden lg:block"/> closer to digital transformation
           </p>
           <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins">
             The quest to find an agile solution for your shop floor has come to
