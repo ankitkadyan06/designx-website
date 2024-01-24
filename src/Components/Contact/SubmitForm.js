@@ -39,7 +39,7 @@ const SubmitForm = () => {
         <div className="formBackground mx-auto mt-[20px] lg:mt-[0px] lg:ml-[70px] w-[100%] sm:w-[300px] md:w-[300px] lg:w-[414px]">
           <div className=" contactForm">
             <p className="text-white text-[20px] md:text-[32px] font-poppins font-medium">
-              Contact Us
+              <span className="underline underline-offset-8 decoration-[2px]">Contact </span>Us
             </p>
             {/* <hr className="border-b-[3px] border-solid border-white w-[15%]" /> */}
             {/* <div className="border-b-[3px] border-solid border-white w-[40%] pr-[50px]"></div> */}
