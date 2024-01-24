@@ -11,11 +11,11 @@ const SubmitForm = () => {
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mx-[30px] xl:mx-[150px] 2xl:mx-[250px]">
         <div className="w-full lg:w-[390px]">
           <p className="text-white text-[22px] md:text-[36px] lg:text-[47px] font-poppins font-semibold">
-            One-step closer to digitalization
+            One-step <br className="hidden lg:block"/> closer to digital transformation
           </p>
           <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins">
             The quest to find an agile solution for your shop floor has come to
-            an end. Switch to digitalization today with DesignX!
+            an end. Switch to digital transformation today with DesignX!
           </p>
           <div className="flex justify-center lg:justify-between flex-row mt-[40px]">
             <div className="bookDemo mr-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
