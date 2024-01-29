@@ -20,21 +20,29 @@ const Footer = () => {
                 DFOS
               </p>
             </Link>
+            <ul className="list-disc">
+            <li>
             <Link to="/IIOT" className=" no-underline text-white">
               <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 IIOT
               </p>
             </Link>
+            </li>
+            <li>
             <Link to="/DigitalTwin" className="no-underline text-white">
               <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 Digital Twin
               </p>
             </Link>
+            </li>
+            <li>
             <Link to="/ESG" className=" no-underline text-white">
               <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 ESG
               </p>
             </Link>
+            </li>
+            </ul>
           </div>
         </div>
         <div>
