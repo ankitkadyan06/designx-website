@@ -5,6 +5,7 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { useFormik } from "formik";
 import { formValidation } from "../../schemas/index";
+import axios from "axios";
 
 const SubmitForm = () => {
   const formik = useFormik({
@@ -17,11 +18,18 @@ const SubmitForm = () => {
       remark: "",
     },
     validationSchema: formValidation,
-    onSubmit: (values, { resetForm }) => {
-      console.log(values);
-      resetForm();
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        const response = await axios.post("/app/api/v3/designx-contact-us", values);
+        console.log("API Response:", response.data);
+      } catch (error) {
+        console.error("API Error:", error.message || error);
+      } finally {
+        resetForm();
+      }
     },
   });
+
   return (
     <div className="pt-[85px] md:pt-[150px]">
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mx-[30px] xl:mx-[150px] 2xl:mx-[250px]">
@@ -61,7 +69,10 @@ const SubmitForm = () => {
               </span>
               Us
             </p>
-            <form onSubmit={formik.handleSubmit} className="mt-[10px] font-poppins">
+            <form
+              onSubmit={formik.handleSubmit}
+              className="mt-[10px] font-poppins"
+            >
               <TextField
                 fullWidth
                 id="name"
@@ -136,11 +147,14 @@ const SubmitForm = () => {
                   className="w-[94%] h-[100px] text-[12px] sm:text-[14px] bg-transparent border-[1px] font-light text-white font-poppins border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
                 ></textarea>
               </div>
-            <div className="flex justify-center">
-              <button type="submit" className="submitButtonForForm w-[100px] md:w-[121px] h-[36px] md:h-[42px] text-white text-[14px] md:text-[18px] font-poppins font-medium mt-[22px]">
-                Submit
-              </button>
-            </div>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="submitButtonForForm w-[100px] md:w-[121px] h-[36px] md:h-[42px] text-white text-[14px] md:text-[18px] font-poppins font-medium mt-[22px]"
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
