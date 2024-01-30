@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import "../Assets/CSS/Form.css";
 import Checkbox from "@mui/material/Checkbox";
@@ -6,8 +6,11 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { useFormik } from "formik";
 import { formValidation } from "../../schemas/index";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SubmitForm = () => {
+  const [loading, setLoading] = useState(false);
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -19,6 +22,7 @@ const SubmitForm = () => {
     },
     validationSchema: formValidation,
     onSubmit: (values, { resetForm }) => {
+      setLoading(true);
       axios
         .post("/app/api/v3/designx-contact-us", values, {
           headers: {
@@ -27,10 +31,16 @@ const SubmitForm = () => {
         })
         .then((response) => {
           console.log("API Response:", response.data);
+          toast.success(response.data.message);
           resetForm();
         })
         .catch((error) => {
           console.error("API Error:", error.message || error);
+          toast.error("Error occurred while submitting the form.");
+          // toast.error(error.message);
+        })
+        .finally(() => {
+          setLoading(false);
         });
     },
   });
@@ -151,7 +161,7 @@ const SubmitForm = () => {
                 <textarea
                   name="remark"
                   id="remark"
-                  value={formik.values.remark || ""}
+                  value={formik.values.remark}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   placeholder="It would be great to hear more about your project (optional)"
@@ -162,14 +172,16 @@ const SubmitForm = () => {
                 <button
                   type="submit"
                   className="submitButtonForForm w-[100px] md:w-[121px] h-[36px] md:h-[42px] text-white text-[14px] md:text-[18px] font-poppins font-medium mt-[22px]"
+                  disabled={loading}
                 >
-                  Submit
+                  {loading ? "Loading..." : "Submit"}
                 </button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
