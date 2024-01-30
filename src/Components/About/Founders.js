@@ -5,9 +5,7 @@ import invertedComma1 from "../Assets/Images/invertedComma1.svg";
 import invertedComma2 from "../Assets/Images/invertedComma2.svg";
 import RajatSir from "../Assets/Images/rajatSir.svg";
 import NishantSir from "../Assets/Images/nishantSir.png";
-import twitter from "../Assets/Images/twitter.svg";
-import facebook from "../Assets/Images/facebook.svg";
-import linkedin from "../Assets/Images/linkedin.svg";
+import linkedin from "../Assets/Images/linkedinFull.svg";
 
 const foundersData = [
   {
@@ -84,9 +82,7 @@ const Founders = () => {
               <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center">
                 {founder.role}
               </p>
-              <div className="flex justify-around mt-[20px]">
-                <img src={twitter} alt="" />
-                <img src={facebook} alt="" />
+              <div className="flex justify-center mt-[10px]">
                 <Link to={founder.linkedinURL} target="_blank">
                   <img src={linkedin} alt="" />
                 </Link>
