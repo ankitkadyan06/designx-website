@@ -23,7 +23,7 @@ const Footer = () => {
             <li>
             <Link to="/IIOT" className=" no-underline text-white">
               <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
-                IIOT
+                IOT
               </p>
             </Link>
             </li>
@@ -103,14 +103,14 @@ const Footer = () => {
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Address </p>
             <p className="font-light text-[12px] sm:text-[16px]">
-              3C-1, Block C, Research & Innovation Park, IIT Delhi, New Delhi
+              3C-1, Block C, <br /> Research & Innovation Park, IIT Delhi, New Delhi
               110016
             </p>
             <br />
 
             <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Connect with us</p>
-            <p className="flex">
+            <p className="flex justify-center w-[50%]">
               <Link
                 to="https://www.linkedin.com/company/nrv-designx/"
                 target="_blank"
