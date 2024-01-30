@@ -21,7 +21,7 @@ const Footer = () => {
             </Link>
             <ul className="">
             <li>
-            <Link to="/IIOT" className=" no-underline text-white">
+            <Link to="/IOTGateway" className=" no-underline text-white">
               <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 IOT
               </p>

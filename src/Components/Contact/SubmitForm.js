@@ -18,15 +18,20 @@ const SubmitForm = () => {
       remark: "",
     },
     validationSchema: formValidation,
-    onSubmit: async (values, { resetForm }) => {
-      try {
-        const response = await axios.post("/app/api/v3/designx-contact-us", values);
-        console.log("API Response:", response.data);
-      } catch (error) {
-        console.error("API Error:", error.message || error);
-      } finally {
-        resetForm();
-      }
+    onSubmit: (values, { resetForm }) => {
+      axios
+        .post("/app/api/v3/designx-contact-us", values, {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        })
+        .then((response) => {
+          console.log("API Response:", response.data);
+          resetForm();
+        })
+        .catch((error) => {
+          console.error("API Error:", error.message || error);
+        });
     },
   });
 
@@ -77,8 +82,9 @@ const SubmitForm = () => {
                 fullWidth
                 id="name"
                 label="NAME"
+                name="name"
                 variant="standard"
-                autoComplete="true"
+                autoComplete="off"
                 value={formik.values.name}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -90,8 +96,9 @@ const SubmitForm = () => {
                 fullWidth
                 id="email"
                 label="EMAIL"
+                name="email"
                 variant="standard"
-                autoComplete="true"
+                autoComplete="off"
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -102,8 +109,9 @@ const SubmitForm = () => {
                 fullWidth
                 id="phone"
                 label="PHONE (OPTIONAL)"
+                name="phone"
                 variant="standard"
-                autoComplete="true"
+                autoComplete="off"
                 value={formik.values.phone}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -114,8 +122,9 @@ const SubmitForm = () => {
                 fullWidth
                 id="company"
                 label="COMPANY (OPTIONAL)"
+                name="company"
                 variant="standard"
-                autoComplete="true"
+                autoComplete="off"
                 value={formik.values.company}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -128,7 +137,9 @@ const SubmitForm = () => {
                     id="subscribe"
                     name="subscribe"
                     checked={formik.values.subscribe}
-                    onChange={formik.handleChange}
+                    onChange={(e) =>
+                      formik.setFieldValue("subscribe", e.target.checked)
+                    }
                   />
                 }
                 label="Subscribe to our newsletter"
@@ -140,11 +151,11 @@ const SubmitForm = () => {
                 <textarea
                   name="remark"
                   id="remark"
-                  value={formik.values.remark}
+                  value={formik.values.remark || ""}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   placeholder="It would be great to hear more about your project (optional)"
-                  className="w-[94%] h-[100px] text-[12px] sm:text-[14px] bg-transparent border-[1px] font-light text-white font-poppins border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
+                  className="w-[94%] h-[100px] text-[12px] sm:text-[14px] bg-transparent border-[1px] font-light text-white font-poppins  border-white rounded-[9px] p-[10px] focus:outline-none"
                 ></textarea>
               </div>
               <div className="flex justify-center">
