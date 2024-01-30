@@ -18,22 +18,21 @@ const SubmitForm = () => {
       remark: "",
     },
     validationSchema: formValidation,
-   onSubmit: async (values, { resetForm }) => {
-  try {
-    const response = await axios.post("/app/api/v3/designx-contact-us", values, {
-      headers: {
-        'Content-Type': 'multipart/form-data'  // Corrected Content-Type
-      }
-    });
-    console.log("API Response:", response.data);
-  } catch (error) {
-    console.error("API Error:", error.message || error);
-  } finally {
-    resetForm();
-  }
-},
-
-    
+    onSubmit: (values, { resetForm }) => {
+      axios
+        .post("/app/api/v3/designx-contact-us", values, {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        })
+        .then((response) => {
+          console.log("API Response:", response.data);
+          resetForm();
+        })
+        .catch((error) => {
+          console.error("API Error:", error.message || error);
+        });
+    },
   });
 
   return (
@@ -138,7 +137,9 @@ const SubmitForm = () => {
                     id="subscribe"
                     name="subscribe"
                     checked={formik.values.subscribe}
-                    onChange={(e) => formik.setFieldValue('subscribe', e.target.checked)}
+                    onChange={(e) =>
+                      formik.setFieldValue("subscribe", e.target.checked)
+                    }
                   />
                 }
                 label="Subscribe to our newsletter"
@@ -150,7 +151,7 @@ const SubmitForm = () => {
                 <textarea
                   name="remark"
                   id="remark"
-                  value={formik.values.remark || ''}
+                  value={formik.values.remark || ""}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   placeholder="It would be great to hear more about your project (optional)"
