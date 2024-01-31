@@ -16,8 +16,8 @@ const SubmitForm = () => {
       name: "",
       email: "",
       phone: "",
-      company: "",
-      subscribe: true,
+      company_name: "",
+      subscribe_news: true,
       remark: "",
     },
     validationSchema: formValidation,
@@ -130,12 +130,12 @@ const SubmitForm = () => {
               />
               <TextField
                 fullWidth
-                id="company"
+                id="company_name"
                 label="COMPANY (OPTIONAL)"
-                name="company"
+                name="company_name"
                 variant="standard"
                 autoComplete="off"
-                value={formik.values.company}
+                value={formik.values.company_name}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
@@ -144,11 +144,11 @@ const SubmitForm = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    id="subscribe"
-                    name="subscribe"
-                    checked={formik.values.subscribe}
+                    id="subscribe_news"
+                    name="subscribe_news"
+                    checked={formik.values.subscribe_news}
                     onChange={(e) =>
-                      formik.setFieldValue("subscribe", e.target.checked)
+                      formik.setFieldValue("subscribe_news", e.target.checked)
                     }
                   />
                 }
