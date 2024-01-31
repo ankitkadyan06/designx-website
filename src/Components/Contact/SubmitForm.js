@@ -58,22 +58,23 @@ const SubmitForm = () => {
             an end. Switch to digital transformation today with DesignX!
           </p>
           <div className="flex justify-center lg:justify-between flex-row mt-[40px]">
-            <div className="bookDemo mr-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
+            <div className="bookDemo mr-[10px] w-[200px] lg:w-[380px] h-[100px] lg:h-[140px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
               <p className="contactTextGradient text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Book a Demo
               </p>
               <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px]">
-                Request a demo of one of our solutions.
+                Request a demo to unlock the potential of our best offerings.
+                Explore futuristic solutions with us!
               </p>
             </div>
-            <div className="tryNow ml-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
+            {/* <div className="tryNow ml-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
               <p className="text-white  text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Try Now !
               </p>
               <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px]">
                 Sign up for a demo and switch to digitalization.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="formBackground mx-auto mt-[20px] lg:mt-[0px] lg:ml-[70px] w-[100%] sm:w-[300px] md:w-[300px] lg:w-[414px]">
