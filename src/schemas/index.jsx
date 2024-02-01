@@ -5,5 +5,5 @@ export const formValidation = Yup.object({
     email: Yup.string().email("Invalid email").required("Email is required"),
     phone: Yup.string().matches(/^[0-9]+$/, 'Phone must contain only numbers'),
     company_name: Yup.string(),
-    remark: Yup.string(),
+    remark: Yup.string().min(10).required("Remark is required"),
 })

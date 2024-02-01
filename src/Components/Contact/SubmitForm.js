@@ -154,9 +154,16 @@ const SubmitForm = () => {
                   value={formik.values.remark}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  placeholder="It would be great to hear more about your project (optional)"
-                  className="w-[94%] h-[100px] text-[12px] sm:text-[14px] bg-transparent border-[1px] font-light text-white font-poppins  border-white rounded-[9px] p-[10px] focus:outline-none"
+                  placeholder="It would be great to hear more about your project"
+                  className={`w-[94%] h-[100px] text-[12px] sm:text-[14px] bg-transparent border-[1px] font-light text-white font-poppins  border-white rounded-[9px] p-[10px] focus:outline-none ${
+                    formik.touched.remark && formik.errors.remark ? "border-red-500" : ""
+                  }`}
                 ></textarea>
+                {formik.touched.remark && formik.errors.remark && (
+            <p className="text-red-500 text-[12px] font-poppins mt-1">
+              {formik.errors.remark}
+            </p>
+          )}
               </div>
               <div className="flex justify-center">
                 <button
