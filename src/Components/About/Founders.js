@@ -80,7 +80,7 @@ const Founders = () => {
               <p className="CEO text-[24px] xl:text-[28px] font-poppins font-medium text-center mt-[66px]">
                 {founder.name.split(",")[0]}
               </p>
-              <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center">
+              <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center mb-[0.5rem]">
                 {founder.role}
               </p>
               <div className="flex justify-center mt-[0px]">

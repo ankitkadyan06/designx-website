@@ -86,8 +86,6 @@ const Footer = () => {
                 Privacy Policy
               </p>
             </Link>
-            {/* <p className="font-light text-[12px] sm:text-[16px]">Case Study</p> */}
-            {/* <p className="font-light text-[12px] sm:text-[16px]">Newsletter</p> */}
             <Link to="/Contact" className="no-underline text-white">
               {" "}
               <p
