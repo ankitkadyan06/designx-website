@@ -7,7 +7,7 @@ import { useFormik } from "formik";
 import { formValidation } from "../../schemas/index";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 const SubmitForm = () => {
   const [loading, setLoading] = useState(false);
