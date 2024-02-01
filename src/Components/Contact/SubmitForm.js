@@ -30,14 +30,11 @@ const SubmitForm = () => {
           },
         })
         .then((response) => {
-          console.log("API Response:", response.data);
           toast.success(response.data.message);
           resetForm();
         })
         .catch((error) => {
-          console.error("API Error:", error.message || error);
           toast.error("Error occurred while submitting the form.");
-          // toast.error(error.message);
         })
         .finally(() => {
           setLoading(false);
@@ -67,14 +64,6 @@ const SubmitForm = () => {
                 Explore futuristic solutions with us!
               </p>
             </div>
-            {/* <div className="tryNow ml-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
-              <p className="text-white  text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
-                Try Now !
-              </p>
-              <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px]">
-                Sign up for a demo and switch to digitalization.
-              </p>
-            </div> */}
           </div>
         </div>
         <div className="formBackground mx-auto mt-[20px] lg:mt-[0px] lg:ml-[70px] w-[100%] sm:w-[300px] md:w-[300px] lg:w-[414px]">
