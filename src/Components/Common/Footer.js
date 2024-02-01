@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="text-[16px] sm:text-[20px] font-medium">Product</p>
             <Link to="/Product" className=" no-underline text-white">
               <p
-                className="font-normal hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+                className="font-medium hover:text-[#0046FF] text-[12px] sm:text-[18px]"
                 style={{ transition: "color 0.3s" }}
               >
                 DFOS
