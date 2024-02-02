@@ -1,5 +1,5 @@
 import React from "react";
-import digitalTwin from "../Assets/Images/digitalTwinNew.svg";
+import digitalTwin from "../Assets/Images/digitalTwinNew.png";
 import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 import { Link } from "react-router-dom";
 const ProductDigitalTwin = () => {

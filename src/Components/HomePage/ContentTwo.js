@@ -1,6 +1,6 @@
 import React from "react";
 import "../Assets/CSS/ContentTwo.css";
-import checkSheet from "../Assets/Images/checkImage.svg";
+import checkSheet from "../Assets/Images/checkImage.png";
 import spring from "../Assets/Images/springDark.svg";
 import { Link } from "react-router-dom";
 
