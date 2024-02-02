@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="text-[16px] sm:text-[20px] font-medium">Product</p>
             <Link to="/Product" className=" no-underline text-white">
               <p
-                className="font-medium hover:text-[#0046FF] text-[12px] sm:text-[18px]"
+                className="font-medium hover:text-[#0046FF] text-[14px] sm:text-[18px]"
                 style={{ transition: "color 0.3s" }}
               >
                 DFOS
@@ -24,8 +24,7 @@ const Footer = () => {
             </Link>
 
             <p
-              className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
-              style={{ transition: "color 0.3s" }}
+              className="font-light text-[12px] sm:text-[16px]"
             >
               Digital Process
             </p>
@@ -114,13 +113,15 @@ const Footer = () => {
             <p className="font-light text-[12px] sm:text-[16px] flex items-center">
               <img src={phone} alt="" />
               &nbsp; &nbsp;
+              <span className="flex flex-col sm:flex-row">
               <Link to="tel:9045012061" className="email_link">
-                9045012061
+                9045012061,
               </Link>
-              , &nbsp;
+              <span className="sm:block hidden">&nbsp;</span>
               <Link to="tel:8126084680" className="email_link">
                 8126084680
               </Link>
+              </span>
             </p>
           </div>
           <br />

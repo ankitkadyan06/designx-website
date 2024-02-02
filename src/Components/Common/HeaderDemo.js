@@ -38,7 +38,7 @@ const HeaderDemo = () => {
         >
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5 focus:outline-none ml-[2%]">
-              <img src={logo} className="h-8 w-auto" alt="" />
+              <img src={logo} className="sm:h-10 h-6 w-auto" alt="" />
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -98,7 +98,7 @@ const HeaderDemo = () => {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#00153F] px-6 pt-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
-                <img className="w-auto h-10 sm:h-6" src={logo} alt="" />
+                <img className="w-auto h-8" src={logo} alt="" />
               </Link>
               <button
                 type="button"
