@@ -55,7 +55,7 @@ const SubmitForm = () => {
             an end. Switch to digital transformation today with DesignX!
           </p>
           <div className="flex justify-center lg:justify-between flex-row mt-[40px]">
-            <div className="bookDemo mr-[10px] w-[200px] lg:w-[380px] h-[140px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
+            <div className="bookDemo mr-[10px] w-[200px] lg:w-[380px] h-auto focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
               <p className="contactTextGradient text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Book a Demo
               </p>
