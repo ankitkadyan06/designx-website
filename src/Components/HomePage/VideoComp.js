@@ -28,7 +28,7 @@ const VideoComp = () => {
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[10px] sm:pt-[50px] lg:pt-[100px] px-[15px] sm:px-[30px] lg:px-[80px] videoContent">
           <div className="pr-[10px] md:pr-[30px] lg:pr-[50px] 2xl:pr-[80px] mt-[0%] lg:mt-[10%]">
             <p className="text-gradientVid text-[28px] md:text-[38px] text-white font-poppins tracking-wide font-medium capitalize hidden lg:block underline underline-offset-8 decoration-[#0049FF]">
-              Harness the power of DFOS<sup className="text-gradientVid"><small>&trade;</small></sup>
+              Harness the power of DFOS<small className="text-gradientVid decoration-transparent">&trade;</small>
             </p>
             <p className="text-white text-[12px] sm:text-[14px] md:text-[18px] font-normal lg:text-[20px] tracking-wide leading-5 lg:leading-[30px] xl:leading-[36px]">
               Take your manufacturing plant to new heights by getting the utmost

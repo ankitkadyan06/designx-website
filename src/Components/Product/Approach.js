@@ -2,7 +2,7 @@ import React from 'react'
 import Cardone from '../Assets/Images/Card1.png'
 import Cardtwo from '../Assets/Images/Card2.png'
 import Cardthree from '../Assets/Images/Card3.png'
-import '../Assets/CSS/ProductCards.css'
+
 const Approach = () => {
   return (
     <div className='px-[15px] lg:px-[30px] py-[30px] Approach'>
