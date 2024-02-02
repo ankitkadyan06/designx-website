@@ -64,7 +64,7 @@ const HeaderDemo = () => {
               </svg>
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex items-center lg:gap-x-12">
             {navigation.map((item) => (
               <div
                 key={item.name}
@@ -79,10 +79,10 @@ const HeaderDemo = () => {
               </div>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end mr-[2%] xl:mr-[2%] tracking-wider">
+          <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end items-center mr-[2%] tracking-wider">
             <Link
               to="/Contact"
-              className="text-[18px] leading-6 text-white no-underline mt-[3%] xl:mt-[1.7%] font-poppins font-normal"
+              className="text-[18px] leading-6 text-white no-underline  font-poppins font-normal"
             >
               Contact Us
             </Link>
@@ -98,7 +98,7 @@ const HeaderDemo = () => {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#00153F] px-6 pt-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
-                <img className="h-8 w-auto" src={logo} alt="" />
+                <img className="w-auto h-10 sm:h-6" src={logo} alt="" />
               </Link>
               <button
                 type="button"

@@ -1,6 +1,6 @@
 import React from "react";
 import "../Assets/CSS/AboutusHero.css";
-import AboutHero from "../Assets/Images/aboutHeroImage.svg";
+import AboutHero from "../Assets/Images/aboutHeroImage.png";
 import spring from "../Assets/Images/backgroundSprings.svg";
 import Marquee from "react-fast-marquee";
 import unilever from "../Assets/Images/unilever.svg";
@@ -33,7 +33,7 @@ const AboutusHero = () => {
       </p>
       <div className="mx-[0px] lg:mx-[85px]">
         <Marquee>
-          <img src={unilever} alt="" className="ml-[40px]" />
+          <img src={unilever} alt="" className="ml-[40px] lg:ml-[120px] 2xl:ml-[150px]" />
           <img
             src={amber}
             alt=""
