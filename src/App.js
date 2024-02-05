@@ -19,9 +19,9 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<HomePage />} />
-      <Route path='/Aboutus' element={<About/>}/>
+      <Route path='/about' element={<About/>}/>
       <Route path='/Product' element={<Product/>}/>
-      <Route path='/Contact' element={<Contact/>}/>
+      <Route path='/contact-us' element={<Contact/>}/>
       <Route path='/Blogs' element={<Blogs/>}/>
       <Route path='/IIOT' element={<BlogDetails/>}/>
       <Route path='/iBPMS' element={<IBPMSMain/>}/>

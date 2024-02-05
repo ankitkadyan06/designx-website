@@ -6,7 +6,7 @@ const ArtificalIntelligence = () => {
     <div className="blogback">
       <div className="blogHeaderBack pt-[75px]">
         <div className="block lg:grid lg:grid-cols-2 gap-4 relative z-[1]">
-          <div className="pl-[50px] lg:pl-[100px] pr-[50px]">
+          <div className="mx-[30px] md:mx-[50px] xl:mx-[80px] py-[20px]">
             <p className="text-white text-[14px] lg:text-[18px] font-inter mt-[31px]">
               <Link to="/" className="homeButton">
                 Home
@@ -16,7 +16,7 @@ const ArtificalIntelligence = () => {
                 Blog
               </Link>
             </p>
-            <p className="text-white text-[28px] sm:text-[32px] lg:text-[42px] font-robotoSlab">
+            <p className="text-white text-[22px] md:text-[32px] xl:text-[42px] font-robotoSlab">
               How to Leverage the Benefits of Artificial Intelligence?
             </p>
           </div>

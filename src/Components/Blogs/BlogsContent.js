@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import blogPic from "../Assets/Images/blogPic.png";
 import blogDetailMin from "../Assets/Images/blogDetailmin.png";
 import iBPMS from "../Assets/Images/IOTBlogImage.png";
@@ -11,10 +11,22 @@ import ESGBlog from "../Assets/Images/ESGBlog.png";
 import ESGBlogMin from "../Assets/Images/ESGBlogMin.png";
 import { Link } from "react-router-dom";
 import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const BlogsContent = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="mb-[60px] blogContent">
-      <div className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px]  sm:ml-[50px] lg:ml-[96px] mb-[41px]">
+    <div className="mb-[60px] blogContent flex flex-col items-center">
+      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
         <img
           src={blogPic}
           alt=""
@@ -25,7 +37,7 @@ const BlogsContent = () => {
           alt=""
           className="rounded-24px  block lg:hidden"
         />
-        <div className="font-poppins mt-[0px] lg:mt-[41px] mx-[10px] lg:mx-[53px] w-[60%]">
+        <div className="font-poppins pt-[10px] lg:pt-[41px] px-[10px] lg:px-[53px] w-full lg:w-[60%] pb-[20px]">
           <p className="text-white text-[16px] md:text-[24px] xl:text-[28px] font-medium">
             Industrial Internet of Things: Meaning, Benefits and Uses
           </p>
@@ -45,14 +57,14 @@ const BlogsContent = () => {
         </div>
       </div>
 
-      <div className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px] sm:ml-[50px] lg:ml-[96px] mb-[41px]">
+      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
         <img
           src={iBPMS}
           alt=""
           className="rounded-24px hidden lg:block w-[40%]"
         />
         <img src={iBPMSMin} alt="" className="rounded-24px block lg:hidden" />
-        <div className="font-poppins mt-[0px] lg:mt-[41px] mx-[10px] lg:mx-[53px] w-[60%]">
+        <div className="font-poppins pt-[10px] lg:pt-[41px] px-[10px] lg:px-[53px] w-full lg:w-[60%] pb-[20px]">
           <p className="text-white text-[16px] md:text-[24px] xl:text-[28px] font-medium">
             How DFOS empowers intelligent business process management
             suite(iBPMS)?{" "}
@@ -73,7 +85,7 @@ const BlogsContent = () => {
           </Link>
         </div>
       </div>
-      <div className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px]  sm:ml-[50px] lg:ml-[96px] mb-[41px]">
+      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
         <img
           src={ArtificialIntelligence}
           alt=""
@@ -84,7 +96,7 @@ const BlogsContent = () => {
           alt=""
           className="rounded-24px block lg:hidden"
         />
-        <div className="font-poppins mt-[0px] lg:mt-[41px] mx-[10px] lg:mx-[53px] w-[60%]">
+        <div className="font-poppins pt-[10px] lg:pt-[41px] px-[10px] lg:px-[53px] w-full lg:w-[60%] pb-[20px]">
           <p className="text-white text-[16px] md:text-[24px] xl:text-[28px] font-medium">
             How to Leverage the Benefits of Artificial Intelligence?{" "}
           </p>
@@ -104,14 +116,14 @@ const BlogsContent = () => {
           </Link>
         </div>
       </div>
-      <div className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px]  sm:ml-[50px] lg:ml-[96px] mb-[41px]">
+      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
         <img
           src={Hectos}
           alt=""
           className="rounded-24px hidden lg:block w-[40%]"
         />
         <img src={HectosMin} alt="" className="rounded-24px block lg:hidden" />
-        <div className="font-poppins mt-[0px] lg:mt-[41px] mx-[10px] lg:mx-[53px] w-[60%]">
+        <div className="font-poppins pt-[10px] lg:pt-[41px] px-[10px] lg:px-[53px] w-full lg:w-[60%] pb-[20px]">
           <p className="text-white  text-[16px] md:text-[24px] xl:text-[28px] font-medium">
             IOT Edge Gateway – Hectos
           </p>
@@ -130,14 +142,14 @@ const BlogsContent = () => {
           </Link>
         </div>
       </div>
-      <div className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] ml-[20px]  sm:ml-[50px] lg:ml-[96px] mb-[41px]">
+      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
         <img
           src={ESGBlog}
           alt=""
-          className="rounded-24px hidden lg:block w-[40%]"
+          className="rounded-24px hidden lg:block lg:w-[40%]"
         />
         <img src={ESGBlogMin} alt="" className="rounded-24px block lg:hidden" />
-        <div className="font-poppins mt-[0px] lg:mt-[41px] mx-[10px] lg:mx-[53px] w-[60%]">
+        <div className="font-poppins pt-[10px] lg:pt-[41px] px-[10px] lg:px-[53px] w-full lg:w-[60%] pb-[20px]">
           <p className="text-white  text-[16px] md:text-[24px] xl:text-[28px] font-medium">
             How can factories meet ESG Goals?
           </p>
