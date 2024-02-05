@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 const TrustedBy = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       easing: 'ease-in-out',
       once: true,
     });

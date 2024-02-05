@@ -12,7 +12,7 @@ const BlogDetails = () => {
   }, []);
 
   return (
-    <div className='blogDetailsBackground w-full h-[100%] pt-[77px]'>
+    <div className='blogDetailsBackground w-full pt-[10px] lg:pt-[77px]'>
       <HeaderDemo/>
       <HeaderBlogDetails/>
       <DetailsOfBlog/>

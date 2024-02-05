@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 import logo from "../Assets/Images/designXlogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
-// import { Tooltip } from 'react-tooltip';
 
 const navigation = [
   { name: "Home", to: "/" },
   { name: "Product", to: "/Product" },
-  { name: "About Us", to: "/Aboutus" },
+  { name: "About Us", to: "/about" },
   { name: "Blogs", to: "/Blogs" },
 ];
 const HeaderDemo = () => {
@@ -81,7 +80,7 @@ const HeaderDemo = () => {
           </div>
           <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end items-center mr-[2%] tracking-wider">
             <Link
-              to="/Contact"
+              to="/contact-us"
               className="text-[18px] leading-6 text-white no-underline  font-poppins font-normal"
             >
               Contact Us
@@ -128,7 +127,7 @@ const HeaderDemo = () => {
                 </div>
                 <div className="py-6">
                   <Link
-                    to="/Contact"
+                    to="/contact-us"
                     className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[14px] sm:text-[18px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-normal tracking-wider"
                   >
                     Contact Us

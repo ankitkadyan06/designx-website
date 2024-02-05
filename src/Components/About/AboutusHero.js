@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Assets/CSS/AboutusHero.css";
 import AboutHero from "../Assets/Images/aboutHeroImage.png";
 import spring from "../Assets/Images/backgroundSprings.svg";
@@ -9,13 +9,22 @@ import dabur from "../Assets/Images/daber.svg";
 import toray from "../Assets/Images/torey.svg";
 import hero from "../Assets/Images/hero.svg";
 import tvs from "../Assets/Images/tvs.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const AboutusHero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
   return (
     <div className="heroAbout pt-[80px] lg:pt-[140px] h-auto pb-[20px] sm:pb-[50px]">
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 mx-[10px] lg:mx-[50px]">
-        <img src={AboutHero} alt="" className="relative z-[1]" />
+        <img src={AboutHero} alt="" className="relative z-[1]" data-aos="fade-up" />
         <div>
-          <div className="px-[15px] sm:px-[20px] mt-[0px] lg:mt-[10%] xl:mt-[15%] relative z-[1]">
+          <div data-aos="fade-up" className="px-[15px] sm:px-[20px] mt-[0px] lg:mt-[10%] xl:mt-[15%] relative z-[1]">
             <p className="text-[20px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
               Inspire. Aspire. Automate
             </p>

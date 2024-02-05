@@ -13,7 +13,7 @@ import 'aos/dist/aos.css';
 const Footer = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
       easing: 'ease-in-out',
       once: true,
     });
@@ -71,7 +71,7 @@ const Footer = () => {
         <div>
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Company</p>
-            <Link to="/Aboutus" className="no-underline text-white">
+            <Link to="/about" className="no-underline text-white">
               {" "}
               <p
                 className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
@@ -96,7 +96,7 @@ const Footer = () => {
                 Privacy Policy
               </p>
             </Link>
-            <Link to="/Contact" className="no-underline text-white">
+            <Link to="/contact-us" className="no-underline text-white">
               {" "}
               <p
                 className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
@@ -176,11 +176,11 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-[1px] border-solid border-white" data-aos="fade-up" />
-      <div className="flex justify-center lg:justify-between items-center">
-        <p data-aos="fade-up" className="text-[14px] lg:text-[18px] py-[30px] mb-0">
+      <div data-aos="fade-up" className="flex justify-center lg:justify-between items-center">
+        <p className="text-[14px] lg:text-[18px] py-[30px] mb-0">
           Copyright © 2021 NRV Designx Pvt. Ltd.
         </p>
-        <img src={logo} alt="" className="hidden lg:block w-auto h-8" data-aos="fade-up"/>
+        <img src={logo} alt="" className="hidden lg:block w-auto h-8"/>
       </div>
     </div>
   );

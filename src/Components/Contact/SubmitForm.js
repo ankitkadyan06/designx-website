@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TextField from "@mui/material/TextField";
 import "../Assets/CSS/Form.css";
 import Checkbox from "@mui/material/Checkbox";
@@ -8,6 +8,8 @@ import { formValidation } from "../../schemas/index";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SubmitForm = () => {
   const [loading, setLoading] = useState(false);
@@ -41,11 +43,18 @@ const SubmitForm = () => {
         });
     },
   });
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
 
   return (
     <div className="pt-[85px] md:pt-[150px]">
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mx-[30px] xl:mx-[150px] 2xl:mx-[250px]">
-        <div className="w-full lg:w-[390px]">
+        <div data-aos="fade-right" className="w-full lg:w-[390px]">
           <p className="text-white text-[22px] md:text-[36px] lg:text-[47px] font-poppins font-semibold">
             One-step <br className="hidden lg:block" /> closer to digital
             transformation
@@ -66,7 +75,7 @@ const SubmitForm = () => {
             </div>
           </div>
         </div>
-        <div className="formBackground mx-auto mt-[20px] lg:mt-[0px] lg:ml-[70px] w-[100%] sm:w-[300px] md:w-[300px] lg:w-[414px]">
+        <div data-aos="fade-left" className="formBackground mx-auto mt-[20px] lg:mt-[0px] lg:ml-[70px] w-[100%] sm:w-[300px] md:w-[300px] lg:w-[414px]">
           <div className=" contactForm">
             <p className="text-white text-[20px] md:text-[32px] font-poppins font-medium">
               <span className="underline underline-offset-8 decoration-[2px]">
