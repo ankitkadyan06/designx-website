@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Assets/CSS/Footer.css";
 import linkedin from "../Assets/Images/linkedinIcon.svg";
 import logo from "../Assets/Images/designXlogo.svg";
@@ -7,10 +7,21 @@ import ssl from "../Assets/Images/SSL-Secure-Connection.png";
 import email from "../Assets/Images/emailIcon.svg";
 import phone from "../Assets/Images/phoneIcon.svg";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="footerBack font-poppins text-white pt-[60px] px-[28px] lg:px-[78px]">
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div data-aos="fade-up" className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div>
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Product</p>
@@ -164,12 +175,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="border-[1px] border-solid border-white" />
+      <hr className="border-[1px] border-solid border-white" data-aos="fade-up" />
       <div className="flex justify-center lg:justify-between items-center">
-        <p className="text-[14px] lg:text-[18px] py-[30px] mb-0">
+        <p data-aos="fade-up" className="text-[14px] lg:text-[18px] py-[30px] mb-0">
           Copyright © 2021 NRV Designx Pvt. Ltd.
         </p>
-        <img src={logo} alt="" className="hidden lg:block w-auto h-8" />
+        <img src={logo} alt="" className="hidden lg:block w-auto h-8" data-aos="fade-up"/>
       </div>
     </div>
   );

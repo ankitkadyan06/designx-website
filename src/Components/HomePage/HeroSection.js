@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import heroImage from "../Assets/Images/heroimage-min.png";
 import "../Assets/CSS/HeroSection.css";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Counter = ({ start, end, delay, label }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
   const [visible, setVisible] = useState(false);
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -38,11 +47,11 @@ const HeroSection = () => {
         className="w-full pt-[60px] sm:hidden block"
       />
       <div className="relative top-[0px] sm:top-[120px]">
-        <div className="text-white text-[22px] sm:text-[32px] md:text-[38px] tracking-wide lg:text-[43px] font-poppins capitalize text-center px-[5px]">
+        <div data-aos="fade-up" className="text-white text-[22px] sm:text-[32px] md:text-[38px] tracking-wide lg:text-[43px] font-poppins capitalize text-center px-[5px]">
           millions of data points, but only 1% reaches{" "}
           <br className="hidden lg:block tracking-wide" /> decision-makers
         </div>
-        <div className="text-[#DADADA] text-[14px] md:text-[14px] lg:text-[18px] mt-[10px] text-center tracking-wide px-[20px]">
+        <div data-aos="fade-up" className="text-[#DADADA] text-[14px] md:text-[14px] lg:text-[18px] mt-[10px] text-center tracking-wide px-[20px]">
           Capture remaining 99% data points by digitizing end-to-end
           manufacturing processes with DFOS<sup><small>&trade;</small></sup>
         </div>
