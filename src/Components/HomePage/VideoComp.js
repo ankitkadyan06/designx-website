@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Assets/CSS/VideoComp.css";
 import play from "../Assets/Images/playButton.svg";
@@ -6,6 +6,8 @@ import videoImagePreview from "../Assets/Images/videoImagepreview.png";
 import videoView from "../Assets/Images/videoView.svg";
 import videoDemo from "../Assets/video/DFOS intro.mp4";
 import separation from '../Assets/Images/separation.svg' ;
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const VideoComp = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -18,15 +20,24 @@ const VideoComp = () => {
     }
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
+
   return (
     <div className="videoContainer">
       <div className="videoComp bg-[#282932] pb-[100px] h-auto ">
-      <img src={separation} alt="" className="absolute top-[80px] left-[47%] z-[1] hidden lg:block" />   
-      <p className="text-gradientVidHead block lg:hidden text-[22px] sm:text-[28px] md:text-[38px] ml-[15px] sm:ml-[30px] tracking-wide pt-[45px] text-white font-poppins capitalize font-medium underline underline-offset-8 decoration-[#00A1FF]">
+      <img data-aos="fade-up" src={separation} alt="" className="absolute top-[80px] left-[47%] z-[1] hidden lg:block" />   
+      <p data-aos="fade-up" className="text-gradientVidHead block lg:hidden text-[22px] sm:text-[28px] md:text-[38px] ml-[15px] sm:ml-[30px] tracking-wide pt-[45px] text-white font-poppins capitalize font-medium underline underline-offset-8 decoration-[#00A1FF]">
               Harness the power of DFOS<sup className="text-gradientVid"><small>&trade;</small></sup>
             </p>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[10px] sm:pt-[50px] lg:pt-[100px] px-[15px] sm:px-[30px] lg:px-[80px] videoContent">
-          <div className="pr-[10px] md:pr-[30px] lg:pr-[50px] 2xl:pr-[80px] mt-[0%] lg:mt-[10%]">
+          <div data-aos="fade-up" className="pr-[10px] md:pr-[30px] lg:pr-[50px] 2xl:pr-[80px] mt-[0%] lg:mt-[10%]">
             <p className="text-gradientVid text-[28px] md:text-[38px] text-white font-poppins tracking-wide font-medium capitalize hidden lg:block underline underline-offset-8 decoration-[#0049FF]">
               Harness the power of DFOS<small className="text-gradientVid decoration-transparent">&trade;</small>
             </p>
@@ -51,7 +62,7 @@ const VideoComp = () => {
             </button>
             </div>
           </div>
-          <div className="w-[664px] border-[5px] lg:border-[10px] border-solid border-[#0046FF] rounded-[20px] video-container relative overflow-hidden">
+          <div data-aos="fade-up" className="w-[664px] border-[5px] lg:border-[10px] border-solid border-[#0046FF] rounded-[20px] video-container relative overflow-hidden">
             <div>
               {!isPlaying && (
                 <div className="relative">

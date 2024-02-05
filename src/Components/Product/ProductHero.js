@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../Assets/CSS/Product.css'
 import globe from '../../globe.mp4'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const ProductHero = () => {
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+      });
+    }, []);
   return (
     <div className="productHero flex flex-col-reverse md:flex-row bg-[#000210]">
-      <div className="font-poppins pt-[0px] lg:pt-[30px] mt-[0px] lg:mt-[00px] xl:mt-[50px] px-[15px] sm:px-[30px] xl:px-[80px] w-full md:w-[50%]">
+      <div data-aos="fade-up" className="font-poppins pt-[0px] lg:pt-[30px] mt-[0px] lg:mt-[00px] xl:mt-[50px] px-[15px] sm:px-[30px] xl:px-[80px] w-full md:w-[50%]">
         <p className="text-white text-[22px] pt-0 md:pt-[70px] md:text-[28px] lg:text-[43px] mt-[10px] md:mt-[70px] tracking-wide w-[90%] font-medium">
           Revolutionize Your Shop Floor With DFOS<sup><small>&trade;</small></sup>!
         </p>
@@ -16,7 +25,7 @@ const ProductHero = () => {
           which assists in expanding the business exponentially.
         </p>
       </div>
-      <div className="w-full md:w-[50%] pt-[90px]">
+      <div data-aos="fade-up" className="w-full md:w-[50%] pt-[90px]">
       <video autoPlay muted loop playsInline className="mt-[-70px]">
         <source src={globe} type="video/mp4" />
       </video>

@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useEffect } from "react";
 import "../Assets/CSS/IIOTProduct.css";
 import IIOTMachine from "../Assets/Images/IIOTMachine.svg";
 import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const ProductIIOT = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="tiltBGProduct">
       <div className="IIOT py-[30px] sm:py-[40px] lg:py-[100px] px-[15px] sm:px-[30px] lg:px-[80px]">
