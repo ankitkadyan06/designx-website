@@ -19,7 +19,7 @@ const ProductIIOT = () => {
   return (
     <div className="tiltBGProduct">
       <div className="IIOT py-[30px] sm:py-[40px] lg:py-[100px] px-[15px] sm:px-[30px] lg:px-[80px]">
-        <p data-aos="fade-right" className="iiotDetails text-white text-[22px] md:text-[24px] lg:text-[28px] font-poppins font-medium capitalize block lg:hidden">
+        <p className="iiotDetails text-white text-[22px] md:text-[24px] lg:text-[28px] font-poppins font-medium capitalize block lg:hidden">
           IOT
         </p>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[0px] md:pt-[50px] lg:pt-[100px]">
