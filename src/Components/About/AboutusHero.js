@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 const AboutusHero = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      // duration: 1000,
       easing: 'ease-in-out',
       once: true,
     });
@@ -24,11 +24,11 @@ const AboutusHero = () => {
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 mx-[10px] lg:mx-[50px]">
         <img src={AboutHero} alt="" className="relative z-[1]" data-aos="fade-up" />
         <div>
-          <div data-aos="fade-up" className="px-[15px] sm:px-[20px] mt-[0px] lg:mt-[10%] xl:mt-[15%] relative z-[1]">
-            <p className="text-[20px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
+          <div className="px-[15px] sm:px-[20px] mt-[0px] lg:mt-[10%] xl:mt-[15%] relative z-[1]">
+            <p data-aos="fade-up" data-aos-delay="500" className="text-[20px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
               Inspire. Aspire. Automate
             </p>
-            <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] text-[#adadad] font-poppins w-[100%] md:w-[89%] tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
+            <p data-aos="fade-up" data-aos-delay="800" className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] text-[#adadad] font-poppins w-[100%] md:w-[89%] tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
               Craft a new manufacturing era to attain maximum efficiency. With
               DesignX, step towards a digital future to reach the zenith of
               success.

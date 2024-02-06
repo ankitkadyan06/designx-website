@@ -6,22 +6,22 @@ import 'aos/dist/aos.css';
 const ProductContent = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1500,
+      duration: 1000,
       easing: 'ease-in-out',
       once: true,
     });
   }, []);
 
   return (
-    <div className="contentProduct py-[20px] sm:pb-[50px] md:pb-[100px]">
-      <p data-aos="fade-up" className="text-[22px] md:text-[24px] lg:text-[28px] text-white font-poppins font-medium block lg:hidden px-[15px] sm:px-[30px]">
+    <div className="contentProduct py-[20px] lg:py-[50px] sm:pb-[50px] md:pb-[100px]">
+      <p data-aos="fade-right" className="text-[22px] md:text-[24px] lg:text-[28px] text-white font-poppins font-medium block lg:hidden px-[15px] sm:px-[30px]">
         Digital Process
       </p>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[15px] sm:mx-[30px] lg:mx-[80px]">
-        <div data-aos="fade-up" className="flex justify-center lg:justify-start">
+        <div data-aos="fade-right" className="flex justify-center lg:justify-start">
           <img src={digitalProcess} alt="" />
         </div>
-        <div data-aos="fade-up" className="mt-[0px] pl-[0px] md:pl-[50px] lg:pl-[80px]">
+        <div data-aos="fade-left" className="mt-[0px] pl-[0px] md:pl-[50px] lg:pl-[80px]">
           <p className="text-[24px] lg:text-[28px] xl:text-[32px] text-white font-poppins font-medium hidden lg:block tracking-wide leading-[20px] lg:leading-[36px]">
             Digital Process
           </p>

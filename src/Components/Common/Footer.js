@@ -175,8 +175,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="border-[1px] border-solid border-white" data-aos="fade-up" />
-      <div data-aos="fade-up" className="flex justify-center lg:justify-between items-center">
+      <hr className="border-[1px] border-solid border-white" data-aos="fade-down" />
+      <div data-aos="fade-down" className="flex justify-center lg:justify-between items-center">
         <p className="text-[14px] lg:text-[18px] py-[30px] mb-0">
           Copyright © 2021 NRV Designx Pvt. Ltd.
         </p>
