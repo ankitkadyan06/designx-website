@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 const TrustedBy = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1500,
+      duration: 1000,
       easing: 'ease-in-out',
       once: true,
     });
@@ -16,14 +16,14 @@ const TrustedBy = () => {
 
   return (
     <div className="trustedBy pb-[30px]">
-      <p data-aos="fade-up" className="text-gradientTrust tracking-wide text-[22px] lg:text-[38px] font-poppins block lg:hidden pt-[50px] px-[10px] lg:px-[40px] xl:px-[80px] font-medium">
+      <p data-aos="fade-right" className="text-gradientTrust tracking-wide text-[22px] lg:text-[38px] font-poppins block lg:hidden pt-[50px] px-[10px] lg:px-[40px] xl:px-[80px] font-medium">
        <span className="underline underline-offset-8 decoration-[#0049FF]">Trusted </span> by
       </p>
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 pt-[10px] sm:pt-[50px] lg:pt-[100px] pb-[20px]">
-        <div className="px-[10px] flex justify-center" data-aos="fade-up">
+        <div className="px-[10px] flex justify-center" data-aos="fade-right">
           <img src={client} alt="" />
         </div>
-        <div data-aos="fade-up" className="px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px]">
+        <div data-aos="fade-left" className="px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px]">
           <p className="text-gradientTrust tracking-wide text-[28px] lg:text-[38px] font-poppins hidden lg:block font-medium ">
           <span className="underline underline-offset-8 decoration-[#0049FF]">Trusted </span> by
           </p>

@@ -17,7 +17,7 @@ const ContentOne = () => {
     <div>
       <div className="backContent h-auto pb-[50px]">
         <p
-          data-aos="fade-up"
+          data-aos="fade-right"
           className="text-white text-[22px] sm:text-[28px] lg:text-[32px] font-poppins tracking-wide capitalize pt-[42px] lg:pt-[50px] px-[15px] sm:px-[20px] xl:px-[80px] block lg:hidden"
         >
           Massive volume of manufacturing data is Overlooked
@@ -25,13 +25,13 @@ const ContentOne = () => {
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[30px] px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px]">
           <div className=" relative z-[10] mt-[0px] lg:mt-[40px]">
             <p
-              data-aos="fade-up"
+              data-aos="fade-right"
               className="text-white text-[20px] sm:text-[28px] md:text-[32px] tracking-wide lg:text-[36px] font-poppins font-medium capitalize hidden lg:block"
             >
               Massive volume of manufacturing data is Overlooked
             </p>
             <p
-              data-aos="fade-up"
+              data-aos="fade-right"
               className="text-[#D4D4D4] text-[12px] sm:text-[14px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]"
             >
               As a result, for most manufacturing decision-makers, the
@@ -41,7 +41,7 @@ const ContentOne = () => {
               compromised safety and depreciated quality.
             </p>
             <p
-              data-aos="fade-up"
+              data-aos="fade-right"
               className="text-[#D4D4D4] text-[12px] sm:text-[14px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]"
             >
               Even the ones who wish to change the status quo, when they
@@ -54,7 +54,7 @@ const ContentOne = () => {
           <div
             className="flex justify-center lg:justify-end"
           >
-            <img src={dashboard} alt="" className="relative z-[10] w-full"  data-aos="fade-up"/>
+            <img src={dashboard} alt="" className="relative z-[10] w-full"  data-aos="fade-left"/>
             <img
               src={spring}
               alt=""

@@ -47,7 +47,7 @@ const Testimonies = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       easing: 'ease-in-out',
       once: true,
     });
@@ -56,7 +56,7 @@ const Testimonies = () => {
   return (
     <div className="testimonies w-full h-auto py-[20px] px-[10px]">
       <div className="flex flex-col lg:grid lg:grid-cols-2 pt-[30px] sm:pt-[0px] pl-[10px] sm:pl-[78px]">
-        <div data-aos="fade-up" className="w-full lg:w-[60%] mt-[5px] sm:mt-[80px] lg:mt-[200px]">
+        <div data-aos="fade-right" className="w-full lg:w-[60%] mt-[5px] sm:mt-[80px] lg:mt-[200px]">
           <p className="text-gradientTest tracking-wide font-poppins text-[22px] sm:text-[32px] lg:text-[42px] font-semibold">
             What Our Clients Are Saying...
           </p>
@@ -75,7 +75,7 @@ const Testimonies = () => {
             />
           </div>
         </div>
-        <div data-aos="fade-up" className="mt-[0px] lg:mt-[0px] ml-[0px] lg:ml-[-130px]">
+        <div data-aos="fade-left" className="mt-[0px] lg:mt-[0px] ml-[0px] lg:ml-[-130px]">
           <img
             src={inverted}
             alt=""
