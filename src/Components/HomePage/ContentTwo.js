@@ -18,7 +18,7 @@ const ContentTwo = () => {
   return (
     <div className="tiltBGHomepage">
       <div className="backContTwo pt-[50px]">
-        <p data-aos="fade-right" className="mobileFactory text-white text-[22px] sm:text-[28px] lg:text-[32px] font-poppins font-medium capitalize block lg:hidden">
+        <p className="mobileFactory text-white text-[22px] sm:text-[28px] lg:text-[32px] font-poppins font-medium capitalize block lg:hidden">
           One Factory-One Platform
         </p>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-0 lg:gap-4 px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px] pt-[50px] lg:pt-[100px] pb-[30px] lg:pb-[30px]">
