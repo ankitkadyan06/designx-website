@@ -33,7 +33,7 @@ const VideoComp = () => {
     <div className="videoContainer">
       <div className="videoComp bg-[#282932] pb-[100px] h-auto ">
       <img data-aos="fade-up" src={separation} alt="" className="absolute top-[80px] left-[47%] z-[1] hidden lg:block" />   
-      <p data-aos="fade-right" className="text-gradientVidHead block lg:hidden text-[22px] sm:text-[28px] md:text-[38px] ml-[15px] sm:ml-[30px] tracking-wide pt-[45px] text-white font-poppins capitalize font-medium underline underline-offset-8 decoration-[#00A1FF]">
+      <p className="text-gradientVidHead block lg:hidden text-[22px] sm:text-[28px] md:text-[38px] ml-[15px] sm:ml-[30px] tracking-wide pt-[45px] text-white font-poppins capitalize font-medium underline underline-offset-8 decoration-[#00A1FF]">
               Harness the power of DFOS<sup className="text-gradientVid"><small>&trade;</small></sup>
             </p>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[10px] sm:pt-[50px] lg:pt-[100px] px-[15px] sm:px-[30px] lg:px-[80px] videoContent">
