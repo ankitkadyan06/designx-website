@@ -1,19 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../Assets/CSS/ContentTwo.css";
 import checkSheet from "../Assets/Images/checkImage.svg";
 import spring from "../Assets/Images/springDark.svg";
 import { Link } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const ContentTwo = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-    });
-  }, []);
 
   return (
     <div className="tiltBGHomepage">
@@ -23,28 +15,28 @@ const ContentTwo = () => {
         </p>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-0 lg:gap-4 px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px] pt-[50px] lg:pt-[100px] pb-[30px] lg:pb-[30px]">
           <div className="mt-[0px] lg:mt-[20px] overlook">
-            <p data-aos="fade-right" className="text-white text-[28px] md:text-[32px] lg:text-[36px] font-poppins font-medium capitalize tracking-wide lg:block hidden">
+            <p className="text-white text-[28px] md:text-[32px] lg:text-[36px] font-poppins font-medium capitalize tracking-wide lg:block hidden">
               One Factory-One Platform
             </p>
-            <p data-aos="fade-right" className="text-[#D4D4D4] text-[12px] tracking-wide sm:text-[14px] md:text-[18px] lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
+            <p className="text-[#D4D4D4] text-[12px] tracking-wide sm:text-[14px] md:text-[18px] lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
               After interacting with hundreds of people who wanted to change the
               status quo, we realized that a robust solution is imperative. This
               solution can cater to ever-changing requirements on the shop floor
               and give economies of scale.
             </p>
-            <p data-aos="fade-right" className="text-[#D4D4D4] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
+            <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
               We heard the change-makers and built DFOS (Digital Factory
               Operating System), a no-code, low-code platform, which empowers
               you to build solutions tailored to your specific shop floor needs.
             </p>
-            <p data-aos="fade-right" className="text-[#D4D4D4] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
+            <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
               DFOS provides you with real-time insights and a transparent view
               of the factory leading to data-backed decisions and continuous
               improvement. It's like throwing a bright light on every corner of
               your operations!
             </p>
             <Link to="/Product">
-              <button data-aos="fade-right" className="bg-white text-[#001141] text-[12px] sm:text-[14px] md:text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">
+              <button className="bg-white text-[#001141] text-[12px] sm:text-[14px] md:text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">
                 Know More
               </button>
             </Link>
@@ -53,7 +45,6 @@ const ContentTwo = () => {
             <img
               src={checkSheet}
               alt=""
-              data-aos="fade-left"
               className="relative bottom-[60px] lg:bottom-[85px] mt-[0px] md:mt-[50px] lg:mt-[0px]"
             />
             <img

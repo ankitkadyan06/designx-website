@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Assets/CSS/Testimonies.css";
 import prevArrow from "../Assets/Images/PreviousArrow.svg";
 import nextArrow from "../Assets/Images/nextArrow.svg";
 import inverted from "../Assets/Images/inverted.svg";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Testimonies = () => {
   const texts = [
@@ -45,18 +43,11 @@ const Testimonies = () => {
     setCurrentIndex(index);
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-    });
-  }, []);
 
   return (
     <div className="testimonies w-full h-auto py-[20px] px-[10px]">
       <div className="flex flex-col lg:grid lg:grid-cols-2 pt-[30px] sm:pt-[0px] pl-[10px] sm:pl-[78px]">
-        <div data-aos="fade-right" className="w-full lg:w-[60%] mt-[5px] sm:mt-[80px] lg:mt-[200px]">
+        <div className="w-full lg:w-[60%] mt-[5px] sm:mt-[80px] lg:mt-[200px]">
           <p className="text-gradientTest tracking-wide font-poppins text-[22px] sm:text-[32px] lg:text-[42px] font-semibold">
             What Our Clients Are Saying...
           </p>
@@ -75,7 +66,7 @@ const Testimonies = () => {
             />
           </div>
         </div>
-        <div data-aos="fade-left" className="mt-[0px] lg:mt-[0px] ml-[0px] lg:ml-[-130px]">
+        <div className="mt-[0px] lg:mt-[0px] ml-[0px] lg:ml-[-130px]">
           <img
             src={inverted}
             alt=""

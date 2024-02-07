@@ -1,30 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
 import esg from "../Assets/Images/ESG.svg";
 import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 import { Link } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const ESG = () => {
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-    });
-  }, []);
 
   return (
     <div className="py-[30px] sm:py-[50px] lg:py-[180px]">
-      <p data-aos="fade-left" className="text-white text-[22px] sm:text-[24px] lg:text-[28px] font-poppins font-medium mx-[15px] block lg:hidden">
+      <p className="text-white text-[22px] sm:text-[24px] lg:text-[28px] font-poppins font-medium mx-[15px] block lg:hidden">
         ESG
       </p>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[15px] sm:mx-[30px] lg:mx-[80px]">
         <div data-aos="fade-right" className="flex justify-center lg:justify-start">
           <img src={esg} alt="" />
         </div>
-        <div data-aos="fade-left" className="pl-[0px] md:pl-[50px] lg:pl-[80px]">
+        <div className="pl-[0px] md:pl-[50px] lg:pl-[80px]">
           <p className="text-white text-[24px] lg:text-[28px] xl:text-[32px] font-poppins font-medium hidden lg:block tracking-wide">
             ESG
           </p>

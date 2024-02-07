@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Assets/CSS/Founders.css";
 import invertedComma1 from "../Assets/Images/invertedComma1.svg";
@@ -6,8 +6,6 @@ import invertedComma2 from "../Assets/Images/invertedComma2.svg";
 import RajatSir from "../Assets/Images/rajatSir.svg";
 import NishantSir from "../Assets/Images/NishantSir.svg";
 import linkedin from "../Assets/Images/linkedinFull.svg";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const foundersData = [
   {
@@ -34,21 +32,14 @@ const Founders = () => {
   const handleFounderHover = (founder) => {
     setHoveredFounder(founder);
   };
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-    });
-  }, []);
 
   return (
     <div className="founder px-[15px] sm:px-[50px] lg:px-[10px] 2xl:px-[80px] pt-[30px] lg:pt-[100px] pb-[50px]">
-      <p data-aos="fade-up" className="text-[22px] md:text-[28px] block lg:hidden text-white font-poppins font-medium underline underline-offset-8 decoration-[#7292f1]">
+      <p className="text-[22px] md:text-[28px] block lg:hidden text-white font-poppins font-medium underline underline-offset-8 decoration-[#7292f1]">
         Meet Our Prominent Innovators
       </p>
       <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4">
-        <div data-aos="fade-up">
+        <div>
           <p className="text-[38px] lg:text-[46px] hidden lg:block text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
             Meet Our Prominent Innovators
           </p>
@@ -72,7 +63,7 @@ const Founders = () => {
           </div>
         </div>
         {/* desktop version */}
-        <div data-aos="fade-up" className="block sm:flex mt-[50px] lg:mt-[0px]">
+        <div className="block sm:flex mt-[50px] lg:mt-[0px]">
           {foundersData.map((founder, index) => (
             <div
               key={index}
@@ -102,7 +93,7 @@ const Founders = () => {
         </div>
 
         {/* mobile version */}
-        <div data-aos="fade-up" className="block sm:flex mt-[50px] lg:mt-[0px]">
+        <div className="block sm:flex mt-[50px] lg:mt-[0px]">
           {foundersData.map((founder, index) => (
             <div
               key={index}
