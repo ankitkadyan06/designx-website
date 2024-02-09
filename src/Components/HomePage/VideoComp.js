@@ -35,7 +35,7 @@ const VideoComp = () => {
               shop floor visibility, connectivity & real-time insights.
             </p>
             <div className="flex items-center">
-              <Link to="/Contact">
+              <Link to="/contact-us">
                 <button className="demo text-white text-[12px] sm:text-[14px] md:text-[18px] 2xl:text-[24px] tracking-wide rounded-[5px] font-medium px-[10px] sm:px-[23px] py-[0px] sm:py-[5px] h-[41px] lg:h-[58px]">
                   Request a Demo
                 </button>
@@ -77,7 +77,7 @@ const VideoComp = () => {
                 controls
                   ref={videoRef}
                   className={`rounded-[15px] ${isPlaying ? "playing" : "hidden"} w-[100%] rounded-[15px]`}
-                  style={{transform: "translate(-50%, 0%)"}}
+                  style={{transform: "translate(0%, 0%)"}}
                 >
                   <source src={videoDemo} type="video/mp4" />
                   Your browser does not support the video tag.
