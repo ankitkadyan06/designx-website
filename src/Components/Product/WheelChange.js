@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Assets/CSS/Wheel.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const WheelChange = () => {
   const [hoveredHeading, setHoveredHeading] = useState({
@@ -16,17 +15,10 @@ const WheelChange = () => {
     setHoveredHeading(headingName);
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-    });
-  }, []);
 
   return (
     <div>
-      <div data-aos="fade-up" className="flex flex-col lg:grid grid-cols-2 gap-4">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-4">
         <svg
           width="100%"
           height="100%"

@@ -11,22 +11,24 @@ import ESGBlog from "../Assets/Images/ESGBlog.png";
 import ESGBlogMin from "../Assets/Images/ESGBlogMin.png";
 import { Link } from "react-router-dom";
 import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BlogsContent = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
     });
   }, []);
 
   return (
     <div className="mb-[60px] blogContent flex flex-col items-center">
-      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
+      <div
+        data-aos="fade-up"
+        className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]"
+      >
         <img
           src={blogPic}
           alt=""
@@ -57,7 +59,10 @@ const BlogsContent = () => {
         </div>
       </div>
 
-      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
+      <div
+        data-aos="fade-up"
+        className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]"
+      >
         <img
           src={iBPMS}
           alt=""
@@ -85,7 +90,10 @@ const BlogsContent = () => {
           </Link>
         </div>
       </div>
-      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
+      <div
+        data-aos="fade-up"
+        className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]"
+      >
         <img
           src={ArtificialIntelligence}
           alt=""
@@ -116,7 +124,10 @@ const BlogsContent = () => {
           </Link>
         </div>
       </div>
-      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
+      <div
+        data-aos="fade-up"
+        className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]"
+      >
         <img
           src={Hectos}
           alt=""
@@ -142,7 +153,10 @@ const BlogsContent = () => {
           </Link>
         </div>
       </div>
-      <div data-aos="fade-up" className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]">
+      <div
+        data-aos="fade-up"
+        className="blogContentBackground flex flex-col lg:flex-row w-[88%] h-auto border-[5px] border-solid border-[#0943CB] rounded-[24px] mb-[41px]"
+      >
         <img
           src={ESGBlog}
           alt=""
@@ -154,8 +168,8 @@ const BlogsContent = () => {
             How can factories meet ESG Goals?
           </p>
           <p className="text-[12px] md:text-[14px] xl:text-[18px] text-[#adadad] font-medium">
-            Sustainability is the buzzing word these days. Only profit
-            maximization can’t make a factory profitable...
+            Sustainability is a buzz word these days as Gen Z pays heed to the
+            approach followed by factories to manufacture...
           </p>
           <Link to="/ESG" className="no-underline">
             <button className="blogReadButton flex items-center justify-around w-[120px] sm:w-[151px] h-[40px] rounded-[7px] font-inter text-[12px] sm:text-[14px] text-white">

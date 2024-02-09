@@ -7,9 +7,9 @@ import { useFormik } from "formik";
 import { formValidation } from "../../schemas/index";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import "react-toastify/dist/ReactToastify.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SubmitForm = () => {
   const [loading, setLoading] = useState(false);
@@ -46,7 +46,7 @@ const SubmitForm = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
     });
   }, []);
@@ -75,7 +75,10 @@ const SubmitForm = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" className="formBackground mx-auto mt-[20px] lg:mt-[0px] lg:ml-[70px] w-[100%] sm:w-[300px] md:w-[300px] lg:w-[414px]">
+        <div
+          data-aos="fade-left"
+          className="formBackground mx-auto mt-[20px] lg:mt-[0px] lg:ml-[70px] w-[100%] sm:w-[300px] md:w-[300px] lg:w-[414px]"
+        >
           <div className=" contactForm">
             <p className="text-white text-[20px] md:text-[32px] font-poppins font-medium">
               <span className="underline underline-offset-8 decoration-[2px]">
@@ -84,6 +87,7 @@ const SubmitForm = () => {
               Us
             </p>
             <form
+              autoComplete="off"
               onSubmit={formik.handleSubmit}
               className="mt-[10px] font-poppins"
             >
@@ -93,7 +97,6 @@ const SubmitForm = () => {
                 label="NAME"
                 name="name"
                 variant="standard"
-                autoComplete="off"
                 value={formik.values.name}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -107,7 +110,6 @@ const SubmitForm = () => {
                 label="EMAIL"
                 name="email"
                 variant="standard"
-                autoComplete="off"
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -120,7 +122,6 @@ const SubmitForm = () => {
                 label="PHONE (OPTIONAL)"
                 name="phone"
                 variant="standard"
-                autoComplete="off"
                 value={formik.values.phone}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -133,7 +134,6 @@ const SubmitForm = () => {
                 label="COMPANY (OPTIONAL)"
                 name="company_name"
                 variant="standard"
-                autoComplete="off"
                 value={formik.values.company_name}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
