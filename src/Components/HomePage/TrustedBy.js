@@ -31,7 +31,7 @@ const TrustedBy = () => {
             transformed their shop floors by leveraging the SaaS-based platform,
             DFOS and exhibited exemplary digital outcomes.
           </p>
-          <Link to="/Contact">
+          <Link to="/contact-us">
             <button className="bg-white text-[#001141] text-[12px] sm:text-[14px] lg:text-[18px] tracking-wide p-[10px] rounded-[5px] font-poppins font-medium">
               Learn More
             </button>
