@@ -18,7 +18,7 @@ const ComputerVision = () => {
             </p>
           </div>
           <div className="checkImage flex justify-center lg:justify-start pl-[0px] md:pl-[50px] lg:pl-[80px]">
-            <img src={computerVision} alt="" className="mt-[0px] lg:mt-[70px]" data-aos="fade-left" />
+            <img src={computerVision} alt="" className="mt-[0px] lg:mt-[70px]" />
           </div>
         </div>
         <div className="computerVisionMobile pr-[0px] md:pr-[50px] lg:pr-[80px] block lg:hidden">

@@ -4,9 +4,7 @@ import checkSheet from "../Assets/Images/checkImage.svg";
 import spring from "../Assets/Images/springDark.svg";
 import { Link } from "react-router-dom";
 
-
 const ContentTwo = () => {
-
   return (
     <div className="tiltBGHomepage">
       <div className="backContTwo pt-[50px]">
@@ -36,7 +34,7 @@ const ContentTwo = () => {
               your operations!
             </p>
             <Link to="/Product">
-              <button className="bg-white text-[#001141] text-[12px] sm:text-[14px] md:text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">
+              <button className="knowMore bg-white text-[#001141] text-[12px] sm:text-[14px] md:text-[18px] p-[10px] rounded-[5px] font-poppins font-medium">
                 Know More
               </button>
             </Link>

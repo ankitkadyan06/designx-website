@@ -12,7 +12,7 @@ const ProductDigitalTwin = () => {
         Digital Twin
       </p>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[15px] sm:mx-[30px] lg:mx-[80px]">
-        <div data-aos="fade-right" className="flex justify-center lg:justify-start">
+        <div className="flex justify-center lg:justify-start">
           <img src={digitalTwin} alt="" />
         </div>
         <div className="mt-[0px] ml-[0px] xl:mt-[20px] pl-[0px] md:pl-[50px] lg:pl-[80px]">

@@ -12,7 +12,7 @@ const ESG = () => {
         ESG
       </p>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[15px] sm:mx-[30px] lg:mx-[80px]">
-        <div data-aos="fade-right" className="flex justify-center lg:justify-start">
+        <div className="flex justify-center lg:justify-start">
           <img src={esg} alt="" />
         </div>
         <div className="pl-[0px] md:pl-[50px] lg:pl-[80px]">
