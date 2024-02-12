@@ -752,7 +752,7 @@ const WheelChange = () => {
         </svg>
 
         <div className="flex flex-col justify-center items-center w-full px-[40px] sm:pr-[30px] lg:pr-[80px] pb-[20px] sm:pb-[0px] py-[0px] sm:py-[20px] tracking-wide">
-          <div className="w-full h-auto border-[4px] sm:border-[7px] border-solid border-[#0B77F8] rounded-[21px] pt-[10px] sm:pt-[20px] pb-[16px] sm:pb-[26px] px-[10px] sm:px-[30px] text-left">
+          <div className="textContainer w-full h-auto border-[4px] sm:border-[7px] border-solid border-[#0B77F8] rounded-[21px] pt-[10px] sm:pt-[20px] pb-[16px] sm:pb-[26px] px-[10px] sm:px-[30px] text-left">
             <p className="text-[22px] sm:text-[33px] lg:text-[38px] text-white font-robotoSlab font-semibold tracking-wide leading-[20px] lg:leading-[30px]">
               {hoveredHeading ? hoveredHeading.name : "Sustainability"}
             </p>

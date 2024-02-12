@@ -3,13 +3,15 @@
   transition: border 0.3s ease;
 }
 .cardFounder:hover {
-  border-top: 10px solid #0046ff;
-  border-right: 10px solid #0046ff;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  background: linear-gradient(#282932, #282932) padding-box,
+    linear-gradient(to top, #0046ff, #009dff) border-box;
+  border-radius: 21px;
 }
-  
+
 .founder {
   background: url("../Images/backContactus.svg"),
     lightgray 0px 0px / 100% 137.325% no-repeat;
   background-size: cover;
 }
-

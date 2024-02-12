@@ -14,7 +14,12 @@
 }
 
 .blogContentBackground{
-    background: rgba(0, 0, 0, 0.36);
+    /* background: rgba(0, 0, 0, 0.36); */
+    background: 
+    linear-gradient(#000210, #000210) padding-box,
+    linear-gradient(to bottom, #0943CB, #20DEEB, #009FFF) border-box;
+  border-radius: 24px;
+  border: 7px solid transparent;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
 }
 
