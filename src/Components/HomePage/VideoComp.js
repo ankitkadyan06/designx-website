@@ -51,7 +51,7 @@ const VideoComp = () => {
             </button>
             </div>
           </div>
-          <div className="w-[664px] border-[5px] lg:border-[10px] border-solid border-[#0046FF] rounded-[20px] video-container relative overflow-hidden">
+          <div className="videoBox w-[664px] border-[5px] lg:border-[10px] border-solid  rounded-[20px] video-container relative overflow-hidden">
             <div>
               {!isPlaying && (
                 <div className="relative">
@@ -61,13 +61,13 @@ const VideoComp = () => {
                     className="preview-image w-[100%]"
                   />
                   <div
-                    className="play-button cursor-pointer"
+                    className="play-button cursor-pointer flex items-center justify-center"
                     onClick={playVideo}
                   >
                     <img
                       src={videoView}
                       alt="View Video"
-                      className="absolute bottom-[40%] left-[45%] w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]"
+                      className="absolute bottom-[35%] sm:bottom-[40%] w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]"
                     />
                   </div>
                 </div>

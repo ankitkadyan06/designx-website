@@ -24,7 +24,7 @@
   );
 } */
 
-.text-gradientVidHead{
+.text-gradientVidHead {
   transform: skewy(5deg);
   background: linear-gradient(180deg, #0043ff -7.64%, #009fff 36.11%);
   background-clip: text;
@@ -65,4 +65,17 @@ video {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+}
+
+.videoBox {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to top, #4cb8ff, #eef5ff) border-box;
+  border-radius: 20px;
+  border: 10px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .videoBox{
+    border: 5px solid transparent
+  }
 }

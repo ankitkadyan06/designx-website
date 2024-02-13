@@ -2,3 +2,19 @@
   fill-opacity: 1;
   transition: fill-opacity 0.3s ease-in-out;
 }
+
+.textContainer{
+  background: linear-gradient(#000210, #000210) padding-box,
+  linear-gradient(to bottom, #0B77F8, #1CD5EE, #0BB5F8) border-box;
+border-radius: 21px;
+border: 7px solid transparent; background: linear-gradient(#000210, #000210) padding-box,
+  linear-gradient(to bottom, #0B77F8, #1CD5EE, #0BB5F8) border-box;
+border-radius: 21px;
+border: 7px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .textContainer{
+    border: 4px solid transparent;
+  }
+}
