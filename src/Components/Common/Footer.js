@@ -79,7 +79,7 @@ const Footer = () => {
                 Blogs
               </p>
             </Link>
-            <Link to="/PrivacyPolicy" className="no-underline text-white">
+            <Link to="/privacy-policy/" className="no-underline text-white">
               <p
                 className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
                 style={{ transition: "color 0.3s" }}

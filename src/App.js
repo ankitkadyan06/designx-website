@@ -28,7 +28,7 @@ function App() {
       <Route path='/ArtificialIntelligence' element={<ArtificialIntelligenceMain/>}/>
       <Route path='/DigitalTwin' element={<DigitalTwinMain/>}/>
       <Route path='/IOTGateway' element={<IOTGateWayMain/>}/>
-      <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
+      <Route path='/privacy-policy/' element={<PrivacyPolicy/>}/>
       <Route path='/ESG' element={<ESGMain/>}/>
 
     </Routes>
