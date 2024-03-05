@@ -12,6 +12,7 @@ import DigitalTwinMain from './Pages/DigitalTwinMain';
 import IOTGateWayMain from './Pages/IOTGateWayMain';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import ESGMain from './Pages/ESGMain';
+import UseCases from './Pages/UseCases';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Route path='/IOTGateway' element={<IOTGateWayMain/>}/>
       <Route path='/privacy-policy/' element={<PrivacyPolicy/>}/>
       <Route path='/ESG' element={<ESGMain/>}/>
+      <Route path='/use-cases' element={<UseCases/>}/>
 
     </Routes>
   </BrowserRouter>

@@ -77,6 +77,9 @@ const HeaderDemo = () => {
                 </Link>
               </div>
             ))}
+            <Link to="/use-cases"
+            className="no-underline font-poppins text-[14px] sm:text-[18px] font-normal leading-6 text-white tracking-wider"
+            >Use Cases</Link>
           </div>
           <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end items-center mr-[2%] tracking-wider">
             <Link
