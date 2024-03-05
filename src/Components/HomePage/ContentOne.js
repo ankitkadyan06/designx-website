@@ -21,7 +21,7 @@ const ContentOne = () => {
               Massive volume of manufacturing data is Overlooked
             </p>
             <p
-              className="text-[#D4D4D4] text-[12px] sm:text-[14px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]"
+              className="text-[#D4D4D4] text-[12px] sm:text-[14px] md:text-[18px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]"
             >
               As a result, for most manufacturing decision-makers, the
               visibility to their day-to-day operations is opaque. Due to lack
@@ -30,7 +30,7 @@ const ContentOne = () => {
               compromised safety and depreciated quality.
             </p>
             <p
-              className="text-[#D4D4D4] text-[12px] sm:text-[14px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]"
+              className="text-[#D4D4D4] text-[12px] sm:text-[14px] md:text-[18px] tracking-wide lg:text-[20px] font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]"
             >
               Even the ones who wish to change the status quo, when they
               look-out for a solution, often they encounter solutions which are
