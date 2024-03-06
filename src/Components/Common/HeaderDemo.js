@@ -1,16 +1,24 @@
 import React, { useState, useEffect } from "react";
-import "../Assets//CSS/HeaderDemo.css";
+import "../Assets/CSS/HeaderDemo.css";
 import { Link } from "react-router-dom";
 import logo from "../Assets/Images/designXlogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
+import { Dropdown, ButtonToolbar } from "rsuite";
 
 const navigation = [
   { name: "Home", to: "/" },
   { name: "Product", to: "/Product" },
   { name: "About Us", to: "/about" },
-  { name: "Blogs", to: "/Blogs" },
 ];
+
+const CustomDropdown = ({ ...props }) => (
+  <Dropdown {...props}>
+    <Dropdown.Item><Link to="/Blogs" className="no-underline text-white">Blogs</Link></Dropdown.Item>
+    <Dropdown.Item><Link to="/use-cases" className="no-underline text-white">Use Cases</Link></Dropdown.Item>
+    <Dropdown.Item>Newsletter</Dropdown.Item>
+  </Dropdown>
+);
 const HeaderDemo = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
@@ -77,9 +85,9 @@ const HeaderDemo = () => {
                 </Link>
               </div>
             ))}
-            <Link to="/use-cases"
-            className="no-underline font-poppins text-[14px] sm:text-[18px] font-normal leading-6 text-white tracking-wider"
-            >Use Cases</Link>
+            <ButtonToolbar className=" font-poppins text-[14px] sm:text-[18px] text-white outline-none flex">
+              <CustomDropdown title="Resources" trigger="hover" className="absolute" />
+            </ButtonToolbar>
           </div>
           <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end items-center mr-[2%] tracking-wider">
             <Link
