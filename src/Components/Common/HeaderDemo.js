@@ -16,7 +16,7 @@ const CustomDropdown = ({ ...props }) => (
   <Dropdown {...props}>
     <Dropdown.Item><Link to="/Blogs" className="no-underline text-white">Blogs</Link></Dropdown.Item>
     <Dropdown.Item><Link to="/use-cases" className="no-underline text-white">Use Cases</Link></Dropdown.Item>
-    <Dropdown.Item>Newsletter</Dropdown.Item>
+    <Dropdown.Item><Link to="/newsletter" className="no-underline text-white">Newsletters</Link></Dropdown.Item>
   </Dropdown>
 );
 const HeaderDemo = () => {

@@ -55,12 +55,8 @@ const UseCasesData = () => {
     setSelectedPdf(null);
   };
 
-  const onDocumentLoadSuccess = ({ numPages, error }) => {
-    if (error) {
-      console.error("Error loading document:", error);
-    } else {
-      setNumPages(numPages);
-    }
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
   };
 
   const openVideoModal = (video) => {
@@ -101,7 +97,7 @@ const UseCasesData = () => {
             </button>
             <Document file={selectedPdf} onLoadSuccess={onDocumentLoadSuccess}>
               {Array.from(new Array(numPages), (el, index) => (
-                <Page key={`page_${index + 1}`} pageNumber={index + 1} renderTextLayer={false} />
+                <Page key={`page_${index + 1}`} pageNumber={index + 1} />
               ))}
             </Document>
           </div>
@@ -110,7 +106,7 @@ const UseCasesData = () => {
       {selectedVideo && (
         <div className="video-modal">
           <div className="video-container">
-            <button className="close-btn" onClick={closeVideoModal}>
+            <button className="close-btn font-poppins" onClick={closeVideoModal}>
               Close
             </button>
             <video autoPlay controls width="100%" height="auto">

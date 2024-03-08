@@ -13,6 +13,7 @@ import IOTGateWayMain from "./Pages/IOTGateWayMain";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import ESGMain from "./Pages/ESGMain";
 import UseCases from "./Pages/UseCases";
+import Newsletter from "./Pages/Newsletter";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
         <Route path="/ESG" element={<ESGMain />} />
         <Route path="/use-cases" element={<UseCases />} />
+        <Route path="/newsletter" element={<Newsletter />} />
       </Routes>
     </BrowserRouter>
   );
