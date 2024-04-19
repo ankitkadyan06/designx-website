@@ -27,7 +27,7 @@ const NewsletterData = () => {
             Check out our recent newsletters
           </p>
           <div className="h-full overflow-y-scroll">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 pb-[20px] h-[150px]">
               <div>
                 <p className="text-[16px] text-white font-poppins font-normal tracking-wide">
                   New Year, New Shopfloor
@@ -47,7 +47,7 @@ const NewsletterData = () => {
                 <img src={newsletterfour} alt="" />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 pb-[20px] h-[150px]">
               <div>
                 <p className="text-[16px] text-white font-poppins font-normal tracking-wide">
                   Industry Insights By DesignX
@@ -67,7 +67,7 @@ const NewsletterData = () => {
                 <img src={newsletterfour} alt="" />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 pb-[20px] h-[150px]">
               <div>
                 <p className="text-[16px] text-white font-poppins font-normal tracking-wide">
                   Simplify Breakdown
@@ -87,7 +87,7 @@ const NewsletterData = () => {
                 <img src={newsletterThree} alt="" />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 pb-[20px] h-[150px]">
               <div>
                 <p className="text-[16px] text-white font-poppins font-normal tracking-wide">
                   Simplify UA & UC
@@ -108,7 +108,7 @@ const NewsletterData = () => {
                 <img src={newsletterOne} alt="" />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 pb-[20px] h-[150px]">
               <div>
                 <p className="text-[16px] text-white font-poppins font-normal tracking-wide">
                   Simplify Preventive Maintenance

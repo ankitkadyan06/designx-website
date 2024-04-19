@@ -19,8 +19,8 @@ import hira_audit from "../Assets/video/HIRA_Audit.mp4";
 import "../Assets/CSS/useCases.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url,
+  "pdfjs-dist/build/pdf.worker.min.js",
+  import.meta.url
 ).toString();
 
 const pdfData = [
@@ -106,7 +106,10 @@ const UseCasesData = () => {
       {selectedVideo && (
         <div className="video-modal">
           <div className="video-container">
-            <button className="close-btn font-poppins" onClick={closeVideoModal}>
+            <button
+              className="close-btn font-poppins"
+              onClick={closeVideoModal}
+            >
               Close
             </button>
             <video autoPlay controls width="100%" height="auto">
