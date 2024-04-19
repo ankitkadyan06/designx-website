@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "keen-slider/keen-slider.min.css"
 import 'react-tooltip/dist/react-tooltip.css'

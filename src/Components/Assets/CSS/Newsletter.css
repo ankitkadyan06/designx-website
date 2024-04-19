@@ -1,0 +1,14 @@
+.subscribeButton {
+    background: linear-gradient(0deg, #094cad 0%, #00a2ff 100%);
+}
+
+.infoSubs{
+    background: linear-gradient(0deg, #000A26 100%, #0361A0 100%);
+}
+
+.newNewsletter{
+    background-image: url('../Images/backContactus.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

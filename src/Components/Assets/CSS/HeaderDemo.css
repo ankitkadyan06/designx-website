@@ -1,29 +1,28 @@
 .sticky-header {
     position: fixed;
-    /* display: flex; */
-    /* justify-content: space-between; */
     top: 0;
     left: 0;
     width: 100%;
-    /* background: rgba(255, 255, 255, 0.8);  */
     backdrop-filter: blur(10px); 
     z-index: 1000;
     padding: 10px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
 }
 
-.dropdown{
-    background-color: transparent;
-    backdrop-filter: blur(100px);
+.rs-dropdown-menu{
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 15px;
+    overflow: hidden; 
 }
 
-/* .pagesNav{
-    position: relative;
-    right: 400px;
+.rs-dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(46, 46, 46, 0.5);
+    filter: blur(20px);
 }
-
-@media screen and (max-width:1280px){
-    .pagesNav{
-      right: 300px;
-    }
-  } */
