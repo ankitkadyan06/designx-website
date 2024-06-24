@@ -145,7 +145,7 @@ const Footer = () => {
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Address </p>
             <p className="font-light text-[12px] sm:text-[16px]">
-             B 26-27, 3rd floor, <br /> Sector-1, Noida <br/>Uttar Pradesh - 201301
+             Block B-26 & 27, 3rd floor, <br /> Sector-1, Noida <br/>Uttar Pradesh - 201301
             </p>
             <br />
 

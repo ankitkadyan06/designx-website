@@ -17,7 +17,7 @@ import Newsletter from "./Pages/Newsletter";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
