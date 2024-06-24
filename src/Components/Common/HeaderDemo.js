@@ -14,9 +14,17 @@ const navigation = [
 
 const CustomDropdown = ({ ...props }) => (
   <Dropdown {...props}>
-    <Dropdown.Item><Link to="/Blogs" className="no-underline text-white">Blogs</Link></Dropdown.Item>
-    <Dropdown.Item><Link to="/use-cases" className="no-underline text-white">Use Cases</Link></Dropdown.Item>
-    <Dropdown.Item><Link to="/newsletter" className="no-underline text-white">Newsletters</Link></Dropdown.Item>
+    <Dropdown.Item>
+      <Link to="/Blogs" className="no-underline text-white">
+        Blogs
+      </Link>
+    </Dropdown.Item>
+    <Dropdown.Item>
+      <Link to="/use-cases" className="no-underline text-white">
+        Use Cases
+      </Link>
+    </Dropdown.Item>
+    {/* <Dropdown.Item><Link to="/newsletter" className="no-underline text-white">Newsletters</Link></Dropdown.Item> */}
   </Dropdown>
 );
 const HeaderDemo = () => {
@@ -86,7 +94,11 @@ const HeaderDemo = () => {
               </div>
             ))}
             <ButtonToolbar className=" font-poppins text-[14px] sm:text-[18px] text-white outline-none flex">
-              <CustomDropdown title="Resources" trigger="hover" className="absolute" />
+              <CustomDropdown
+                title="Resources"
+                trigger="hover"
+                className="absolute"
+              />
             </ButtonToolbar>
           </div>
           <div className="hidden lg:flex lg:flex-1 gap-x-12 lg:justify-end items-center mr-[2%] tracking-wider">
@@ -106,10 +118,10 @@ const HeaderDemo = () => {
         >
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#00153F] px-6 pt-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <Link to="/" className="-m-1.5 p-1.5">
+            <div className="flex items-center justify-end">
+              {/* <Link to="/" className="-m-1.5 p-1.5">
                 <img className="w-auto h-8" src={logo} alt="" />
-              </Link>
+              </Link> */}
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -120,8 +132,8 @@ const HeaderDemo = () => {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+              <div className="-my-6 divide-gray-500/10">
+                <div className="space-y-2 pt-6">
                   {navigation.map((item) => (
                     <div
                       key={item.name}
@@ -136,10 +148,16 @@ const HeaderDemo = () => {
                     </div>
                   ))}
                 </div>
-                <div className="py-6">
+                <ButtonToolbar className=" font-poppins text-[14px] sm:text-[18px] mt-[20px] text-white outline-none flex focus:outline-none">
+                    <CustomDropdown
+                      title="Resources"
+                      className="absolute"
+                    />
+                  </ButtonToolbar>
+                <div className="pt-[20px]">
                   <Link
                     to="/contact-us"
-                    className="-mx-3 block rounded-lg font-Poppins px-3 py-2.5 text-[14px] sm:text-[18px] no-underline leading-7 text-white hover:bg-gray-50  font-poppins font-normal tracking-wider"
+                    className="-mx-3 block rounded-lg font-Poppins px-[12px]  text-[14px] sm:text-[18px] no-underline leading-7 text-white  font-poppins font-normal tracking-wider"
                   >
                     Contact Us
                   </Link>

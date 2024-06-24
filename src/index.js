@@ -9,6 +9,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "keen-slider/keen-slider.min.css"
 import 'react-tooltip/dist/react-tooltip.css'
 
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  window.dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-VPNQ61TJKP');
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
